@@ -11,7 +11,12 @@ import {
 
 
 const client = new Client({
-    intents: []
+    intents: [
+        GatewayIntentBits.DirectMessages,
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.GuildMembers
+    ]
 });
 
 client.once("clientReady", async () => {
