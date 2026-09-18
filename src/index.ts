@@ -1,3 +1,4 @@
+import { dbAdd, dbTest } from "./apiCalls";
 import {
     TOKEN,
     SERVER_ID,
@@ -14,6 +15,7 @@ const client = new Client({
     intents: [
         GatewayIntentBits.DirectMessages,
         GatewayIntentBits.Guilds,
+        GatewayIntentBits.MessageContent,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.GuildMembers
     ]
@@ -34,3 +36,19 @@ client.once("clientReady", async () => {
 });
 
 client.login(TOKEN);
+
+
+client.on("messageCreate", async (message) => {
+    if (message.author.id != MY_ID) return;
+    if (message.content.toLowerCase().includes("store")) {
+        const extracts = message.content.match(/"([^"]+)"/);
+        if (!extracts) {
+            console.log("No userId found");
+            return;
+        };
+        const userId = extracts[1];
+        const score = message.content.slice(-3);
+        const response = await dbAdd(userId, score);
+        console.log(response);
+    };
+});

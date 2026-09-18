@@ -1,0 +1,50 @@
+import { API_BASE_URL } from "./config";
+
+export const dbAdd = async (id: string, score: string) => {
+    try {
+        console.log(`${API_BASE_URL}/add`)
+        const response = await fetch(`${API_BASE_URL}/add`, {
+            method: "post",
+            body: JSON.stringify({
+                "userId": id,
+                "score": score
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await response.json();
+        return data;
+    } catch (err) {
+        return err;
+    };
+};
+
+export const dbGetOne = async (id: string) => {
+    try {
+        const response = await fetch(`${API_BASE_URL}/${id}`, {
+            method: "get",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await response.json();
+        return data;
+    } catch (err) {
+        return err
+    };
+};
+
+export const dbTest = async () => {
+    try {
+        const response = await fetch(API_BASE_URL!, {
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await response.json();
+        return data;
+    } catch (err) {
+        return err;
+    };
+};
