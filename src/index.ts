@@ -3,13 +3,16 @@ import {
     TOKEN,
     SERVER_ID,
     MY_ID,
-} from "./config";
+    IQ_CHANNEL_ID,
+} from "./config/environment";
 import {
+    Channel,
     Client,
     GatewayIntentBits,
+    TextChannel,
 } from "discord.js";
 
-
+let iqChannel: Channel | undefined | null;
 
 const client = new Client({
     intents: [
@@ -33,6 +36,18 @@ client.once("clientReady", async () => {
     await server.members.fetch();
     const father = server.members.cache.get(MY_ID!);
     await father?.send("I'm online");
+
+    iqChannel = await client.channels.fetch(IQ_CHANNEL_ID!) as TextChannel;
+
+    if (!iqChannel) {
+        console.log("Couldn't find the iq channel");
+    } else {
+        const channelMsgs = await iqChannel.messages.fetch({limit: 1});
+        if (channelMsgs.size > 0) {
+            await iqChannel.send("Test");
+        };
+    };
+
 });
 
 client.login(TOKEN);

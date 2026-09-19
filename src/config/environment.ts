@@ -8,6 +8,7 @@ const {
     SERVER_ID,
     MY_ID,
     API_BASE_URL,
+    IQ_CHANNEL_ID
 } = process.env;
 
 if (
@@ -15,7 +16,8 @@ if (
     !CLIENT_ID ||
     !SERVER_ID ||
     !MY_ID ||
-    !API_BASE_URL
+    !API_BASE_URL ||
+    !IQ_CHANNEL_ID
 ) throw new Error("Missing environment variables");
 
 export {
@@ -23,5 +25,6 @@ export {
     CLIENT_ID,
     SERVER_ID,
     MY_ID,
-    API_BASE_URL
+    API_BASE_URL,
+    IQ_CHANNEL_ID
 };

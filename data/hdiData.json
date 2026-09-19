@@ -1,0 +1,8210 @@
+[
+  {
+    "country": "Afghanistan",
+    "regions": [
+      {
+        "region": "Central (Kabul Wardak Kapisa Logar Parwan Panjsher)",
+        "hdi": 0.593
+      },
+      {
+        "region": "Central Highlands (Bamyan Daikundi)",
+        "hdi": 0.543
+      },
+      {
+        "region": "East (Nangarhar Kunar Laghman Nooristan)",
+        "hdi": 0.515
+      },
+      {
+        "region": "North (Samangan Sar-e-Pul Balkh Jawzjan Faryab)",
+        "hdi": 0.521
+      },
+      {
+        "region": "North East (Baghlan Takhar Badakhshan Kunduz)",
+        "hdi": 0.456
+      },
+      {
+        "region": "South (Uruzgan Helmand Zabul Nimroz Kandahar)",
+        "hdi": 0.381
+      },
+      {
+        "region": "South East (Ghazni Paktya Paktika Khost)",
+        "hdi": 0.483
+      },
+      {
+        "region": "West (Ghor Herat Badghis Farah)",
+        "hdi": 0.465
+      }
+    ]
+  },
+  {
+    "country": "Albania",
+    "regions": [
+      {
+        "region": " Berat",
+        "hdi": 0.797
+      },
+      {
+        "region": " Diber",
+        "hdi": 0.769
+      },
+      {
+        "region": " Durres",
+        "hdi": 0.817
+      },
+      {
+        "region": " Elbasan",
+        "hdi": 0.799
+      },
+      {
+        "region": " Fier",
+        "hdi": 0.782
+      },
+      {
+        "region": " Gjirokaster",
+        "hdi": 0.81
+      },
+      {
+        "region": " Korce",
+        "hdi": 0.806
+      },
+      {
+        "region": " Kukes",
+        "hdi": 0.765
+      },
+      {
+        "region": " Lezhe",
+        "hdi": 0.784
+      },
+      {
+        "region": " Shkoder",
+        "hdi": 0.799
+      },
+      {
+        "region": " Tirana",
+        "hdi": 0.836
+      },
+      {
+        "region": " Vlore",
+        "hdi": 0.818
+      }
+    ]
+  },
+  {
+    "country": "Algeria",
+    "regions": [
+      {
+        "region": "Hauts Plateaux Centre (Djelfa, Laghouat, MSila)",
+        "hdi": 0.739
+      },
+      {
+        "region": "Hauts Plateaux Est (Setif, Batna, Khenchela, Bordj Bou Arreridj, Oum El Bouaghi, Tebessa)",
+        "hdi": 0.753
+      },
+      {
+        "region": "Hauts Plateaux Ouest (Tiaret, Saida, Tissemsilt, Naama, El Bayadh)",
+        "hdi": 0.748
+      },
+      {
+        "region": "Nord Centre (Alger, Blida, Boumerdes, Tipaza, Bouira, Medea, Tizi-Ouzou, Bejaia, Chlef, Ain Defla)",
+        "hdi": 0.785
+      },
+      {
+        "region": "Nord Est (Annaba, Constantine, Skikda, Jijel, Mila, Souk Ahras, El Tarf, Guelma)",
+        "hdi": 0.759
+      },
+      {
+        "region": "Nord Ouest (Oran, Tlemcen, Mostaganem, Ain Temouchent, Relizane, Sidi Bel Abbes, Mascara)",
+        "hdi": 0.755
+      },
+      {
+        "region": "Sud (Bechar, Tindouf, Adrar, Ghardaia, Biskra, El Oued, Ouargla, Tamanrasset,Illizi)",
+        "hdi": 0.754
+      }
+    ]
+  },
+  {
+    "country": "Angola",
+    "regions": [
+      {
+        "region": " Bengo",
+        "hdi": 0.608
+      },
+      {
+        "region": " Benguela",
+        "hdi": 0.557
+      },
+      {
+        "region": " Bie",
+        "hdi": 0.526
+      },
+      {
+        "region": " Cabinda",
+        "hdi": 0.716
+      },
+      {
+        "region": " Cunene",
+        "hdi": 0.544
+      },
+      {
+        "region": " Huambo",
+        "hdi": 0.562
+      },
+      {
+        "region": " Huila",
+        "hdi": 0.542
+      },
+      {
+        "region": " Kuando Kubango",
+        "hdi": 0.532
+      },
+      {
+        "region": " Kuanza Norte",
+        "hdi": 0.569
+      },
+      {
+        "region": " Kuanza Sul",
+        "hdi": 0.474
+      },
+      {
+        "region": " Luanda",
+        "hdi": 0.738
+      },
+      {
+        "region": " Lunda Norte",
+        "hdi": 0.548
+      },
+      {
+        "region": " Lunda Sul",
+        "hdi": 0.61
+      },
+      {
+        "region": " Malange",
+        "hdi": 0.595
+      },
+      {
+        "region": " Moxico",
+        "hdi": 0.53
+      },
+      {
+        "region": " Namibe",
+        "hdi": 0.612
+      },
+      {
+        "region": " Uige",
+        "hdi": 0.569
+      },
+      {
+        "region": " Zaire",
+        "hdi": 0.648
+      }
+    ]
+  },
+  {
+    "country": "Argentina urban",
+    "regions": [
+      {
+        "region": "Cuyo",
+        "hdi": 0.865
+      },
+      {
+        "region": "Gran Buenos Aires",
+        "hdi": 0.866
+      },
+      {
+        "region": "NEA",
+        "hdi": 0.852
+      },
+      {
+        "region": "NOA",
+        "hdi": 0.867
+      },
+      {
+        "region": "Pampeana",
+        "hdi": 0.865
+      },
+      {
+        "region": "Patagonia",
+        "hdi": 0.864
+      }
+    ]
+  },
+  {
+    "country": "Armenia",
+    "regions": [
+      {
+        "region": "Aragatsotn",
+        "hdi": 0.782
+      },
+      {
+        "region": "Ararat",
+        "hdi": 0.788
+      },
+      {
+        "region": "Armavir",
+        "hdi": 0.784
+      },
+      {
+        "region": "Gegharkunik",
+        "hdi": 0.756
+      },
+      {
+        "region": "Kotayk",
+        "hdi": 0.817
+      },
+      {
+        "region": "Lori",
+        "hdi": 0.786
+      },
+      {
+        "region": "Shirak",
+        "hdi": 0.809
+      },
+      {
+        "region": "Syunik",
+        "hdi": 0.802
+      },
+      {
+        "region": "Tavush",
+        "hdi": 0.805
+      },
+      {
+        "region": "Vayots Dzor",
+        "hdi": 0.787
+      },
+      {
+        "region": "Yerevan",
+        "hdi": 0.858
+      }
+    ]
+  },
+  {
+    "country": "Australia",
+    "regions": [
+      {
+        "region": "Australia",
+        "hdi": 0.958
+      },
+      {
+        "region": "Australian Capital Territory",
+        "hdi": 0.988
+      },
+      {
+        "region": "New South Wales",
+        "hdi": 0.958
+      },
+      {
+        "region": "Northern Territory",
+        "hdi": 0.944
+      },
+      {
+        "region": "Queensland",
+        "hdi": 0.947
+      },
+      {
+        "region": "South Australia",
+        "hdi": 0.944
+      },
+      {
+        "region": "Tasmania",
+        "hdi": 0.935
+      },
+      {
+        "region": "Victoria",
+        "hdi": 0.954
+      },
+      {
+        "region": "Western Australia",
+        "hdi": 0.973
+      }
+    ]
+  },
+  {
+    "country": "Austria",
+    "regions": [
+      {
+        "region": "Austria",
+        "hdi": 0.93
+      },
+      {
+        "region": "Burgenland",
+        "hdi": 0.894
+      },
+      {
+        "region": "Karnten",
+        "hdi": 0.916
+      },
+      {
+        "region": "Niederosterreich",
+        "hdi": 0.896
+      },
+      {
+        "region": "Oberosterreich",
+        "hdi": 0.921
+      },
+      {
+        "region": "Salzburg",
+        "hdi": 0.948
+      },
+      {
+        "region": "Steiermark",
+        "hdi": 0.926
+      },
+      {
+        "region": "Tirol",
+        "hdi": 0.941
+      },
+      {
+        "region": "Vorarlberg",
+        "hdi": 0.92
+      },
+      {
+        "region": "Wien",
+        "hdi": 0.952
+      }
+    ]
+  },
+  {
+    "country": "Azerbaijan",
+    "regions": [
+      {
+        "region": "Absheron",
+        "hdi": 0.808
+      },
+      {
+        "region": "Aran",
+        "hdi": 0.765
+      },
+      {
+        "region": "Baku",
+        "hdi": 0.821
+      },
+      {
+        "region": "Dakhlik Shirvan",
+        "hdi": 0.76
+      },
+      {
+        "region": "Ganja Gazakh",
+        "hdi": 0.782
+      },
+      {
+        "region": "Guba Khachmaz",
+        "hdi": 0.757
+      },
+      {
+        "region": "Lankaran",
+        "hdi": 0.755
+      },
+      {
+        "region": "Nakhchivan",
+        "hdi": 0.779
+      },
+      {
+        "region": "Shaki Zaqatala",
+        "hdi": 0.782
+      },
+      {
+        "region": "Yukhari Karabakh",
+        "hdi": 0.746
+      }
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "regions": [
+      {
+        "region": " Bagerhat, Khulna, Satkhira",
+        "hdi": 0.719
+      },
+      {
+        "region": " Bandarban, Cox s Bazar",
+        "hdi": 0.613
+      },
+      {
+        "region": " Barguna, Bhola, Patuakhali",
+        "hdi": 0.675
+      },
+      {
+        "region": " Barisal, Jhalokati, Pirojpur",
+        "hdi": 0.702
+      },
+      {
+        "region": " Bogra, Gaibandha, Jaypurhat",
+        "hdi": 0.674
+      },
+      {
+        "region": " Brahmanbaria, Chandpur, Comilla",
+        "hdi": 0.672
+      },
+      {
+        "region": " Chittagong",
+        "hdi": 0.696
+      },
+      {
+        "region": " Chuadanga, Jhenaidah, Kushtia, Meherpur",
+        "hdi": 0.694
+      },
+      {
+        "region": " Dhaka",
+        "hdi": 0.743
+      },
+      {
+        "region": " Dinajpur, Nilphamari, Panchagarh, Thakurgaon",
+        "hdi": 0.67
+      },
+      {
+        "region": " Faridpur, Manikganj, Rajbari",
+        "hdi": 0.677
+      },
+      {
+        "region": " Feni, Lakshmipur, Noakhali",
+        "hdi": 0.661
+      },
+      {
+        "region": " Gazipur, Narayanganj, Narsingdi",
+        "hdi": 0.701
+      },
+      {
+        "region": " Gopalganj, Madaripur, Munshiganj, Shariatpur",
+        "hdi": 0.687
+      },
+      {
+        "region": " Habiganj, Sunamganj",
+        "hdi": 0.642
+      },
+      {
+        "region": " Jamalpur, Sherpur, Tangail",
+        "hdi": 0.677
+      },
+      {
+        "region": " Jessore, Magura, Narail",
+        "hdi": 0.704
+      },
+      {
+        "region": " Khagrachhari, Rangamati (Chattagram)",
+        "hdi": 0.629
+      },
+      {
+        "region": " Kishoreganj, Mymensingh, Netrakona",
+        "hdi": 0.66
+      },
+      {
+        "region": " Kurigram, Lalmonirhat, Rangpur",
+        "hdi": 0.672
+      },
+      {
+        "region": " Maulvibazar, Sylhet",
+        "hdi": 0.648
+      },
+      {
+        "region": " Naogaon, Nawabganj, Rajshahi",
+        "hdi": 0.701
+      },
+      {
+        "region": " Natore, Pabna, Sirajganj",
+        "hdi": 0.696
+      }
+    ]
+  },
+  {
+    "country": "Barbados",
+    "regions": [
+      {
+        "region": "Christ Church and St. Philip",
+        "hdi": 0.818
+      },
+      {
+        "region": "St Michael",
+        "hdi": 0.803
+      },
+      {
+        "region": "St. James, St. George, and St. Thomas",
+        "hdi": 0.824
+      },
+      {
+        "region": "St. Lucy, St. Peter, St. Andrew, St. Joseph, and St. John",
+        "hdi": 0.803
+      }
+    ]
+  },
+  {
+    "country": "Belarus",
+    "regions": [
+      {
+        "region": "Brest region",
+        "hdi": 0.816
+      },
+      {
+        "region": "Gomel region",
+        "hdi": 0.824
+      },
+      {
+        "region": "Grodno region",
+        "hdi": 0.822
+      },
+      {
+        "region": "Minsk region",
+        "hdi": 0.835
+      },
+      {
+        "region": "Mogilev region",
+        "hdi": 0.813
+      },
+      {
+        "region": "Vitebsk region",
+        "hdi": 0.816
+      }
+    ]
+  },
+  {
+    "country": "Belgium",
+    "regions": [
+      {
+        "region": "Belgium",
+        "hdi": 0.951
+      },
+      {
+        "region": "Bruxelles - Brussel",
+        "hdi": 0.961
+      },
+      {
+        "region": "Prov. Antwerpen",
+        "hdi": 0.966
+      },
+      {
+        "region": "Prov. Brabant Wallon",
+        "hdi": 0.957
+      },
+      {
+        "region": "Prov. Hainaut",
+        "hdi": 0.903
+      },
+      {
+        "region": "Prov. Liege",
+        "hdi": 0.916
+      },
+      {
+        "region": "Prov. Limburg",
+        "hdi": 0.946
+      },
+      {
+        "region": "Prov. Luxembourg",
+        "hdi": 0.911
+      },
+      {
+        "region": "Prov. Namur",
+        "hdi": 0.92
+      },
+      {
+        "region": "Prov. Oost-Vlaanderen",
+        "hdi": 0.955
+      },
+      {
+        "region": "Prov. Vlaams-Brabant",
+        "hdi": 0.957
+      },
+      {
+        "region": "Prov. West-Vlaanderen",
+        "hdi": 0.948
+      }
+    ]
+  },
+  {
+    "country": "Belize",
+    "regions": [
+      {
+        "region": "Belize",
+        "hdi": 0.752
+      },
+      {
+        "region": "Cayo",
+        "hdi": 0.645
+      },
+      {
+        "region": "Corozal, Orange Walk",
+        "hdi": 0.692
+      },
+      {
+        "region": "Stann Creek, Toledo",
+        "hdi": 0.732
+      }
+    ]
+  },
+  {
+    "country": "Benin",
+    "regions": [
+      {
+        "region": "Atacora (incl Donga)",
+        "hdi": 0.469
+      },
+      {
+        "region": "Atlantique (incl Littoral (Cotonou))",
+        "hdi": 0.573
+      },
+      {
+        "region": "Borgou (incl Alibori)",
+        "hdi": 0.456
+      },
+      {
+        "region": "Mono (incl Couffo)",
+        "hdi": 0.497
+      },
+      {
+        "region": "Queme (incl Plateau)",
+        "hdi": 0.533
+      },
+      {
+        "region": "Zou (incl Collines)",
+        "hdi": 0.517
+      }
+    ]
+  },
+  {
+    "country": "Bhutan",
+    "regions": [
+      {
+        "region": "Bumthang",
+        "hdi": 0.704
+      },
+      {
+        "region": "Chukha",
+        "hdi": 0.736
+      },
+      {
+        "region": "Dagana",
+        "hdi": 0.642
+      },
+      {
+        "region": "Gasa",
+        "hdi": 0.572
+      },
+      {
+        "region": "Haa",
+        "hdi": 0.746
+      },
+      {
+        "region": "Lhuntse",
+        "hdi": 0.634
+      },
+      {
+        "region": "Mongar",
+        "hdi": 0.636
+      },
+      {
+        "region": "Paro",
+        "hdi": 0.771
+      },
+      {
+        "region": "Pemagatshel",
+        "hdi": 0.638
+      },
+      {
+        "region": "Punakha",
+        "hdi": 0.698
+      },
+      {
+        "region": "Samdrup jongkhar",
+        "hdi": 0.649
+      },
+      {
+        "region": "Samtse",
+        "hdi": 0.657
+      },
+      {
+        "region": "Sarpang",
+        "hdi": 0.731
+      },
+      {
+        "region": "Thimphu",
+        "hdi": 0.877
+      },
+      {
+        "region": "Trashigang",
+        "hdi": 0.607
+      },
+      {
+        "region": "Trashiyangtse",
+        "hdi": 0.621
+      },
+      {
+        "region": "Trongsa",
+        "hdi": 0.654
+      },
+      {
+        "region": "Tsirang",
+        "hdi": 0.667
+      },
+      {
+        "region": "Wangdi",
+        "hdi": 0.639
+      },
+      {
+        "region": "Zhemgang",
+        "hdi": 0.636
+      }
+    ]
+  },
+  {
+    "country": "Bolivia",
+    "regions": [
+      {
+        "region": "Beni",
+        "hdi": 0.735
+      },
+      {
+        "region": "Chuquisaca",
+        "hdi": 0.715
+      },
+      {
+        "region": "Cochabamba",
+        "hdi": 0.724
+      },
+      {
+        "region": "La Paz",
+        "hdi": 0.735
+      },
+      {
+        "region": "Oruro",
+        "hdi": 0.744
+      },
+      {
+        "region": "Pando",
+        "hdi": 0.73
+      },
+      {
+        "region": "Potosi",
+        "hdi": 0.66
+      },
+      {
+        "region": "Santa Cruz",
+        "hdi": 0.775
+      },
+      {
+        "region": "Tarija",
+        "hdi": 0.76
+      }
+    ]
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "regions": [
+      {
+        "region": "Central Bosnia",
+        "hdi": 0.806
+      },
+      {
+        "region": "Northern Bosnia",
+        "hdi": 0.797
+      },
+      {
+        "region": "Republica Srpska",
+        "hdi": 0.801
+      },
+      {
+        "region": "Western Bosnia",
+        "hdi": 0.798
+      },
+      {
+        "region": "Western herzegovina",
+        "hdi": 0.827
+      }
+    ]
+  },
+  {
+    "country": "Botswana",
+    "regions": [
+      {
+        "region": "Central",
+        "hdi": 0.708
+      },
+      {
+        "region": "Chobe",
+        "hdi": 0.705
+      },
+      {
+        "region": "Ghanzi",
+        "hdi": 0.706
+      },
+      {
+        "region": "Kgalagadi",
+        "hdi": 0.669
+      },
+      {
+        "region": "Kgatleng",
+        "hdi": 0.76
+      },
+      {
+        "region": "Kweneng",
+        "hdi": 0.748
+      },
+      {
+        "region": "North-East",
+        "hdi": 0.781
+      },
+      {
+        "region": "North-West, Ngamiland",
+        "hdi": 0.67
+      },
+      {
+        "region": "South-East",
+        "hdi": 0.793
+      },
+      {
+        "region": "Southern",
+        "hdi": 0.682
+      }
+    ]
+  },
+  {
+    "country": "Brazil",
+    "regions": [
+      {
+        "region": "Acre",
+        "hdi": 0.739
+      },
+      {
+        "region": "Alagoas",
+        "hdi": 0.741
+      },
+      {
+        "region": "Amapa",
+        "hdi": 0.773
+      },
+      {
+        "region": "Amazonas",
+        "hdi": 0.761
+      },
+      {
+        "region": "Bahia",
+        "hdi": 0.759
+      },
+      {
+        "region": "Ceara",
+        "hdi": 0.757
+      },
+      {
+        "region": "Distrito Federal",
+        "hdi": 0.85
+      },
+      {
+        "region": "Espirito Santo",
+        "hdi": 0.788
+      },
+      {
+        "region": "Goias",
+        "hdi": 0.793
+      },
+      {
+        "region": "Maranhao",
+        "hdi": 0.728
+      },
+      {
+        "region": "Mato Grosso",
+        "hdi": 0.782
+      },
+      {
+        "region": "Mato Grosso do Sul",
+        "hdi": 0.788
+      },
+      {
+        "region": "Minas Gerais",
+        "hdi": 0.786
+      },
+      {
+        "region": "Para",
+        "hdi": 0.742
+      },
+      {
+        "region": "Paraiba",
+        "hdi": 0.759
+      },
+      {
+        "region": "Parana",
+        "hdi": 0.795
+      },
+      {
+        "region": "Pernambuco",
+        "hdi": 0.76
+      },
+      {
+        "region": "Piaui",
+        "hdi": 0.737
+      },
+      {
+        "region": "Rio Grande do Norte",
+        "hdi": 0.775
+      },
+      {
+        "region": "Rio Grande do Sul",
+        "hdi": 0.801
+      },
+      {
+        "region": "Rio de Janeiro",
+        "hdi": 0.816
+      },
+      {
+        "region": "Rondonia",
+        "hdi": 0.758
+      },
+      {
+        "region": "Roraima",
+        "hdi": 0.788
+      },
+      {
+        "region": "Santa Catarina",
+        "hdi": 0.801
+      },
+      {
+        "region": "Sao Paulo",
+        "hdi": 0.813
+      },
+      {
+        "region": "Sergipe",
+        "hdi": 0.77
+      },
+      {
+        "region": "Tocantins",
+        "hdi": 0.774
+      }
+    ]
+  },
+  {
+    "country": "Bulgaria",
+    "regions": [
+      {
+        "region": "Bulgaria",
+        "hdi": 0.845
+      },
+      {
+        "region": "Severen tsentralen",
+        "hdi": 0.813
+      },
+      {
+        "region": "Severoiztochen",
+        "hdi": 0.822
+      },
+      {
+        "region": "Severozapaden",
+        "hdi": 0.786
+      },
+      {
+        "region": "Yugoiztochen",
+        "hdi": 0.81
+      },
+      {
+        "region": "Yugozapaden",
+        "hdi": 0.905
+      },
+      {
+        "region": "Yuzhen tsentralen",
+        "hdi": 0.817
+      }
+    ]
+  },
+  {
+    "country": "Burkina Faso",
+    "regions": [
+      {
+        "region": "Boucle de Mouhoun",
+        "hdi": 0.422
+      },
+      {
+        "region": "Cascades",
+        "hdi": 0.463
+      },
+      {
+        "region": "Centre (incl Ouagadougou)",
+        "hdi": 0.573
+      },
+      {
+        "region": "Centre-Est",
+        "hdi": 0.419
+      },
+      {
+        "region": "Centre-Nord",
+        "hdi": 0.408
+      },
+      {
+        "region": "Centre-Ouest",
+        "hdi": 0.456
+      },
+      {
+        "region": "Centre-Sud",
+        "hdi": 0.441
+      },
+      {
+        "region": "Est",
+        "hdi": 0.393
+      },
+      {
+        "region": "Hauts Bassins",
+        "hdi": 0.487
+      },
+      {
+        "region": "Nord",
+        "hdi": 0.441
+      },
+      {
+        "region": "Plateau Central",
+        "hdi": 0.442
+      },
+      {
+        "region": "Sahel",
+        "hdi": 0.305
+      },
+      {
+        "region": "Sud-Ouest",
+        "hdi": 0.36
+      }
+    ]
+  },
+  {
+    "country": "Burundi",
+    "regions": [
+      {
+        "region": "East (Cankuzo, Rutana, Ruyigi )",
+        "hdi": 0.422
+      },
+      {
+        "region": "Middle (Gitega, Karuzi, Muramvya, Mwaro)",
+        "hdi": 0.442
+      },
+      {
+        "region": "North (Kayanza, Kirundo, Muyinga, Ngozi)",
+        "hdi": 0.389
+      },
+      {
+        "region": "South (Bururi, Makamba)",
+        "hdi": 0.472
+      },
+      {
+        "region": "West (Bubanza, Buja Rural, Cibitoke, Mairie de Bujumbura)",
+        "hdi": 0.49
+      }
+    ]
+  },
+  {
+    "country": "Cambodia",
+    "regions": [
+      {
+        "region": "Banteay Mean Chey",
+        "hdi": 0.642
+      },
+      {
+        "region": "Bat Dambang-Krong Pailin",
+        "hdi": 0.6
+      },
+      {
+        "region": "Kampong Cham (incl Tboung Khmum)",
+        "hdi": 0.551
+      },
+      {
+        "region": "Kampong Chhnang",
+        "hdi": 0.621
+      },
+      {
+        "region": "Kampong Spueu",
+        "hdi": 0.505
+      },
+      {
+        "region": "Kampong Thum",
+        "hdi": 0.563
+      },
+      {
+        "region": "Kampot-Krong Kaeb-Krong Preah Sihanouk",
+        "hdi": 0.579
+      },
+      {
+        "region": "Kandal",
+        "hdi": 0.606
+      },
+      {
+        "region": "Kaoh Kong",
+        "hdi": 0.554
+      },
+      {
+        "region": "Mondol Kiri-Rotanak Kiri",
+        "hdi": 0.537
+      },
+      {
+        "region": "Phnom Penh",
+        "hdi": 0.703
+      },
+      {
+        "region": "Pousat",
+        "hdi": 0.534
+      },
+      {
+        "region": "Preah Vihear-Stueng Traeng-Kracheh",
+        "hdi": 0.578
+      },
+      {
+        "region": "Prey Veaeng",
+        "hdi": 0.609
+      },
+      {
+        "region": "Siem Reab-Otdar Mean Chey",
+        "hdi": 0.612
+      },
+      {
+        "region": "Svay Rieng",
+        "hdi": 0.607
+      },
+      {
+        "region": "Takaev",
+        "hdi": 0.636
+      }
+    ]
+  },
+  {
+    "country": "Cameroon",
+    "regions": [
+      {
+        "region": "Adamaoua",
+        "hdi": 0.501
+      },
+      {
+        "region": "Centre (incl Yaounde)",
+        "hdi": 0.669
+      },
+      {
+        "region": "Est",
+        "hdi": 0.544
+      },
+      {
+        "region": "Extreme Nord",
+        "hdi": 0.467
+      },
+      {
+        "region": "Littoral (incl Douala)",
+        "hdi": 0.708
+      },
+      {
+        "region": "Nord",
+        "hdi": 0.461
+      },
+      {
+        "region": "Nord Ouest",
+        "hdi": 0.564
+      },
+      {
+        "region": "Ouest",
+        "hdi": 0.626
+      },
+      {
+        "region": "Sud",
+        "hdi": 0.631
+      },
+      {
+        "region": "Sud Ouest",
+        "hdi": 0.68
+      }
+    ]
+  },
+  {
+    "country": "Canada",
+    "regions": [
+      {
+        "region": "Canada",
+        "hdi": 0.939
+      },
+      {
+        "region": "Alberta",
+        "hdi": 0.952
+      },
+      {
+        "region": "British Columbia",
+        "hdi": 0.95
+      },
+      {
+        "region": "Manitoba",
+        "hdi": 0.911
+      },
+      {
+        "region": "New Brunswick",
+        "hdi": 0.908
+      },
+      {
+        "region": "Newfoundland and Labrador",
+        "hdi": 0.905
+      },
+      {
+        "region": "Nova Scotia",
+        "hdi": 0.913
+      },
+      {
+        "region": "Ontario",
+        "hdi": 0.946
+      },
+      {
+        "region": "Prince Edward Island, Yukon Territory, Northwest Territories, Nunavut",
+        "hdi": 0.933
+      },
+      {
+        "region": "Quebec",
+        "hdi": 0.93
+      },
+      {
+        "region": "Saskatchewan",
+        "hdi": 0.924
+      }
+    ]
+  },
+  {
+    "country": "Cape Verde",
+    "regions": [
+      {
+        "region": "Fogo",
+        "hdi": 0.665
+      },
+      {
+        "region": "S.Antao",
+        "hdi": 0.635
+      },
+      {
+        "region": "S.Vicente",
+        "hdi": 0.677
+      },
+      {
+        "region": "Santiago- Praia",
+        "hdi": 0.682
+      },
+      {
+        "region": "Santiago-Interior",
+        "hdi": 0.65
+      }
+    ]
+  },
+  {
+    "country": "Central African Republic CAR",
+    "regions": [
+      {
+        "region": "Bangui",
+        "hdi": 0.557
+      },
+      {
+        "region": "RS I (Ombella Mpoko, Lobaye, Kemo, Nana Grebizi, Ouaka)",
+        "hdi": 0.412
+      },
+      {
+        "region": "RS II (Mambera Kadei, Nana Mambere, Sangha Mbaere)",
+        "hdi": 0.393
+      },
+      {
+        "region": "RS III (Ouham Pende, Ouham)",
+        "hdi": 0.371
+      },
+      {
+        "region": "RS IV (Haute-Kotto, Baminigui Bangoran, Vakaga)",
+        "hdi": 0.397
+      },
+      {
+        "region": "RS V (Basse Kotto, Mbornou, Houte Mbormou)",
+        "hdi": 0.35
+      }
+    ]
+  },
+  {
+    "country": "Chad",
+    "regions": [
+      {
+        "region": "Zone 1 (N'Djamena)",
+        "hdi": 0.558
+      },
+      {
+        "region": "Zone 2 (Borkou, Ennedi, Tibesti, Kanem, Barh El Gazal, Lac)",
+        "hdi": 0.285
+      },
+      {
+        "region": "Zone 3 (Guera, Batha, Salamat)",
+        "hdi": 0.355
+      },
+      {
+        "region": "Zone 4 (Ouaddai, Assongha, Sila, Biltine - Wadi Fira)",
+        "hdi": 0.308
+      },
+      {
+        "region": "Zone 5 (Chari-Baguimi, Dababa, Baguirmi, Hadjer Lamis)",
+        "hdi": 0.302
+      },
+      {
+        "region": "Zone 6 (Mayo-Kebbi Est and Ouest)",
+        "hdi": 0.484
+      },
+      {
+        "region": "Zone 7 (Logone Occidental & Oriental, Monts de Lam, Tandjile Est & Ouest)",
+        "hdi": 0.438
+      },
+      {
+        "region": "Zone 8 (Mandoul, Moyen-Chari, Bahr Koh, Lac Iro)",
+        "hdi": 0.458
+      }
+    ]
+  },
+  {
+    "country": "Chili",
+    "regions": [
+      {
+        "region": "Aisen",
+        "hdi": 0.833
+      },
+      {
+        "region": "Antofagasta",
+        "hdi": 0.898
+      },
+      {
+        "region": "Arbucania",
+        "hdi": 0.812
+      },
+      {
+        "region": "Atacama",
+        "hdi": 0.882
+      },
+      {
+        "region": "Bio Bio",
+        "hdi": 0.852
+      },
+      {
+        "region": "Coquimbo",
+        "hdi": 0.857
+      },
+      {
+        "region": "Los Lagos (incl Los Rios)",
+        "hdi": 0.821
+      },
+      {
+        "region": "Magallanes and La Antartica Chilena",
+        "hdi": 0.891
+      },
+      {
+        "region": "Maule",
+        "hdi": 0.816
+      },
+      {
+        "region": "OHiggins",
+        "hdi": 0.847
+      },
+      {
+        "region": "Region Metropolitana",
+        "hdi": 0.908
+      },
+      {
+        "region": "Tarapaca (incl Arica and Parinacota)",
+        "hdi": 0.905
+      },
+      {
+        "region": "Valparaiso (former Aconcagua)",
+        "hdi": 0.894
+      }
+    ]
+  },
+  {
+    "country": "China",
+    "regions": [
+      {
+        "region": "China",
+        "hdi": 0.797
+      },
+      {
+        "region": "Anhui",
+        "hdi": 0.776
+      },
+      {
+        "region": "Beijing",
+        "hdi": 0.912
+      },
+      {
+        "region": "Chongqing",
+        "hdi": 0.804
+      },
+      {
+        "region": "Fujian",
+        "hdi": 0.812
+      },
+      {
+        "region": "Gansu",
+        "hdi": 0.731
+      },
+      {
+        "region": "Guangdong",
+        "hdi": 0.823
+      },
+      {
+        "region": "Guangxi",
+        "hdi": 0.76
+      },
+      {
+        "region": "Guizhou",
+        "hdi": 0.734
+      },
+      {
+        "region": "Hainan",
+        "hdi": 0.79
+      },
+      {
+        "region": "Hebei",
+        "hdi": 0.771
+      },
+      {
+        "region": "Heilongjiang",
+        "hdi": 0.778
+      },
+      {
+        "region": "Henan",
+        "hdi": 0.769
+      },
+      {
+        "region": "Hongkong",
+        "hdi": 0.955
+      },
+      {
+        "region": "Hubei",
+        "hdi": 0.803
+      },
+      {
+        "region": "Hunan",
+        "hdi": 0.79
+      },
+      {
+        "region": "Inner Mongolia",
+        "hdi": 0.807
+      },
+      {
+        "region": "Jiangsu",
+        "hdi": 0.836
+      },
+      {
+        "region": "Jiangxi",
+        "hdi": 0.777
+      },
+      {
+        "region": "Jilin",
+        "hdi": 0.787
+      },
+      {
+        "region": "Liaoning",
+        "hdi": 0.803
+      },
+      {
+        "region": "Ningxia",
+        "hdi": 0.773
+      },
+      {
+        "region": "Qinghai",
+        "hdi": 0.727
+      },
+      {
+        "region": "Shaanxi",
+        "hdi": 0.802
+      },
+      {
+        "region": "Shandong",
+        "hdi": 0.798
+      },
+      {
+        "region": "Shanghai",
+        "hdi": 0.901
+      },
+      {
+        "region": "Shanxi",
+        "hdi": 0.8
+      },
+      {
+        "region": "Sichuan",
+        "hdi": 0.771
+      },
+      {
+        "region": "Taiwan",
+        "hdi": 0.934
+      },
+      {
+        "region": "Tianjin",
+        "hdi": 0.867
+      },
+      {
+        "region": "Tibet",
+        "hdi": 0.656
+      },
+      {
+        "region": "Xinjiang",
+        "hdi": 0.771
+      },
+      {
+        "region": "Yunnan",
+        "hdi": 0.737
+      },
+      {
+        "region": "Zhejiang",
+        "hdi": 0.823
+      }
+    ]
+  },
+  {
+    "country": "Colombia",
+    "regions": [
+      {
+        "region": "Amazonas",
+        "hdi": 0.737
+      },
+      {
+        "region": "Antioquia (incl Medellin)",
+        "hdi": 0.793
+      },
+      {
+        "region": "Arauca",
+        "hdi": 0.76
+      },
+      {
+        "region": "Atlantico (incl Barranquilla)",
+        "hdi": 0.808
+      },
+      {
+        "region": "Bogota D.C.",
+        "hdi": 0.836
+      },
+      {
+        "region": "Bolivar (Sur and Norte)",
+        "hdi": 0.777
+      },
+      {
+        "region": "Boyaca",
+        "hdi": 0.78
+      },
+      {
+        "region": "Caldas",
+        "hdi": 0.799
+      },
+      {
+        "region": "Caqueta",
+        "hdi": 0.737
+      },
+      {
+        "region": "Casanare",
+        "hdi": 0.77
+      },
+      {
+        "region": "Cauca",
+        "hdi": 0.739
+      },
+      {
+        "region": "Cesar",
+        "hdi": 0.75
+      },
+      {
+        "region": "Choco",
+        "hdi": 0.716
+      },
+      {
+        "region": "Cordoba",
+        "hdi": 0.736
+      },
+      {
+        "region": "Cundinamarca",
+        "hdi": 0.795
+      },
+      {
+        "region": "Guainja",
+        "hdi": 0.689
+      },
+      {
+        "region": "Guajira",
+        "hdi": 0.715
+      },
+      {
+        "region": "Guaviare",
+        "hdi": 0.776
+      },
+      {
+        "region": "Huila",
+        "hdi": 0.745
+      },
+      {
+        "region": "Magdalena",
+        "hdi": 0.746
+      },
+      {
+        "region": "Meta",
+        "hdi": 0.799
+      },
+      {
+        "region": "Narino",
+        "hdi": 0.742
+      },
+      {
+        "region": "Norte de Santander",
+        "hdi": 0.77
+      },
+      {
+        "region": "Putumayo",
+        "hdi": 0.737
+      },
+      {
+        "region": "Quindio",
+        "hdi": 0.805
+      },
+      {
+        "region": "Risaralda",
+        "hdi": 0.782
+      },
+      {
+        "region": "San Andres",
+        "hdi": 0.811
+      },
+      {
+        "region": "Santander",
+        "hdi": 0.799
+      },
+      {
+        "region": "Sucre",
+        "hdi": 0.764
+      },
+      {
+        "region": "Tolima",
+        "hdi": 0.767
+      },
+      {
+        "region": "Valle (incl Cali)",
+        "hdi": 0.813
+      },
+      {
+        "region": "Vaupis",
+        "hdi": 0.658
+      },
+      {
+        "region": "Vichada",
+        "hdi": 0.775
+      }
+    ]
+  },
+  {
+    "country": "Comoros",
+    "regions": [
+      {
+        "region": "Anjouan (Ndzouani)",
+        "hdi": 0.577
+      },
+      {
+        "region": "Grande Comore (Ngazidja)",
+        "hdi": 0.625
+      },
+      {
+        "region": "Moheli",
+        "hdi": 0.621
+      }
+    ]
+  },
+  {
+    "country": "Congo Brazzaville",
+    "regions": [
+      {
+        "region": " Bouenza",
+        "hdi": 0.563
+      },
+      {
+        "region": " Brazzaville",
+        "hdi": 0.707
+      },
+      {
+        "region": " Cuvette",
+        "hdi": 0.616
+      },
+      {
+        "region": " Cuvette Ouest",
+        "hdi": 0.543
+      },
+      {
+        "region": " Kouilou",
+        "hdi": 0.53
+      },
+      {
+        "region": " Lekoumou",
+        "hdi": 0.53
+      },
+      {
+        "region": " Likouala",
+        "hdi": 0.559
+      },
+      {
+        "region": " Niari",
+        "hdi": 0.603
+      },
+      {
+        "region": " Plateaux",
+        "hdi": 0.576
+      },
+      {
+        "region": " Pointe Noire",
+        "hdi": 0.696
+      },
+      {
+        "region": " Pool",
+        "hdi": 0.514
+      },
+      {
+        "region": " Sangha",
+        "hdi": 0.549
+      }
+    ]
+  },
+  {
+    "country": "Congo Democratic Republic",
+    "regions": [
+      {
+        "region": "Bandundu",
+        "hdi": 0.499
+      },
+      {
+        "region": "Bas-Congo",
+        "hdi": 0.521
+      },
+      {
+        "region": "Equateur",
+        "hdi": 0.497
+      },
+      {
+        "region": "Kasai Occidental",
+        "hdi": 0.441
+      },
+      {
+        "region": "Kasai Oriental",
+        "hdi": 0.489
+      },
+      {
+        "region": "Katanga",
+        "hdi": 0.507
+      },
+      {
+        "region": "Kinshasa",
+        "hdi": 0.625
+      },
+      {
+        "region": "Maniema",
+        "hdi": 0.47
+      },
+      {
+        "region": "Nord-Kivu",
+        "hdi": 0.547
+      },
+      {
+        "region": "Orientale",
+        "hdi": 0.509
+      },
+      {
+        "region": "Sud-Kivu",
+        "hdi": 0.534
+      }
+    ]
+  },
+  {
+    "country": "Costa Rica",
+    "regions": [
+      {
+        "region": "Alajuela",
+        "hdi": 0.83
+      },
+      {
+        "region": "Cartago",
+        "hdi": 0.832
+      },
+      {
+        "region": "Guanacaste",
+        "hdi": 0.82
+      },
+      {
+        "region": "Heredia",
+        "hdi": 0.861
+      },
+      {
+        "region": "Limon",
+        "hdi": 0.793
+      },
+      {
+        "region": "Puntarenas",
+        "hdi": 0.813
+      },
+      {
+        "region": "San Jose",
+        "hdi": 0.849
+      }
+    ]
+  },
+  {
+    "country": "Cote d'Ivoire",
+    "regions": [
+      {
+        "region": "Abidjan",
+        "hdi": 0.611
+      },
+      {
+        "region": "Bas Sassandra",
+        "hdi": 0.604
+      },
+      {
+        "region": "Comoe",
+        "hdi": 0.558
+      },
+      {
+        "region": "Denguele",
+        "hdi": 0.513
+      },
+      {
+        "region": "Goh-Djiboua",
+        "hdi": 0.535
+      },
+      {
+        "region": "Lacs",
+        "hdi": 0.466
+      },
+      {
+        "region": "Lagunes",
+        "hdi": 0.537
+      },
+      {
+        "region": "Montagnes",
+        "hdi": 0.619
+      },
+      {
+        "region": "Sassandra-Marahoue",
+        "hdi": 0.567
+      },
+      {
+        "region": "Yamoussoukro",
+        "hdi": 0.633
+      }
+    ]
+  },
+  {
+    "country": "Croatia",
+    "regions": [
+      {
+        "region": "Croatia",
+        "hdi": 0.889
+      },
+      {
+        "region": "City of Zagreb",
+        "hdi": 0.954
+      },
+      {
+        "region": "County of Bjelovar-Bilogora",
+        "hdi": 0.835
+      },
+      {
+        "region": "County of Brod-Posavina",
+        "hdi": 0.836
+      },
+      {
+        "region": "County of Dubrovnik-Neretva",
+        "hdi": 0.911
+      },
+      {
+        "region": "County of Istria",
+        "hdi": 0.917
+      },
+      {
+        "region": "County of Karlovac",
+        "hdi": 0.857
+      },
+      {
+        "region": "County of Koprivnica-Krizevc",
+        "hdi": 0.847
+      },
+      {
+        "region": "County of Krapina-Zagorje",
+        "hdi": 0.834
+      },
+      {
+        "region": "County of Lika-Senj",
+        "hdi": 0.856
+      },
+      {
+        "region": "County of Medimurje",
+        "hdi": 0.866
+      },
+      {
+        "region": "County of Osijek-Baranja",
+        "hdi": 0.862
+      },
+      {
+        "region": "County of Pozega-Slavonia",
+        "hdi": 0.83
+      },
+      {
+        "region": "County of Primorje-Gorski Kotar",
+        "hdi": 0.925
+      },
+      {
+        "region": "County of Sibenik-Knin",
+        "hdi": 0.871
+      },
+      {
+        "region": "County of Sisak-Moslavina",
+        "hdi": 0.846
+      },
+      {
+        "region": "County of Split-Dalmatia",
+        "hdi": 0.891
+      },
+      {
+        "region": "County of Varazdin",
+        "hdi": 0.867
+      },
+      {
+        "region": "County of Virovitica-Podravina",
+        "hdi": 0.816
+      },
+      {
+        "region": "County of Vukovar-Srijem",
+        "hdi": 0.835
+      },
+      {
+        "region": "County of Zadar",
+        "hdi": 0.881
+      },
+      {
+        "region": "County of Zagreb",
+        "hdi": 0.871
+      }
+    ]
+  },
+  {
+    "country": "Cuba",
+    "regions": [
+      {
+        "region": "C. Habana",
+        "hdi": 0.801
+      },
+      {
+        "region": "Camaguey",
+        "hdi": 0.746
+      },
+      {
+        "region": "Ciego de Avila",
+        "hdi": 0.767
+      },
+      {
+        "region": "Cienfuegos",
+        "hdi": 0.771
+      },
+      {
+        "region": "Granma",
+        "hdi": 0.735
+      },
+      {
+        "region": "Guantanamo",
+        "hdi": 0.769
+      },
+      {
+        "region": "Holguin",
+        "hdi": 0.744
+      },
+      {
+        "region": "Isla",
+        "hdi": 0.782
+      },
+      {
+        "region": "Las Tunas",
+        "hdi": 0.738
+      },
+      {
+        "region": "Matanzas",
+        "hdi": 0.759
+      },
+      {
+        "region": "Pinar del Rio",
+        "hdi": 0.752
+      },
+      {
+        "region": "Prov. Habana",
+        "hdi": 0.771
+      },
+      {
+        "region": "S.Spiritus",
+        "hdi": 0.745
+      },
+      {
+        "region": "Santiago de Cuba",
+        "hdi": 0.767
+      },
+      {
+        "region": "Villa Clara",
+        "hdi": 0.75
+      }
+    ]
+  },
+  {
+    "country": "Cyprus",
+    "regions": [
+      {
+        "region": "Cyprus",
+        "hdi": 0.913
+      }
+    ]
+  },
+  {
+    "country": "Czech Republic",
+    "regions": [
+      {
+        "region": "Czech Republic",
+        "hdi": 0.915
+      },
+      {
+        "region": "Jihovychod",
+        "hdi": 0.924
+      },
+      {
+        "region": "Jihozapad",
+        "hdi": 0.898
+      },
+      {
+        "region": "Moravskoslezsko",
+        "hdi": 0.882
+      },
+      {
+        "region": "Praha",
+        "hdi": 0.975
+      },
+      {
+        "region": "Severovychod",
+        "hdi": 0.891
+      },
+      {
+        "region": "Severozapad",
+        "hdi": 0.854
+      },
+      {
+        "region": "Stredni Cechy",
+        "hdi": 0.869
+      },
+      {
+        "region": "Stredni Morava",
+        "hdi": 0.901
+      }
+    ]
+  },
+  {
+    "country": "Denmark",
+    "regions": [
+      {
+        "region": "Denmark",
+        "hdi": 0.962
+      },
+      {
+        "region": "Hovedstaden",
+        "hdi": 0.971
+      },
+      {
+        "region": "Midtjylland",
+        "hdi": 0.959
+      },
+      {
+        "region": "Nordjylland",
+        "hdi": 0.941
+      },
+      {
+        "region": "Sjaelland",
+        "hdi": 0.929
+      },
+      {
+        "region": "Syddanmark",
+        "hdi": 0.948
+      }
+    ]
+  },
+  {
+    "country": "Djibouti",
+    "regions": [
+      {
+        "region": "Djibouti",
+        "hdi": 0.521
+      },
+      {
+        "region": "Other Districts",
+        "hdi": 0.466
+      }
+    ]
+  },
+  {
+    "country": "Dominican Republic",
+    "regions": [
+      {
+        "region": "Region 0 (Distrito Nacional, Santo Domingo, Monte Plata)",
+        "hdi": 0.792
+      },
+      {
+        "region": "Region I (Peravia, San Cristobal, San Jose de Ocoa, Azua)",
+        "hdi": 0.772
+      },
+      {
+        "region": "Region II (Espaillat, Puerto Plata, Santiago)",
+        "hdi": 0.769
+      },
+      {
+        "region": "Region III (Duarte, Maria Trinidad Sanchez, Salcedo, Samana)",
+        "hdi": 0.772
+      },
+      {
+        "region": "Region IV (Independencia, Bahoruco, Barahona, Pedernales)",
+        "hdi": 0.764
+      },
+      {
+        "region": "Region V (El Seibo, La Altagracia, La Romana, San Pedro de Macoris, Hato Mayor)",
+        "hdi": 0.76
+      },
+      {
+        "region": "Region VI (San Juan, Elias Pina)",
+        "hdi": 0.742
+      },
+      {
+        "region": "Region VII (Dajabon, Monte Cristi, Santiago Rodriguez, Valverde)",
+        "hdi": 0.75
+      },
+      {
+        "region": "Region VIII (La Vega, Monsenor Nouel, Sanchez Ramirez)",
+        "hdi": 0.775
+      }
+    ]
+  },
+  {
+    "country": "Ecuador",
+    "regions": [
+      {
+        "region": "Coste",
+        "hdi": 0.775
+      },
+      {
+        "region": "Oriente",
+        "hdi": 0.74
+      },
+      {
+        "region": "Sierra",
+        "hdi": 0.79
+      }
+    ]
+  },
+  {
+    "country": "Egypt",
+    "regions": [
+      {
+        "region": "Alexandria",
+        "hdi": 0.805
+      },
+      {
+        "region": "Assuit",
+        "hdi": 0.697
+      },
+      {
+        "region": "Aswan",
+        "hdi": 0.748
+      },
+      {
+        "region": "Behera",
+        "hdi": 0.74
+      },
+      {
+        "region": "Beni Suef",
+        "hdi": 0.719
+      },
+      {
+        "region": "Cairo",
+        "hdi": 0.805
+      },
+      {
+        "region": "Dakahlia",
+        "hdi": 0.772
+      },
+      {
+        "region": "Damietta",
+        "hdi": 0.781
+      },
+      {
+        "region": "Fayoum",
+        "hdi": 0.723
+      },
+      {
+        "region": "Frontier governorates (Red Sea, New Valley, Matroh, North Sainai, South Sainai)",
+        "hdi": 0.762
+      },
+      {
+        "region": "Gharbia",
+        "hdi": 0.767
+      },
+      {
+        "region": "Giza",
+        "hdi": 0.757
+      },
+      {
+        "region": "Ismailia",
+        "hdi": 0.769
+      },
+      {
+        "region": "Kafr El-Sheikh",
+        "hdi": 0.758
+      },
+      {
+        "region": "Kalyubia",
+        "hdi": 0.758
+      },
+      {
+        "region": "Menoufia",
+        "hdi": 0.775
+      },
+      {
+        "region": "Menya",
+        "hdi": 0.711
+      },
+      {
+        "region": "Port Said",
+        "hdi": 0.824
+      },
+      {
+        "region": "Qena",
+        "hdi": 0.731
+      },
+      {
+        "region": "Sharkia",
+        "hdi": 0.753
+      },
+      {
+        "region": "Souhag",
+        "hdi": 0.707
+      },
+      {
+        "region": "Suez",
+        "hdi": 0.809
+      }
+    ]
+  },
+  {
+    "country": "El Salvador",
+    "regions": [
+      {
+        "region": "Central I",
+        "hdi": 0.716
+      },
+      {
+        "region": "Central II",
+        "hdi": 0.644
+      },
+      {
+        "region": "Occidental",
+        "hdi": 0.648
+      },
+      {
+        "region": "Oriental",
+        "hdi": 0.635
+      }
+    ]
+  },
+  {
+    "country": "Equatorial Guinea",
+    "regions": [
+      {
+        "region": "Annobon, Bioko",
+        "hdi": 0.761
+      },
+      {
+        "region": "Centro Sur",
+        "hdi": 0.619
+      },
+      {
+        "region": "Kie Ntem",
+        "hdi": 0.627
+      },
+      {
+        "region": "Litoral",
+        "hdi": 0.703
+      },
+      {
+        "region": "Wele Nzas",
+        "hdi": 0.598
+      }
+    ]
+  },
+  {
+    "country": "Eritrea",
+    "regions": [
+      {
+        "region": "Anseba",
+        "hdi": 0.458
+      },
+      {
+        "region": "Debub",
+        "hdi": 0.478
+      },
+      {
+        "region": "Debubawi Keih Bahri",
+        "hdi": 0.503
+      },
+      {
+        "region": "Gash-Barka",
+        "hdi": 0.377
+      },
+      {
+        "region": "Maekel",
+        "hdi": 0.69
+      },
+      {
+        "region": "Semenawi Keih Bahri",
+        "hdi": 0.408
+      }
+    ]
+  },
+  {
+    "country": "Estonia",
+    "regions": [
+      {
+        "region": "Estonia",
+        "hdi": 0.905
+      },
+      {
+        "region": "Kesk-Eesti",
+        "hdi": 0.843
+      },
+      {
+        "region": "Kirde-Eesti",
+        "hdi": 0.862
+      },
+      {
+        "region": "Laane-Eesti",
+        "hdi": 0.86
+      },
+      {
+        "region": "Louna-Eesti",
+        "hdi": 0.878
+      },
+      {
+        "region": "Pohja-Eesti",
+        "hdi": 0.947
+      }
+    ]
+  },
+  {
+    "country": "Eswatini",
+    "regions": [
+      {
+        "region": "Hhohho",
+        "hdi": 0.713
+      },
+      {
+        "region": "Lubombo",
+        "hdi": 0.691
+      },
+      {
+        "region": "Manzini",
+        "hdi": 0.683
+      },
+      {
+        "region": "Shiselweni",
+        "hdi": 0.687
+      }
+    ]
+  },
+  {
+    "country": "Ethiopia",
+    "regions": [
+      {
+        "region": "Addis",
+        "hdi": 0.703
+      },
+      {
+        "region": "Affar",
+        "hdi": 0.472
+      },
+      {
+        "region": "Amhara",
+        "hdi": 0.48
+      },
+      {
+        "region": "Ben-Gumz",
+        "hdi": 0.494
+      },
+      {
+        "region": "Dire Dawa",
+        "hdi": 0.597
+      },
+      {
+        "region": "Gambela",
+        "hdi": 0.546
+      },
+      {
+        "region": "Harari",
+        "hdi": 0.585
+      },
+      {
+        "region": "Oromiya",
+        "hdi": 0.491
+      },
+      {
+        "region": "SNNP",
+        "hdi": 0.495
+      },
+      {
+        "region": "Somali",
+        "hdi": 0.431
+      },
+      {
+        "region": "Tigray",
+        "hdi": 0.533
+      }
+    ]
+  },
+  {
+    "country": "Fiji",
+    "regions": [
+      {
+        "region": "Ba",
+        "hdi": 0.736
+      },
+      {
+        "region": "Cakaudrove, Bua",
+        "hdi": 0.688
+      },
+      {
+        "region": "Kadavu, Lau, Lomaiviti, Rotuma",
+        "hdi": 0.682
+      },
+      {
+        "region": "Macuata",
+        "hdi": 0.72
+      },
+      {
+        "region": "Nadroga or Navosa",
+        "hdi": 0.699
+      },
+      {
+        "region": "Naitasiri",
+        "hdi": 0.745
+      },
+      {
+        "region": "Ra",
+        "hdi": 0.678
+      },
+      {
+        "region": "Rewa",
+        "hdi": 0.733
+      },
+      {
+        "region": "Serua, Namosi",
+        "hdi": 0.705
+      },
+      {
+        "region": "Tailevu",
+        "hdi": 0.721
+      }
+    ]
+  },
+  {
+    "country": "Finland",
+    "regions": [
+      {
+        "region": "Finland",
+        "hdi": 0.948
+      },
+      {
+        "region": "Aland",
+        "hdi": 0.945
+      },
+      {
+        "region": "Etela-Suomi",
+        "hdi": 0.938
+      },
+      {
+        "region": "Helsinki-Uusimaa",
+        "hdi": 0.967
+      },
+      {
+        "region": "Lansi-Suomi",
+        "hdi": 0.941
+      },
+      {
+        "region": "Pohjois-ja Ita-Suomi",
+        "hdi": 0.935
+      }
+    ]
+  },
+  {
+    "country": "France",
+    "regions": [
+      {
+        "region": "France",
+        "hdi": 0.92
+      },
+      {
+        "region": "Alsace",
+        "hdi": 0.914
+      },
+      {
+        "region": "Aquitaine",
+        "hdi": 0.917
+      },
+      {
+        "region": "Auvergne",
+        "hdi": 0.899
+      },
+      {
+        "region": "Basse-Normandie",
+        "hdi": 0.891
+      },
+      {
+        "region": "Bourgogne",
+        "hdi": 0.896
+      },
+      {
+        "region": "Bretagne",
+        "hdi": 0.913
+      },
+      {
+        "region": "Centre",
+        "hdi": 0.895
+      },
+      {
+        "region": "Champagne-Ardenne",
+        "hdi": 0.893
+      },
+      {
+        "region": "Corse",
+        "hdi": 0.874
+      },
+      {
+        "region": "Franche-Comte",
+        "hdi": 0.897
+      },
+      {
+        "region": "French Guyana",
+        "hdi": 0.799
+      },
+      {
+        "region": "Guadeloupe",
+        "hdi": 0.87
+      },
+      {
+        "region": "Haute-Normandie",
+        "hdi": 0.901
+      },
+      {
+        "region": "Ile de France",
+        "hdi": 0.959
+      },
+      {
+        "region": "Languedoc-Roussillon",
+        "hdi": 0.903
+      },
+      {
+        "region": "Limousin",
+        "hdi": 0.896
+      },
+      {
+        "region": "Lorraine",
+        "hdi": 0.888
+      },
+      {
+        "region": "Martinique",
+        "hdi": 0.863
+      },
+      {
+        "region": "Mayotte",
+        "hdi": 0.773
+      },
+      {
+        "region": "Midi-Pyrenees",
+        "hdi": 0.92
+      },
+      {
+        "region": "Nord",
+        "hdi": 0.897
+      },
+      {
+        "region": "Pays de la Loire",
+        "hdi": 0.915
+      },
+      {
+        "region": "Picardie",
+        "hdi": 0.879
+      },
+      {
+        "region": "Poitou-Charentes",
+        "hdi": 0.901
+      },
+      {
+        "region": "Provence-Alpes-Cote dAzur",
+        "hdi": 0.921
+      },
+      {
+        "region": "Reunion",
+        "hdi": 0.857
+      },
+      {
+        "region": "Rhone-Alpes",
+        "hdi": 0.933
+      }
+    ]
+  },
+  {
+    "country": "Gabon",
+    "regions": [
+      {
+        "region": "Estuaire",
+        "hdi": 0.75
+      },
+      {
+        "region": "Haut Ogooue",
+        "hdi": 0.707
+      },
+      {
+        "region": "Libreville-Port Gentil",
+        "hdi": 0.758
+      },
+      {
+        "region": "Moyen Ogooue",
+        "hdi": 0.692
+      },
+      {
+        "region": "Ngounie",
+        "hdi": 0.663
+      },
+      {
+        "region": "Nyanga",
+        "hdi": 0.671
+      },
+      {
+        "region": "Ogooue Ivindo",
+        "hdi": 0.631
+      },
+      {
+        "region": "Ogooue Lolo",
+        "hdi": 0.666
+      },
+      {
+        "region": "Ogooue Maritime",
+        "hdi": 0.7
+      },
+      {
+        "region": "Woleu Ntem",
+        "hdi": 0.69
+      }
+    ]
+  },
+  {
+    "country": "Gambia",
+    "regions": [
+      {
+        "region": "Banjul",
+        "hdi": 0.572
+      },
+      {
+        "region": "Basse",
+        "hdi": 0.446
+      },
+      {
+        "region": "Brikama",
+        "hdi": 0.555
+      },
+      {
+        "region": "Janjabureh",
+        "hdi": 0.41
+      },
+      {
+        "region": "Kanifing",
+        "hdi": 0.579
+      },
+      {
+        "region": "Kerewan",
+        "hdi": 0.472
+      },
+      {
+        "region": "Kuntaur",
+        "hdi": 0.359
+      },
+      {
+        "region": "Mansakonko",
+        "hdi": 0.465
+      }
+    ]
+  },
+  {
+    "country": "Georgia",
+    "regions": [
+      {
+        "region": "Ajaria",
+        "hdi": 0.848
+      },
+      {
+        "region": "Guria",
+        "hdi": 0.799
+      },
+      {
+        "region": "Imereti Racha-Lochkhumi Kvemo Svaneti",
+        "hdi": 0.842
+      },
+      {
+        "region": "Kakheti",
+        "hdi": 0.797
+      },
+      {
+        "region": "Kvemo Kartli",
+        "hdi": 0.825
+      },
+      {
+        "region": "Mtskheta-Mtianeti",
+        "hdi": 0.785
+      },
+      {
+        "region": "Samegrelo-Zemo Svateni",
+        "hdi": 0.805
+      },
+      {
+        "region": "Samtskhe-Javakheti",
+        "hdi": 0.816
+      },
+      {
+        "region": "Shida Kartli",
+        "hdi": 0.82
+      },
+      {
+        "region": "Tbilisi",
+        "hdi": 0.876
+      }
+    ]
+  },
+  {
+    "country": "Germany",
+    "regions": [
+      {
+        "region": "Germany",
+        "hdi": 0.959
+      },
+      {
+        "region": "Baden-Wurttemberg",
+        "hdi": 0.972
+      },
+      {
+        "region": "Bayern",
+        "hdi": 0.967
+      },
+      {
+        "region": "Berlin",
+        "hdi": 0.977
+      },
+      {
+        "region": "Brandenburg",
+        "hdi": 0.936
+      },
+      {
+        "region": "Bremen",
+        "hdi": 0.961
+      },
+      {
+        "region": "Hamburg",
+        "hdi": 0.977
+      },
+      {
+        "region": "Hessen",
+        "hdi": 0.963
+      },
+      {
+        "region": "Mecklenburg-Vorpommern",
+        "hdi": 0.932
+      },
+      {
+        "region": "Niedersachsen",
+        "hdi": 0.945
+      },
+      {
+        "region": "Nordrhein-Westfalen",
+        "hdi": 0.955
+      },
+      {
+        "region": "Rheinland-Pfalz",
+        "hdi": 0.948
+      },
+      {
+        "region": "Saarland",
+        "hdi": 0.944
+      },
+      {
+        "region": "Sachsen",
+        "hdi": 0.953
+      },
+      {
+        "region": "Sachsen-Anhalt",
+        "hdi": 0.93
+      },
+      {
+        "region": "Schleswig-Holstein",
+        "hdi": 0.939
+      },
+      {
+        "region": "Thuringen",
+        "hdi": 0.937
+      }
+    ]
+  },
+  {
+    "country": "Ghana",
+    "regions": [
+      {
+        "region": "Ashanti",
+        "hdi": 0.651
+      },
+      {
+        "region": "Brong Ahafo",
+        "hdi": 0.607
+      },
+      {
+        "region": "Central",
+        "hdi": 0.634
+      },
+      {
+        "region": "Eastern",
+        "hdi": 0.647
+      },
+      {
+        "region": "Greater Accra",
+        "hdi": 0.7
+      },
+      {
+        "region": "Northern",
+        "hdi": 0.525
+      },
+      {
+        "region": "Upper East",
+        "hdi": 0.581
+      },
+      {
+        "region": "Upper West",
+        "hdi": 0.569
+      },
+      {
+        "region": "Volta",
+        "hdi": 0.61
+      },
+      {
+        "region": "Western",
+        "hdi": 0.629
+      }
+    ]
+  },
+  {
+    "country": "Greece",
+    "regions": [
+      {
+        "region": "Greece",
+        "hdi": 0.908
+      },
+      {
+        "region": "Anatoliki Makedonia, Thraki",
+        "hdi": 0.876
+      },
+      {
+        "region": "Attiki",
+        "hdi": 0.933
+      },
+      {
+        "region": "Dytiki Ellada",
+        "hdi": 0.878
+      },
+      {
+        "region": "Dytiki Makedonia",
+        "hdi": 0.9
+      },
+      {
+        "region": "Ionia Nisia",
+        "hdi": 0.886
+      },
+      {
+        "region": "Ipeiros",
+        "hdi": 0.892
+      },
+      {
+        "region": "Kentriki Makedonia",
+        "hdi": 0.891
+      },
+      {
+        "region": "Kriti",
+        "hdi": 0.896
+      },
+      {
+        "region": "Notio Aigaio",
+        "hdi": 0.89
+      },
+      {
+        "region": "Peloponnisos",
+        "hdi": 0.892
+      },
+      {
+        "region": "Sterea Ellada",
+        "hdi": 0.897
+      },
+      {
+        "region": "Thessalia",
+        "hdi": 0.894
+      },
+      {
+        "region": "Voreio Aigaio",
+        "hdi": 0.882
+      }
+    ]
+  },
+  {
+    "country": "Guatemala",
+    "regions": [
+      {
+        "region": "Central",
+        "hdi": 0.674
+      },
+      {
+        "region": "Metropolitan",
+        "hdi": 0.761
+      },
+      {
+        "region": "North",
+        "hdi": 0.587
+      },
+      {
+        "region": "North-Occidental",
+        "hdi": 0.585
+      },
+      {
+        "region": "North-Oriental",
+        "hdi": 0.655
+      },
+      {
+        "region": "Peten",
+        "hdi": 0.643
+      },
+      {
+        "region": "South-Occidental",
+        "hdi": 0.641
+      },
+      {
+        "region": "South-Oriental",
+        "hdi": 0.648
+      }
+    ]
+  },
+  {
+    "country": "Guinea",
+    "regions": [
+      {
+        "region": "Boke",
+        "hdi": 0.474
+      },
+      {
+        "region": "Conakry",
+        "hdi": 0.697
+      },
+      {
+        "region": "Faranah",
+        "hdi": 0.435
+      },
+      {
+        "region": "Kankan",
+        "hdi": 0.421
+      },
+      {
+        "region": "Kindia",
+        "hdi": 0.493
+      },
+      {
+        "region": "Labe",
+        "hdi": 0.43
+      },
+      {
+        "region": "Mamou",
+        "hdi": 0.464
+      },
+      {
+        "region": "N Zerekore",
+        "hdi": 0.485
+      }
+    ]
+  },
+  {
+    "country": "Guinea Bissau",
+    "regions": [
+      {
+        "region": "Bafata",
+        "hdi": 0.493
+      },
+      {
+        "region": "Biombo",
+        "hdi": 0.513
+      },
+      {
+        "region": "Bissau",
+        "hdi": 0.614
+      },
+      {
+        "region": "Bolama",
+        "hdi": 0.505
+      },
+      {
+        "region": "Cacheu",
+        "hdi": 0.536
+      },
+      {
+        "region": "Gabu",
+        "hdi": 0.414
+      },
+      {
+        "region": "Oio",
+        "hdi": 0.462
+      },
+      {
+        "region": "Quinara",
+        "hdi": 0.503
+      },
+      {
+        "region": "Tombali",
+        "hdi": 0.498
+      }
+    ]
+  },
+  {
+    "country": "Guyana",
+    "regions": [
+      {
+        "region": "Barima-Waini",
+        "hdi": 0.697
+      },
+      {
+        "region": "Cuyuni-Mazaruni",
+        "hdi": 0.721
+      },
+      {
+        "region": "Demerara-Mahaica",
+        "hdi": 0.796
+      },
+      {
+        "region": "East Berbice-Corentyne",
+        "hdi": 0.766
+      },
+      {
+        "region": "Essequibo Islands-West Demerara",
+        "hdi": 0.767
+      },
+      {
+        "region": "Mahaica-Berbice",
+        "hdi": 0.778
+      },
+      {
+        "region": "Pomeroon-Supenaam",
+        "hdi": 0.738
+      },
+      {
+        "region": "Potaro-Siparuni",
+        "hdi": 0.691
+      },
+      {
+        "region": "Upper Demerara-Berbice",
+        "hdi": 0.81
+      },
+      {
+        "region": "Upper Takutu-Upper Essequibo",
+        "hdi": 0.711
+      }
+    ]
+  },
+  {
+    "country": "Haiti",
+    "regions": [
+      {
+        "region": "Artibonite",
+        "hdi": 0.52
+      },
+      {
+        "region": "Centre",
+        "hdi": 0.504
+      },
+      {
+        "region": "Grande-Anse, Nippes",
+        "hdi": 0.525
+      },
+      {
+        "region": "North",
+        "hdi": 0.571
+      },
+      {
+        "region": "North-East",
+        "hdi": 0.544
+      },
+      {
+        "region": "North-West",
+        "hdi": 0.547
+      },
+      {
+        "region": "South",
+        "hdi": 0.54
+      },
+      {
+        "region": "South-East",
+        "hdi": 0.533
+      },
+      {
+        "region": "West (incl Metropolitain area)",
+        "hdi": 0.584
+      }
+    ]
+  },
+  {
+    "country": "Honduras",
+    "regions": [
+      {
+        "region": "Atlantida",
+        "hdi": 0.651
+      },
+      {
+        "region": "Choluteca",
+        "hdi": 0.606
+      },
+      {
+        "region": "Colon",
+        "hdi": 0.623
+      },
+      {
+        "region": "Comayagua",
+        "hdi": 0.63
+      },
+      {
+        "region": "Copan",
+        "hdi": 0.594
+      },
+      {
+        "region": "Cortes",
+        "hdi": 0.688
+      },
+      {
+        "region": "El Paraiso",
+        "hdi": 0.609
+      },
+      {
+        "region": "Francisco Morazan",
+        "hdi": 0.704
+      },
+      {
+        "region": "Gracias a Dios",
+        "hdi": 0.572
+      },
+      {
+        "region": "Intibuca",
+        "hdi": 0.593
+      },
+      {
+        "region": "Islas de la Bahia",
+        "hdi": 0.677
+      },
+      {
+        "region": "La Paz",
+        "hdi": 0.618
+      },
+      {
+        "region": "Lempira",
+        "hdi": 0.566
+      },
+      {
+        "region": "Ocotepeque",
+        "hdi": 0.612
+      },
+      {
+        "region": "Olancho",
+        "hdi": 0.601
+      },
+      {
+        "region": "Santa Barbara",
+        "hdi": 0.616
+      },
+      {
+        "region": "Valle",
+        "hdi": 0.612
+      },
+      {
+        "region": "Yoro",
+        "hdi": 0.633
+      }
+    ]
+  },
+  {
+    "country": "Hungary",
+    "regions": [
+      {
+        "region": "Hungary",
+        "hdi": 0.87
+      },
+      {
+        "region": "Del-Alfold",
+        "hdi": 0.867
+      },
+      {
+        "region": "Del-Dunantul",
+        "hdi": 0.86
+      },
+      {
+        "region": "Eszak-Alfold",
+        "hdi": 0.85
+      },
+      {
+        "region": "Eszak-Magyarorszag",
+        "hdi": 0.837
+      },
+      {
+        "region": "Kozep-Dunantul",
+        "hdi": 0.867
+      },
+      {
+        "region": "Kozep-Magyarorszag",
+        "hdi": 0.95
+      },
+      {
+        "region": "Nyugat-Dunantul",
+        "hdi": 0.881
+      }
+    ]
+  },
+  {
+    "country": "India",
+    "regions": [
+      {
+        "region": "Andaman and Nicobar Islands",
+        "hdi": 0.749
+      },
+      {
+        "region": "Andhra Pradesh",
+        "hdi": 0.681
+      },
+      {
+        "region": "Arunachal Pradesh",
+        "hdi": 0.724
+      },
+      {
+        "region": "Assam",
+        "hdi": 0.654
+      },
+      {
+        "region": "Bihar",
+        "hdi": 0.614
+      },
+      {
+        "region": "Chandigarth",
+        "hdi": 0.796
+      },
+      {
+        "region": "Chhattisgarh",
+        "hdi": 0.664
+      },
+      {
+        "region": "Dadra and Nagar Haveli",
+        "hdi": 0.663
+      },
+      {
+        "region": "Daman and Diu",
+        "hdi": 0.715
+      },
+      {
+        "region": "Goa",
+        "hdi": 0.806
+      },
+      {
+        "region": "Gujarat",
+        "hdi": 0.686
+      },
+      {
+        "region": "Haryana",
+        "hdi": 0.738
+      },
+      {
+        "region": "Himachal Pradesh",
+        "hdi": 0.759
+      },
+      {
+        "region": "Jammu and Kashmir",
+        "hdi": 0.763
+      },
+      {
+        "region": "Jharkhand",
+        "hdi": 0.638
+      },
+      {
+        "region": "Karnataka",
+        "hdi": 0.715
+      },
+      {
+        "region": "Kerala",
+        "hdi": 0.804
+      },
+      {
+        "region": "Lakshadweep",
+        "hdi": 0.763
+      },
+      {
+        "region": "Madhya Pradesh",
+        "hdi": 0.649
+      },
+      {
+        "region": "Maharashtra",
+        "hdi": 0.738
+      },
+      {
+        "region": "Manipur",
+        "hdi": 0.726
+      },
+      {
+        "region": "Meghalaya",
+        "hdi": 0.69
+      },
+      {
+        "region": "Mizoram",
+        "hdi": 0.753
+      },
+      {
+        "region": "Nagaland",
+        "hdi": 0.721
+      },
+      {
+        "region": "New Delhi",
+        "hdi": 0.779
+      },
+      {
+        "region": "Orissa",
+        "hdi": 0.648
+      },
+      {
+        "region": "Puducherry",
+        "hdi": 0.786
+      },
+      {
+        "region": "Punjab",
+        "hdi": 0.74
+      },
+      {
+        "region": "Rajasthan",
+        "hdi": 0.692
+      },
+      {
+        "region": "Sikkim",
+        "hdi": 0.755
+      },
+      {
+        "region": "Tamil Nadu",
+        "hdi": 0.734
+      },
+      {
+        "region": "Telangana",
+        "hdi": 0.7
+      },
+      {
+        "region": "Tripura",
+        "hdi": 0.663
+      },
+      {
+        "region": "Uttar Pradesh",
+        "hdi": 0.648
+      },
+      {
+        "region": "Uttaranchal",
+        "hdi": 0.723
+      },
+      {
+        "region": "West Bengal",
+        "hdi": 0.674
+      }
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "regions": [
+      {
+        "region": "Bali",
+        "hdi": 0.754
+      },
+      {
+        "region": "Bangka Belitung",
+        "hdi": 0.714
+      },
+      {
+        "region": "Banten",
+        "hdi": 0.729
+      },
+      {
+        "region": "Bengkulu",
+        "hdi": 0.74
+      },
+      {
+        "region": "Central Java",
+        "hdi": 0.727
+      },
+      {
+        "region": "Central Kalimantan",
+        "hdi": 0.705
+      },
+      {
+        "region": "Central Sulawesi",
+        "hdi": 0.709
+      },
+      {
+        "region": "DI Aceh",
+        "hdi": 0.733
+      },
+      {
+        "region": "DI Yogyakarta",
+        "hdi": 0.781
+      },
+      {
+        "region": "DKI Jakarta",
+        "hdi": 0.785
+      },
+      {
+        "region": "East Java",
+        "hdi": 0.726
+      },
+      {
+        "region": "East Kalimantan",
+        "hdi": 0.75
+      },
+      {
+        "region": "East Nusa Tenggara",
+        "hdi": 0.671
+      },
+      {
+        "region": "East Timor",
+        "hdi": 0
+      },
+      {
+        "region": "Gorontalo",
+        "hdi": 0.686
+      },
+      {
+        "region": "Irian Jaya (Papua and Papua Barat)",
+        "hdi": 0.671
+      },
+      {
+        "region": "Jambi",
+        "hdi": 0.722
+      },
+      {
+        "region": "Lampung",
+        "hdi": 0.718
+      },
+      {
+        "region": "Maluku",
+        "hdi": 0.714
+      },
+      {
+        "region": "North Sulawesi",
+        "hdi": 0.74
+      },
+      {
+        "region": "North Sumatra",
+        "hdi": 0.735
+      },
+      {
+        "region": "Riau (incl. Riau islands)",
+        "hdi": 0.741
+      },
+      {
+        "region": "South Kalimantan",
+        "hdi": 0.713
+      },
+      {
+        "region": "South Sulawesi (incl Sulawesi Barat)",
+        "hdi": 0.722
+      },
+      {
+        "region": "South Sumatra",
+        "hdi": 0.72
+      },
+      {
+        "region": "Southeast Sulawesi",
+        "hdi": 0.72
+      },
+      {
+        "region": "West Java",
+        "hdi": 0.731
+      },
+      {
+        "region": "West Kalimantan",
+        "hdi": 0.701
+      },
+      {
+        "region": "West Nusa Tenggara",
+        "hdi": 0.713
+      },
+      {
+        "region": "West Sumatra",
+        "hdi": 0.752
+      }
+    ]
+  },
+  {
+    "country": "Iran",
+    "regions": [
+      {
+        "region": "Ardebil",
+        "hdi": 0.761
+      },
+      {
+        "region": "Bushehr",
+        "hdi": 0.812
+      },
+      {
+        "region": "Chaharmahal and Bakhtiyari",
+        "hdi": 0.795
+      },
+      {
+        "region": "EastAzarbayejan",
+        "hdi": 0.785
+      },
+      {
+        "region": "Esfahan",
+        "hdi": 0.831
+      },
+      {
+        "region": "Fars",
+        "hdi": 0.809
+      },
+      {
+        "region": "Gilan",
+        "hdi": 0.804
+      },
+      {
+        "region": "Golestan",
+        "hdi": 0.777
+      },
+      {
+        "region": "Hamedan",
+        "hdi": 0.774
+      },
+      {
+        "region": "Hormozgan",
+        "hdi": 0.769
+      },
+      {
+        "region": "Ilam",
+        "hdi": 0.815
+      },
+      {
+        "region": "Kerman",
+        "hdi": 0.779
+      },
+      {
+        "region": "Kermanshah",
+        "hdi": 0.796
+      },
+      {
+        "region": "Khorasan-e-Razavi",
+        "hdi": 0.782
+      },
+      {
+        "region": "Khuzestan",
+        "hdi": 0.802
+      },
+      {
+        "region": "Kohgiluyeh and Boyerahmad",
+        "hdi": 0.792
+      },
+      {
+        "region": "Kordestan",
+        "hdi": 0.746
+      },
+      {
+        "region": "Lorestan",
+        "hdi": 0.781
+      },
+      {
+        "region": "Markazi",
+        "hdi": 0.792
+      },
+      {
+        "region": "Mazandaran",
+        "hdi": 0.824
+      },
+      {
+        "region": "North Khorasan",
+        "hdi": 0.746
+      },
+      {
+        "region": "Qazvin",
+        "hdi": 0.796
+      },
+      {
+        "region": "Qom",
+        "hdi": 0.816
+      },
+      {
+        "region": "Semnan",
+        "hdi": 0.824
+      },
+      {
+        "region": "Sistanand Baluchestan",
+        "hdi": 0.687
+      },
+      {
+        "region": "South Khorasan",
+        "hdi": 0.756
+      },
+      {
+        "region": "Tehran and Alborz",
+        "hdi": 0.837
+      },
+      {
+        "region": "WestAzarbayejan",
+        "hdi": 0.759
+      },
+      {
+        "region": "Yazd",
+        "hdi": 0.824
+      },
+      {
+        "region": "Zanjan",
+        "hdi": 0.772
+      }
+    ]
+  },
+  {
+    "country": "Iraq",
+    "regions": [
+      {
+        "region": "Anbar",
+        "hdi": 0.689
+      },
+      {
+        "region": "Babylon",
+        "hdi": 0.69
+      },
+      {
+        "region": "Baghdad",
+        "hdi": 0.711
+      },
+      {
+        "region": "Basra",
+        "hdi": 0.671
+      },
+      {
+        "region": "Diala",
+        "hdi": 0.703
+      },
+      {
+        "region": "Dohouk",
+        "hdi": 0.711
+      },
+      {
+        "region": "Erbil",
+        "hdi": 0.712
+      },
+      {
+        "region": "Kerbela",
+        "hdi": 0.675
+      },
+      {
+        "region": "Maysan",
+        "hdi": 0.644
+      },
+      {
+        "region": "Muthanna",
+        "hdi": 0.654
+      },
+      {
+        "region": "Najaf",
+        "hdi": 0.663
+      },
+      {
+        "region": "Nenava",
+        "hdi": 0.703
+      },
+      {
+        "region": "Qadisiya",
+        "hdi": 0.687
+      },
+      {
+        "region": "Salaheldeen",
+        "hdi": 0.7
+      },
+      {
+        "region": "Suleimaniya",
+        "hdi": 0.716
+      },
+      {
+        "region": "Ta-amem-Karkuk",
+        "hdi": 0.713
+      },
+      {
+        "region": "Thi-Qar",
+        "hdi": 0.694
+      },
+      {
+        "region": "Wasit",
+        "hdi": 0.664
+      }
+    ]
+  },
+  {
+    "country": "Ireland",
+    "regions": [
+      {
+        "region": "Ireland",
+        "hdi": 0.949
+      },
+      {
+        "region": "Border",
+        "hdi": 0.916
+      },
+      {
+        "region": "Dublin",
+        "hdi": 0.953
+      },
+      {
+        "region": "Mid-East",
+        "hdi": 0.944
+      },
+      {
+        "region": "Mid-West",
+        "hdi": 0.939
+      },
+      {
+        "region": "Midland",
+        "hdi": 0.918
+      },
+      {
+        "region": "South-East",
+        "hdi": 0.933
+      },
+      {
+        "region": "South-West",
+        "hdi": 0.949
+      },
+      {
+        "region": "West",
+        "hdi": 0.944
+      }
+    ]
+  },
+  {
+    "country": "Italy",
+    "regions": [
+      {
+        "region": "Italy",
+        "hdi": 0.915
+      },
+      {
+        "region": "Abruzzo",
+        "hdi": 0.909
+      },
+      {
+        "region": "Basilicata",
+        "hdi": 0.888
+      },
+      {
+        "region": "Calabria",
+        "hdi": 0.867
+      },
+      {
+        "region": "Campania",
+        "hdi": 0.876
+      },
+      {
+        "region": "Emilia-Romagna",
+        "hdi": 0.943
+      },
+      {
+        "region": "Friuli-Venezia Giulia",
+        "hdi": 0.926
+      },
+      {
+        "region": "Lazio",
+        "hdi": 0.938
+      },
+      {
+        "region": "Liguria",
+        "hdi": 0.921
+      },
+      {
+        "region": "Lombardia",
+        "hdi": 0.936
+      },
+      {
+        "region": "Marche",
+        "hdi": 0.923
+      },
+      {
+        "region": "Molise",
+        "hdi": 0.894
+      },
+      {
+        "region": "Piemonte",
+        "hdi": 0.92
+      },
+      {
+        "region": "Provincia Autonoma di Bolzano",
+        "hdi": 0.926
+      },
+      {
+        "region": "Provincia Autonoma di Trento",
+        "hdi": 0.944
+      },
+      {
+        "region": "Puglia",
+        "hdi": 0.878
+      },
+      {
+        "region": "Sardegna",
+        "hdi": 0.887
+      },
+      {
+        "region": "Sicilia",
+        "hdi": 0.868
+      },
+      {
+        "region": "Toscana",
+        "hdi": 0.93
+      },
+      {
+        "region": "Umbria",
+        "hdi": 0.917
+      },
+      {
+        "region": "Valle dAosta",
+        "hdi": 0.908
+      },
+      {
+        "region": "Veneto",
+        "hdi": 0.922
+      }
+    ]
+  },
+  {
+    "country": "Jamaica",
+    "regions": [
+      {
+        "region": "Kingston, St Andrew",
+        "hdi": 0.733
+      },
+      {
+        "region": "Manchester, Clarendon",
+        "hdi": 0.714
+      },
+      {
+        "region": "St Ann, St Catherine",
+        "hdi": 0.724
+      },
+      {
+        "region": "St James, Hanover, Westmoreland",
+        "hdi": 0.719
+      },
+      {
+        "region": "St Thomas, Portland, St Mary",
+        "hdi": 0.708
+      },
+      {
+        "region": "Trelawny, St Elizabeth",
+        "hdi": 0.7
+      }
+    ]
+  },
+  {
+    "country": "Japan",
+    "regions": [
+      {
+        "region": "Japan",
+        "hdi": 0.925
+      },
+      {
+        "region": "Chugoku (Tottori, Shimane, Okayama, Hiroshima, Yamaguchi)",
+        "hdi": 0.921
+      },
+      {
+        "region": "Hokkaido",
+        "hdi": 0.898
+      },
+      {
+        "region": "Hokuriku (Niigata, Toyama, Ishikawa, Fukui)",
+        "hdi": 0.907
+      },
+      {
+        "region": "Kansai region (Shiga, Kyoto, Osaka, Hyogo, Nara, Wakayama)",
+        "hdi": 0.927
+      },
+      {
+        "region": "Kyushu (Fukuoka, Saga, Nagasaki, Kumamoto, Oita, Miyazaki, Kagoshima, Okinawa)",
+        "hdi": 0.904
+      },
+      {
+        "region": "Northern-Kanto, Koshin (Ibaraki, Tochigi, Gunma)",
+        "hdi": 0.913
+      },
+      {
+        "region": "Shikoku (Tokushima, Kagawa, Ehime, Kochi)",
+        "hdi": 0.903
+      },
+      {
+        "region": "Southern-Kanto (Saitama, Chiba, Tokyo, Kanagawa, Yamanashi, Nagano)",
+        "hdi": 0.951
+      },
+      {
+        "region": "Tohoku (Aomori, Iwate, Miyagi, Akita, Yamagata, Fukushima)",
+        "hdi": 0.893
+      },
+      {
+        "region": "Toukai (Gifu, Shizuoka, Aichi, Mie)",
+        "hdi": 0.925
+      }
+    ]
+  },
+  {
+    "country": "Jordan",
+    "regions": [
+      {
+        "region": "Aljoun",
+        "hdi": 0.771
+      },
+      {
+        "region": "Amman",
+        "hdi": 0.766
+      },
+      {
+        "region": "Aqaba",
+        "hdi": 0.763
+      },
+      {
+        "region": "Balqa",
+        "hdi": 0.761
+      },
+      {
+        "region": "Irbid",
+        "hdi": 0.737
+      },
+      {
+        "region": "Jarash",
+        "hdi": 0.767
+      },
+      {
+        "region": "Karak",
+        "hdi": 0.762
+      },
+      {
+        "region": "Maan",
+        "hdi": 0.758
+      },
+      {
+        "region": "Madaba",
+        "hdi": 0.739
+      },
+      {
+        "region": "Mafraq",
+        "hdi": 0.72
+      },
+      {
+        "region": "Tafiela",
+        "hdi": 0.767
+      },
+      {
+        "region": "Zarqa",
+        "hdi": 0.742
+      }
+    ]
+  },
+  {
+    "country": "Kazakhstan",
+    "regions": [
+      {
+        "region": "Almaty city",
+        "hdi": 0.867
+      },
+      {
+        "region": "Central region (Karagandinskaya)",
+        "hdi": 0.859
+      },
+      {
+        "region": "East region (East-Kazakhstanskaya)",
+        "hdi": 0.821
+      },
+      {
+        "region": "North region (Akmolinskaya (incl Astana city), Kostnaiskaya, Pavlodarskaya, North-Kazakhstanskaya)",
+        "hdi": 0.852
+      },
+      {
+        "region": "South region (Almatinskaya, Zhambylskaya, Kyzylordinskaya, South-Kazakhstanskaya)",
+        "hdi": 0.82
+      },
+      {
+        "region": "West region (Aktyubinskaya, Atyrauskaya, Mangistauskaya, West-Kazakhstanskaya)",
+        "hdi": 0.829
+      }
+    ]
+  },
+  {
+    "country": "Kenya",
+    "regions": [
+      {
+        "region": "Central",
+        "hdi": 0.656
+      },
+      {
+        "region": "Coast",
+        "hdi": 0.608
+      },
+      {
+        "region": "Eastern",
+        "hdi": 0.621
+      },
+      {
+        "region": "Nairobi",
+        "hdi": 0.694
+      },
+      {
+        "region": "North Eastern",
+        "hdi": 0.487
+      },
+      {
+        "region": "Nyanza",
+        "hdi": 0.602
+      },
+      {
+        "region": "Rift Valley",
+        "hdi": 0.62
+      },
+      {
+        "region": "Western",
+        "hdi": 0.609
+      }
+    ]
+  },
+  {
+    "country": "Kiribati",
+    "regions": [
+      {
+        "region": "Central Gibert",
+        "hdi": 0.593
+      },
+      {
+        "region": "Line and Phoenix Group",
+        "hdi": 0.623
+      },
+      {
+        "region": "Northern Gilbert",
+        "hdi": 0.615
+      },
+      {
+        "region": "Southern Gilbert",
+        "hdi": 0.612
+      },
+      {
+        "region": "Souyth Tarawa",
+        "hdi": 0.674
+      }
+    ]
+  },
+  {
+    "country": "Kosovo",
+    "regions": [
+      {
+        "region": "Ferizaj",
+        "hdi": 0.801
+      },
+      {
+        "region": "Gjakova",
+        "hdi": 0.788
+      },
+      {
+        "region": "Gjilan",
+        "hdi": 0.778
+      },
+      {
+        "region": "Mitrovica",
+        "hdi": 0.802
+      },
+      {
+        "region": "Peja",
+        "hdi": 0.789
+      },
+      {
+        "region": "Pristina",
+        "hdi": 0.806
+      },
+      {
+        "region": "Prizren",
+        "hdi": 0.785
+      }
+    ]
+  },
+  {
+    "country": "Kuwait",
+    "regions": [
+      {
+        "region": "Ahmadi",
+        "hdi": 0.861
+      },
+      {
+        "region": "Al Asimah, Hawalli, Al-Farwaniyah, Mubarak al-Sabah",
+        "hdi": 0.85
+      },
+      {
+        "region": "Al-Jahra",
+        "hdi": 0.841
+      }
+    ]
+  },
+  {
+    "country": "Kyrgyzstan",
+    "regions": [
+      {
+        "region": "Batken",
+        "hdi": 0.7
+      },
+      {
+        "region": "Bishkek",
+        "hdi": 0.757
+      },
+      {
+        "region": "Chuy",
+        "hdi": 0.726
+      },
+      {
+        "region": "Issyk-Kul",
+        "hdi": 0.719
+      },
+      {
+        "region": "Jalal-Abad",
+        "hdi": 0.695
+      },
+      {
+        "region": "Naryn",
+        "hdi": 0.701
+      },
+      {
+        "region": "Osh",
+        "hdi": 0.697
+      },
+      {
+        "region": "Talas",
+        "hdi": 0.696
+      }
+    ]
+  },
+  {
+    "country": "Lao",
+    "regions": [
+      {
+        "region": "Attapeu",
+        "hdi": 0.593
+      },
+      {
+        "region": "Bokeo",
+        "hdi": 0.589
+      },
+      {
+        "region": "Borikhamxay",
+        "hdi": 0.653
+      },
+      {
+        "region": "Champasack",
+        "hdi": 0.609
+      },
+      {
+        "region": "Huaphanh",
+        "hdi": 0.588
+      },
+      {
+        "region": "Khammuane",
+        "hdi": 0.598
+      },
+      {
+        "region": "Luangnamtha",
+        "hdi": 0.583
+      },
+      {
+        "region": "Luangprabang",
+        "hdi": 0.601
+      },
+      {
+        "region": "Oudomxay",
+        "hdi": 0.577
+      },
+      {
+        "region": "Phongsaly",
+        "hdi": 0.551
+      },
+      {
+        "region": "Saravane",
+        "hdi": 0.532
+      },
+      {
+        "region": "Savannakhet",
+        "hdi": 0.574
+      },
+      {
+        "region": "Sayabury",
+        "hdi": 0.671
+      },
+      {
+        "region": "Sekong",
+        "hdi": 0.587
+      },
+      {
+        "region": "Vientiane Municipality",
+        "hdi": 0.74
+      },
+      {
+        "region": "Vientiane Province",
+        "hdi": 0.63
+      },
+      {
+        "region": "Xiengkhuang",
+        "hdi": 0.644
+      }
+    ]
+  },
+  {
+    "country": "Latvia",
+    "regions": [
+      {
+        "region": "Latvia",
+        "hdi": 0.889
+      },
+      {
+        "region": "Kurzeme region",
+        "hdi": 0.858
+      },
+      {
+        "region": "Latgale region",
+        "hdi": 0.834
+      },
+      {
+        "region": "Pieriga region",
+        "hdi": 0.886
+      },
+      {
+        "region": "Riga region",
+        "hdi": 0.932
+      },
+      {
+        "region": "Vidzeme region",
+        "hdi": 0.855
+      },
+      {
+        "region": "Zemgale region",
+        "hdi": 0.849
+      }
+    ]
+  },
+  {
+    "country": "Lebanon",
+    "regions": [
+      {
+        "region": "Beirut",
+        "hdi": 0.721
+      },
+      {
+        "region": "Beqaa",
+        "hdi": 0.78
+      },
+      {
+        "region": "Mount Lebanon",
+        "hdi": 0.751
+      },
+      {
+        "region": "Northern",
+        "hdi": 0.74
+      },
+      {
+        "region": "Southern, Nabtieh",
+        "hdi": 0.77
+      }
+    ]
+  },
+  {
+    "country": "Lesotho",
+    "regions": [
+      {
+        "region": "Berea",
+        "hdi": 0.578
+      },
+      {
+        "region": "Butha-Buthe",
+        "hdi": 0.545
+      },
+      {
+        "region": "Leribe",
+        "hdi": 0.544
+      },
+      {
+        "region": "Mafeteng",
+        "hdi": 0.541
+      },
+      {
+        "region": "Maseru",
+        "hdi": 0.587
+      },
+      {
+        "region": "Mohale s Hoek",
+        "hdi": 0.527
+      },
+      {
+        "region": "Mokhotlong",
+        "hdi": 0.484
+      },
+      {
+        "region": "Qasha s Nek",
+        "hdi": 0.522
+      },
+      {
+        "region": "Quthing",
+        "hdi": 0.511
+      },
+      {
+        "region": "Thaba-Tseka",
+        "hdi": 0.457
+      }
+    ]
+  },
+  {
+    "country": "Liberia",
+    "regions": [
+      {
+        "region": "Bomi",
+        "hdi": 0.488
+      },
+      {
+        "region": "Bong",
+        "hdi": 0.47
+      },
+      {
+        "region": "Gbarpolu",
+        "hdi": 0.412
+      },
+      {
+        "region": "Grand Bassa",
+        "hdi": 0.439
+      },
+      {
+        "region": "Grand Cape Mount",
+        "hdi": 0.419
+      },
+      {
+        "region": "Grand Gedeh",
+        "hdi": 0.494
+      },
+      {
+        "region": "Grand Kru",
+        "hdi": 0.465
+      },
+      {
+        "region": "Lofa",
+        "hdi": 0.447
+      },
+      {
+        "region": "Margibi",
+        "hdi": 0.492
+      },
+      {
+        "region": "Maryland",
+        "hdi": 0.499
+      },
+      {
+        "region": "Montserrado",
+        "hdi": 0.581
+      },
+      {
+        "region": "Nimba",
+        "hdi": 0.492
+      },
+      {
+        "region": "River Cess",
+        "hdi": 0.453
+      },
+      {
+        "region": "River Gee",
+        "hdi": 0.499
+      },
+      {
+        "region": "Sinoe",
+        "hdi": 0.462
+      }
+    ]
+  },
+  {
+    "country": "Libya",
+    "regions": [
+      {
+        "region": "Cyrenaica",
+        "hdi": 0.713
+      },
+      {
+        "region": "Fezzan",
+        "hdi": 0.721
+      },
+      {
+        "region": "Tripolitania",
+        "hdi": 0.725
+      }
+    ]
+  },
+  {
+    "country": "Lithuania",
+    "regions": [
+      {
+        "region": "Lithuania",
+        "hdi": 0.895
+      },
+      {
+        "region": "Alytus County",
+        "hdi": 0.861
+      },
+      {
+        "region": "Kaunas County",
+        "hdi": 0.901
+      },
+      {
+        "region": "Klaipeda County",
+        "hdi": 0.895
+      },
+      {
+        "region": "Marijampole County",
+        "hdi": 0.85
+      },
+      {
+        "region": "Panevezys County",
+        "hdi": 0.866
+      },
+      {
+        "region": "Siauliai County",
+        "hdi": 0.868
+      },
+      {
+        "region": "Taurage County",
+        "hdi": 0.84
+      },
+      {
+        "region": "Telsiai County",
+        "hdi": 0.865
+      },
+      {
+        "region": "Utena County",
+        "hdi": 0.853
+      },
+      {
+        "region": "Vilnius County",
+        "hdi": 0.934
+      }
+    ]
+  },
+  {
+    "country": "Madagascar",
+    "regions": [
+      {
+        "region": "Alaotra Mangoro",
+        "hdi": 0.507
+      },
+      {
+        "region": "Analamanga",
+        "hdi": 0.585
+      },
+      {
+        "region": "Analanjirofo",
+        "hdi": 0.505
+      },
+      {
+        "region": "Anamoroni Mania",
+        "hdi": 0.475
+      },
+      {
+        "region": "Androy",
+        "hdi": 0.412
+      },
+      {
+        "region": "Anosy",
+        "hdi": 0.382
+      },
+      {
+        "region": "Atsimo Andrefana",
+        "hdi": 0.444
+      },
+      {
+        "region": "Atsimo Atsinanana",
+        "hdi": 0.41
+      },
+      {
+        "region": "Atsinanana",
+        "hdi": 0.497
+      },
+      {
+        "region": "Betsiboka",
+        "hdi": 0.425
+      },
+      {
+        "region": "Boeny",
+        "hdi": 0.5
+      },
+      {
+        "region": "Bongolava",
+        "hdi": 0.459
+      },
+      {
+        "region": "Diana",
+        "hdi": 0.553
+      },
+      {
+        "region": "Haute Matsiatra",
+        "hdi": 0.497
+      },
+      {
+        "region": "Ihorombe",
+        "hdi": 0.45
+      },
+      {
+        "region": "Itasy",
+        "hdi": 0.488
+      },
+      {
+        "region": "Melaky",
+        "hdi": 0.431
+      },
+      {
+        "region": "Menabe",
+        "hdi": 0.383
+      },
+      {
+        "region": "Sava",
+        "hdi": 0.509
+      },
+      {
+        "region": "Sofia",
+        "hdi": 0.467
+      },
+      {
+        "region": "Vakinankaratra",
+        "hdi": 0.487
+      },
+      {
+        "region": "Vatovavy Fitovinany",
+        "hdi": 0.439
+      }
+    ]
+  },
+  {
+    "country": "Malawi",
+    "regions": [
+      {
+        "region": "Blantyre",
+        "hdi": 0.585
+      },
+      {
+        "region": "Kasungu",
+        "hdi": 0.544
+      },
+      {
+        "region": "Lilongwe",
+        "hdi": 0.527
+      },
+      {
+        "region": "Machinga",
+        "hdi": 0.491
+      },
+      {
+        "region": "Mangochi",
+        "hdi": 0.465
+      },
+      {
+        "region": "Mulanje",
+        "hdi": 0.512
+      },
+      {
+        "region": "Mzimba",
+        "hdi": 0.554
+      },
+      {
+        "region": "Other central (Nkhota Kota, Mchinji, Dowa, Ntchisi, Dedza, Ntcheu)",
+        "hdi": 0.493
+      },
+      {
+        "region": "Other northern (Chitipa, Karonga, Rumphi, Nkhata Bay)",
+        "hdi": 0.561
+      },
+      {
+        "region": "Other southern (Balaka, Mwanza, Phalombe, Chiradzulu, Chikwawa, Nsanje, neno)",
+        "hdi": 0.503
+      },
+      {
+        "region": "Salima",
+        "hdi": 0.489
+      },
+      {
+        "region": "Thyolo",
+        "hdi": 0.487
+      },
+      {
+        "region": "Zomba",
+        "hdi": 0.525
+      }
+    ]
+  },
+  {
+    "country": "Malaysia",
+    "regions": [
+      {
+        "region": "Johor",
+        "hdi": 0.833
+      },
+      {
+        "region": "Kedah",
+        "hdi": 0.816
+      },
+      {
+        "region": "Kelantan",
+        "hdi": 0.785
+      },
+      {
+        "region": "Kuala Lumpur Federal Territory",
+        "hdi": 0.876
+      },
+      {
+        "region": "Labuan Federal Territory",
+        "hdi": 0.795
+      },
+      {
+        "region": "Melaka",
+        "hdi": 0.843
+      },
+      {
+        "region": "Negeri Sembilan",
+        "hdi": 0.837
+      },
+      {
+        "region": "Pahang",
+        "hdi": 0.812
+      },
+      {
+        "region": "Perak",
+        "hdi": 0.823
+      },
+      {
+        "region": "Perlis",
+        "hdi": 0.813
+      },
+      {
+        "region": "Pulau Pinang",
+        "hdi": 0.853
+      },
+      {
+        "region": "Sabah",
+        "hdi": 0.717
+      },
+      {
+        "region": "Sarawak",
+        "hdi": 0.751
+      },
+      {
+        "region": "Selangor",
+        "hdi": 0.872
+      },
+      {
+        "region": "Terengganu",
+        "hdi": 0.807
+      }
+    ]
+  },
+  {
+    "country": "Maldives",
+    "regions": [
+      {
+        "region": "Central",
+        "hdi": 0.722
+      },
+      {
+        "region": "Male",
+        "hdi": 0.804
+      },
+      {
+        "region": "North",
+        "hdi": 0.732
+      },
+      {
+        "region": "North Central",
+        "hdi": 0.729
+      },
+      {
+        "region": "South",
+        "hdi": 0.736
+      },
+      {
+        "region": "South Central",
+        "hdi": 0.737
+      }
+    ]
+  },
+  {
+    "country": "Mali",
+    "regions": [
+      {
+        "region": "Bamako",
+        "hdi": 0.588
+      },
+      {
+        "region": "Gao and Kidal",
+        "hdi": 0.383
+      },
+      {
+        "region": "Kayes",
+        "hdi": 0.387
+      },
+      {
+        "region": "Koulikoro",
+        "hdi": 0.422
+      },
+      {
+        "region": "Mopti",
+        "hdi": 0.349
+      },
+      {
+        "region": "Segou",
+        "hdi": 0.373
+      },
+      {
+        "region": "Sikasso",
+        "hdi": 0.401
+      },
+      {
+        "region": "Tombouctou",
+        "hdi": 0.327
+      }
+    ]
+  },
+  {
+    "country": "Mauritania",
+    "regions": [
+      {
+        "region": "Adrar",
+        "hdi": 0.583
+      },
+      {
+        "region": "Assaba",
+        "hdi": 0.494
+      },
+      {
+        "region": "Brakna",
+        "hdi": 0.535
+      },
+      {
+        "region": "Gorgol",
+        "hdi": 0.479
+      },
+      {
+        "region": "Guidimagha",
+        "hdi": 0.456
+      },
+      {
+        "region": "Hodh Charghi",
+        "hdi": 0.421
+      },
+      {
+        "region": "Hodh Gharbi",
+        "hdi": 0.47
+      },
+      {
+        "region": "Inchiri",
+        "hdi": 0.631
+      },
+      {
+        "region": "Nouadhibou",
+        "hdi": 0.702
+      },
+      {
+        "region": "Tagant",
+        "hdi": 0.527
+      },
+      {
+        "region": "Tiris-Zemmour",
+        "hdi": 0.724
+      },
+      {
+        "region": "Trarza incl Nouakchott",
+        "hdi": 0.674
+      }
+    ]
+  },
+  {
+    "country": "Mauritius",
+    "regions": [
+      {
+        "region": "North (Port Louis, Pamplemousses, Riviere du Rempa",
+        "hdi": 0.799
+      },
+      {
+        "region": "Rodrigues",
+        "hdi": 0.791
+      },
+      {
+        "region": "South (Grand Port, Savanne, Plaines Wilhems, Black",
+        "hdi": 0.812
+      }
+    ]
+  },
+  {
+    "country": "Mexico",
+    "regions": [
+      {
+        "region": "Aguascalientes",
+        "hdi": 0.797
+      },
+      {
+        "region": "Baja California",
+        "hdi": 0.813
+      },
+      {
+        "region": "Baja California Sur",
+        "hdi": 0.81
+      },
+      {
+        "region": "Campeche",
+        "hdi": 0.779
+      },
+      {
+        "region": "Chiapas",
+        "hdi": 0.696
+      },
+      {
+        "region": "Chihuahua",
+        "hdi": 0.796
+      },
+      {
+        "region": "Coahuila",
+        "hdi": 0.801
+      },
+      {
+        "region": "Colima",
+        "hdi": 0.789
+      },
+      {
+        "region": "Distrito Federal",
+        "hdi": 0.846
+      },
+      {
+        "region": "Durango",
+        "hdi": 0.768
+      },
+      {
+        "region": "Guanajuato",
+        "hdi": 0.761
+      },
+      {
+        "region": "Guerrero",
+        "hdi": 0.708
+      },
+      {
+        "region": "Hidalgo",
+        "hdi": 0.765
+      },
+      {
+        "region": "Jalisco",
+        "hdi": 0.794
+      },
+      {
+        "region": "Mexico",
+        "hdi": 0.788
+      },
+      {
+        "region": "Michoacan de Ocampo",
+        "hdi": 0.748
+      },
+      {
+        "region": "Morelos",
+        "hdi": 0.782
+      },
+      {
+        "region": "Nayarit",
+        "hdi": 0.773
+      },
+      {
+        "region": "Nuevo Leon",
+        "hdi": 0.815
+      },
+      {
+        "region": "Oaxaca",
+        "hdi": 0.709
+      },
+      {
+        "region": "Puebla",
+        "hdi": 0.745
+      },
+      {
+        "region": "Queretaro",
+        "hdi": 0.792
+      },
+      {
+        "region": "Quintana Roo",
+        "hdi": 0.789
+      },
+      {
+        "region": "San Luis Potosi",
+        "hdi": 0.76
+      },
+      {
+        "region": "Sinaloa",
+        "hdi": 0.809
+      },
+      {
+        "region": "Sonora",
+        "hdi": 0.811
+      },
+      {
+        "region": "Tabasco",
+        "hdi": 0.778
+      },
+      {
+        "region": "Tamaulipas",
+        "hdi": 0.795
+      },
+      {
+        "region": "Tlaxcala",
+        "hdi": 0.767
+      },
+      {
+        "region": "Veracruz",
+        "hdi": 0.742
+      },
+      {
+        "region": "Yucatan",
+        "hdi": 0.772
+      },
+      {
+        "region": "Zacatecas",
+        "hdi": 0.772
+      }
+    ]
+  },
+  {
+    "country": "Moldova",
+    "regions": [
+      {
+        "region": "Center",
+        "hdi": 0.759
+      },
+      {
+        "region": "Chisinau",
+        "hdi": 0.854
+      },
+      {
+        "region": "North",
+        "hdi": 0.763
+      },
+      {
+        "region": "South",
+        "hdi": 0.781
+      }
+    ]
+  },
+  {
+    "country": "Mongolia",
+    "regions": [
+      {
+        "region": "Central (Dornogovi, Dundgovi, Umnugovi, Selenge, Tuv, Darkhan-Uul, Govisumber)",
+        "hdi": 0.737
+      },
+      {
+        "region": "Eastern (Dornod, Sukhbaatar, Khentii)",
+        "hdi": 0.704
+      },
+      {
+        "region": "Khangai (Arkhangai, Bayankhongor, Bulgan, Uvurkhangai, Khuvsgul, Orkhon)",
+        "hdi": 0.69
+      },
+      {
+        "region": "Ulaanbaatar",
+        "hdi": 0.788
+      },
+      {
+        "region": "Western (Bayan-Ulgii, Govi-Altai, Zavkhan, Uvs, Khovd)",
+        "hdi": 0.68
+      }
+    ]
+  },
+  {
+    "country": "Monte Negro",
+    "regions": [
+      {
+        "region": "Centre",
+        "hdi": 0.872
+      },
+      {
+        "region": "North",
+        "hdi": 0.856
+      },
+      {
+        "region": "South",
+        "hdi": 0.844
+      }
+    ]
+  },
+  {
+    "country": "Morocco",
+    "regions": [
+      {
+        "region": "Centre",
+        "hdi": 0.724
+      },
+      {
+        "region": "Centre north",
+        "hdi": 0.706
+      },
+      {
+        "region": "Centre south",
+        "hdi": 0.688
+      },
+      {
+        "region": "Eastern",
+        "hdi": 0.705
+      },
+      {
+        "region": "North west",
+        "hdi": 0.714
+      },
+      {
+        "region": "South",
+        "hdi": 0.743
+      },
+      {
+        "region": "Tensift",
+        "hdi": 0.7
+      }
+    ]
+  },
+  {
+    "country": "Mozambique",
+    "regions": [
+      {
+        "region": "Cabo delgado",
+        "hdi": 0.444
+      },
+      {
+        "region": "Gaza",
+        "hdi": 0.53
+      },
+      {
+        "region": "Inhambane",
+        "hdi": 0.523
+      },
+      {
+        "region": "Manica",
+        "hdi": 0.51
+      },
+      {
+        "region": "Maputo Cidade",
+        "hdi": 0.663
+      },
+      {
+        "region": "Maputo Provincia",
+        "hdi": 0.637
+      },
+      {
+        "region": "Nampula",
+        "hdi": 0.447
+      },
+      {
+        "region": "Niassa",
+        "hdi": 0.442
+      },
+      {
+        "region": "Sofala",
+        "hdi": 0.515
+      },
+      {
+        "region": "Tete",
+        "hdi": 0.475
+      },
+      {
+        "region": "Zambezia",
+        "hdi": 0.447
+      }
+    ]
+  },
+  {
+    "country": "Myanmar",
+    "regions": [
+      {
+        "region": "Ayeyarwaddy",
+        "hdi": 0.583
+      },
+      {
+        "region": "Bago",
+        "hdi": 0.602
+      },
+      {
+        "region": "Chin",
+        "hdi": 0.616
+      },
+      {
+        "region": "Kachin",
+        "hdi": 0.652
+      },
+      {
+        "region": "Kayah",
+        "hdi": 0.637
+      },
+      {
+        "region": "Kayin",
+        "hdi": 0.58
+      },
+      {
+        "region": "Magway",
+        "hdi": 0.612
+      },
+      {
+        "region": "Mandalay, NayPyitaw",
+        "hdi": 0.627
+      },
+      {
+        "region": "Mon",
+        "hdi": 0.635
+      },
+      {
+        "region": "Rakhine",
+        "hdi": 0.568
+      },
+      {
+        "region": "Sagaing",
+        "hdi": 0.599
+      },
+      {
+        "region": "Shan",
+        "hdi": 0.53
+      },
+      {
+        "region": "Taninthayi",
+        "hdi": 0.607
+      },
+      {
+        "region": "Yangon",
+        "hdi": 0.698
+      }
+    ]
+  },
+  {
+    "country": "Namibia",
+    "regions": [
+      {
+        "region": "Caprivi",
+        "hdi": 0.624
+      },
+      {
+        "region": "Erongo",
+        "hdi": 0.718
+      },
+      {
+        "region": "Hardap",
+        "hdi": 0.684
+      },
+      {
+        "region": "Karas",
+        "hdi": 0.701
+      },
+      {
+        "region": "Kavango",
+        "hdi": 0.569
+      },
+      {
+        "region": "Khomas",
+        "hdi": 0.758
+      },
+      {
+        "region": "Kunene",
+        "hdi": 0.589
+      },
+      {
+        "region": "Ohangwena",
+        "hdi": 0.587
+      },
+      {
+        "region": "Omaheke",
+        "hdi": 0.61
+      },
+      {
+        "region": "Omusati",
+        "hdi": 0.633
+      },
+      {
+        "region": "Oshana",
+        "hdi": 0.684
+      },
+      {
+        "region": "Oshikoto",
+        "hdi": 0.632
+      },
+      {
+        "region": "Otjozondjupa",
+        "hdi": 0.655
+      }
+    ]
+  },
+  {
+    "country": "Nepal",
+    "regions": [
+      {
+        "region": "Bagmati province",
+        "hdi": 0.679
+      },
+      {
+        "region": "Gandaki province",
+        "hdi": 0.659
+      },
+      {
+        "region": "Karnali province",
+        "hdi": 0.596
+      },
+      {
+        "region": "Koshi province",
+        "hdi": 0.619
+      },
+      {
+        "region": "Lumbini province",
+        "hdi": 0.614
+      },
+      {
+        "region": "Madhesh province",
+        "hdi": 0.568
+      },
+      {
+        "region": "Sudurpashchim province",
+        "hdi": 0.6
+      }
+    ]
+  },
+  {
+    "country": "Netherlands",
+    "regions": [
+      {
+        "region": "Netherlands",
+        "hdi": 0.955
+      },
+      {
+        "region": "Drenthe",
+        "hdi": 0.926
+      },
+      {
+        "region": "Flevoland",
+        "hdi": 0.933
+      },
+      {
+        "region": "Friesland",
+        "hdi": 0.931
+      },
+      {
+        "region": "Gelderland",
+        "hdi": 0.944
+      },
+      {
+        "region": "Groningen",
+        "hdi": 0.951
+      },
+      {
+        "region": "Limburg",
+        "hdi": 0.944
+      },
+      {
+        "region": "Noord-Brabant",
+        "hdi": 0.955
+      },
+      {
+        "region": "Noord-Holland",
+        "hdi": 0.964
+      },
+      {
+        "region": "Overijssel",
+        "hdi": 0.942
+      },
+      {
+        "region": "Utrecht",
+        "hdi": 0.969
+      },
+      {
+        "region": "Zeeland",
+        "hdi": 0.93
+      },
+      {
+        "region": "Zuid-Holland",
+        "hdi": 0.954
+      }
+    ]
+  },
+  {
+    "country": "New Zealand",
+    "regions": [
+      {
+        "region": "New Zealand",
+        "hdi": 0.938
+      },
+      {
+        "region": "Auckland",
+        "hdi": 0.954
+      },
+      {
+        "region": "Bay of Plenty",
+        "hdi": 0.925
+      },
+      {
+        "region": "Canterbury",
+        "hdi": 0.936
+      },
+      {
+        "region": "Gisborne",
+        "hdi": 0.899
+      },
+      {
+        "region": "Hawkes Bay",
+        "hdi": 0.916
+      },
+      {
+        "region": "Manawatu-Wanganui",
+        "hdi": 0.912
+      },
+      {
+        "region": "Marlborough",
+        "hdi": 0.933
+      },
+      {
+        "region": "Northland",
+        "hdi": 0.903
+      },
+      {
+        "region": "Otago",
+        "hdi": 0.936
+      },
+      {
+        "region": "Southland",
+        "hdi": 0.921
+      },
+      {
+        "region": "Taranaki",
+        "hdi": 0.929
+      },
+      {
+        "region": "Tasman - Nelson",
+        "hdi": 0.931
+      },
+      {
+        "region": "Waikato",
+        "hdi": 0.927
+      },
+      {
+        "region": "Wellington",
+        "hdi": 0.955
+      },
+      {
+        "region": "West Coast",
+        "hdi": 0.911
+      }
+    ]
+  },
+  {
+    "country": "Nicaragua",
+    "regions": [
+      {
+        "region": "Atlantico (Rio San Juan, Atlantico Norte (Raan), Atlantico Sur (Raas))",
+        "hdi": 0.59
+      },
+      {
+        "region": "Central-Norte (Boaco, Chontales, Jinotega, Matagalpa, Esteli, Madriz, Nueva Segovia)",
+        "hdi": 0.659
+      },
+      {
+        "region": "Pacifico (Chinandega, Leon, Managua, Masaya, Granada, Carazo, Rivas)",
+        "hdi": 0.758
+      }
+    ]
+  },
+  {
+    "country": "Niger",
+    "regions": [
+      {
+        "region": "Agadez",
+        "hdi": 0.546
+      },
+      {
+        "region": "Diffa",
+        "hdi": 0.418
+      },
+      {
+        "region": "Dosso",
+        "hdi": 0.4
+      },
+      {
+        "region": "Maradi",
+        "hdi": 0.402
+      },
+      {
+        "region": "Tahoua",
+        "hdi": 0.372
+      },
+      {
+        "region": "Tillabery (incl Niamey)",
+        "hdi": 0.514
+      },
+      {
+        "region": "Zinder",
+        "hdi": 0.384
+      }
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "regions": [
+      {
+        "region": "Abia",
+        "hdi": 0.635
+      },
+      {
+        "region": "Abuja FCT",
+        "hdi": 0.692
+      },
+      {
+        "region": "Adamawa",
+        "hdi": 0.551
+      },
+      {
+        "region": "Akwa Ibom",
+        "hdi": 0.615
+      },
+      {
+        "region": "Anambra",
+        "hdi": 0.687
+      },
+      {
+        "region": "Bauchi",
+        "hdi": 0.38
+      },
+      {
+        "region": "Bayelsa",
+        "hdi": 0.585
+      },
+      {
+        "region": "Benue",
+        "hdi": 0.595
+      },
+      {
+        "region": "Borno",
+        "hdi": 0.475
+      },
+      {
+        "region": "Cross River",
+        "hdi": 0.588
+      },
+      {
+        "region": "Delta",
+        "hdi": 0.62
+      },
+      {
+        "region": "Ebonyi",
+        "hdi": 0.72
+      },
+      {
+        "region": "Edo",
+        "hdi": 0.647
+      },
+      {
+        "region": "Ekiti",
+        "hdi": 0.625
+      },
+      {
+        "region": "Enugu",
+        "hdi": 0.681
+      },
+      {
+        "region": "Gombe",
+        "hdi": 0.476
+      },
+      {
+        "region": "Imo",
+        "hdi": 0.697
+      },
+      {
+        "region": "Jigawa",
+        "hdi": 0.38
+      },
+      {
+        "region": "Kaduna",
+        "hdi": 0.557
+      },
+      {
+        "region": "Kano",
+        "hdi": 0.493
+      },
+      {
+        "region": "Katsina",
+        "hdi": 0.442
+      },
+      {
+        "region": "Kebbi",
+        "hdi": 0.375
+      },
+      {
+        "region": "Kogi",
+        "hdi": 0.638
+      },
+      {
+        "region": "Kwara",
+        "hdi": 0.609
+      },
+      {
+        "region": "Lagos",
+        "hdi": 0.735
+      },
+      {
+        "region": "Nassarawa",
+        "hdi": 0.561
+      },
+      {
+        "region": "Niger",
+        "hdi": 0.534
+      },
+      {
+        "region": "Ogun",
+        "hdi": 0.591
+      },
+      {
+        "region": "Ondo",
+        "hdi": 0.624
+      },
+      {
+        "region": "Osun",
+        "hdi": 0.62
+      },
+      {
+        "region": "Oyo",
+        "hdi": 0.616
+      },
+      {
+        "region": "Plateau",
+        "hdi": 0.575
+      },
+      {
+        "region": "Rivers",
+        "hdi": 0.614
+      },
+      {
+        "region": "Sokoto",
+        "hdi": 0.406
+      },
+      {
+        "region": "Taraba",
+        "hdi": 0.539
+      },
+      {
+        "region": "Yobe",
+        "hdi": 0.449
+      },
+      {
+        "region": "Zamfora",
+        "hdi": 0.401
+      }
+    ]
+  },
+  {
+    "country": "North Macedonia",
+    "regions": [
+      {
+        "region": "East",
+        "hdi": 0.8
+      },
+      {
+        "region": "North East",
+        "hdi": 0.795
+      },
+      {
+        "region": "Pelagoniski",
+        "hdi": 0.822
+      },
+      {
+        "region": "Poloski",
+        "hdi": 0.806
+      },
+      {
+        "region": "Skopski",
+        "hdi": 0.829
+      },
+      {
+        "region": "South East",
+        "hdi": 0.773
+      },
+      {
+        "region": "South West",
+        "hdi": 0.821
+      },
+      {
+        "region": "Vardarski",
+        "hdi": 0.813
+      }
+    ]
+  },
+  {
+    "country": "Norway",
+    "regions": [
+      {
+        "region": "Norway",
+        "hdi": 0.97
+      },
+      {
+        "region": "Agder og Rogaland",
+        "hdi": 0.97
+      },
+      {
+        "region": "Hedmark og Oppland",
+        "hdi": 0.958
+      },
+      {
+        "region": "Nord-Norge",
+        "hdi": 0.962
+      },
+      {
+        "region": "Oslo og Akershus",
+        "hdi": 0.982
+      },
+      {
+        "region": "Sor-Ostlandet",
+        "hdi": 0.959
+      },
+      {
+        "region": "Trondelag",
+        "hdi": 0.972
+      },
+      {
+        "region": "Vestlandet",
+        "hdi": 0.974
+      }
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "regions": [
+      {
+        "region": "AJK",
+        "hdi": 0.59
+      },
+      {
+        "region": "Balochistan",
+        "hdi": 0.464
+      },
+      {
+        "region": "FATA",
+        "hdi": 0.456
+      },
+      {
+        "region": "Gilgit Baltistan",
+        "hdi": 0.58
+      },
+      {
+        "region": "Islamabad (ICT)",
+        "hdi": 0.659
+      },
+      {
+        "region": "Khyber Pakhtunkhwa (NWFrontier)",
+        "hdi": 0.515
+      },
+      {
+        "region": "Punjab",
+        "hdi": 0.55
+      },
+      {
+        "region": "Sindh",
+        "hdi": 0.518
+      }
+    ]
+  },
+  {
+    "country": "Palestine",
+    "regions": [
+      {
+        "region": "Bethlehem",
+        "hdi": 0.689
+      },
+      {
+        "region": "Deir El-Balah",
+        "hdi": 0.673
+      },
+      {
+        "region": "Gaza City",
+        "hdi": 0.66
+      },
+      {
+        "region": "Hebron",
+        "hdi": 0.666
+      },
+      {
+        "region": "Jenin",
+        "hdi": 0.684
+      },
+      {
+        "region": "Jericho and Al Aghwar",
+        "hdi": 0.653
+      },
+      {
+        "region": "Jerusalem",
+        "hdi": 0.68
+      },
+      {
+        "region": "Khan Yunis",
+        "hdi": 0.676
+      },
+      {
+        "region": "Nablus",
+        "hdi": 0.678
+      },
+      {
+        "region": "North Gaza",
+        "hdi": 0.658
+      },
+      {
+        "region": "Qalqiliya",
+        "hdi": 0.679
+      },
+      {
+        "region": "Rafah",
+        "hdi": 0.66
+      },
+      {
+        "region": "Ramallah & Al-Bireh",
+        "hdi": 0.686
+      },
+      {
+        "region": "Salfit",
+        "hdi": 0.685
+      },
+      {
+        "region": "Tubas",
+        "hdi": 0.672
+      },
+      {
+        "region": "Tulkarm",
+        "hdi": 0.691
+      }
+    ]
+  },
+  {
+    "country": "Panama",
+    "regions": [
+      {
+        "region": "Bocas del Toro",
+        "hdi": 0.767
+      },
+      {
+        "region": "Chiriqui",
+        "hdi": 0.839
+      },
+      {
+        "region": "Cocle",
+        "hdi": 0.811
+      },
+      {
+        "region": "Colon",
+        "hdi": 0.849
+      },
+      {
+        "region": "Darien",
+        "hdi": 0.736
+      },
+      {
+        "region": "Embera Wounaan",
+        "hdi": 0.656
+      },
+      {
+        "region": "Herrera",
+        "hdi": 0.838
+      },
+      {
+        "region": "Kuna Yala",
+        "hdi": 0.622
+      },
+      {
+        "region": "Los Santos",
+        "hdi": 0.833
+      },
+      {
+        "region": "Ngobe Bugle",
+        "hdi": 0.603
+      },
+      {
+        "region": "Panama",
+        "hdi": 0.872
+      },
+      {
+        "region": "Veraguas",
+        "hdi": 0.777
+      }
+    ]
+  },
+  {
+    "country": "Papua New Guinea",
+    "regions": [
+      {
+        "region": "Autonomous Region of Bougainville",
+        "hdi": 0.616
+      },
+      {
+        "region": "Central",
+        "hdi": 0.59
+      },
+      {
+        "region": "Chimbu, Simbu",
+        "hdi": 0.592
+      },
+      {
+        "region": "East New Britain",
+        "hdi": 0.622
+      },
+      {
+        "region": "East Sepik",
+        "hdi": 0.571
+      },
+      {
+        "region": "Eastern Highlands",
+        "hdi": 0.543
+      },
+      {
+        "region": "Enga",
+        "hdi": 0.508
+      },
+      {
+        "region": "Gulf",
+        "hdi": 0.541
+      },
+      {
+        "region": "Hela",
+        "hdi": 0.48
+      },
+      {
+        "region": "Jiwaka",
+        "hdi": 0.573
+      },
+      {
+        "region": "Madang",
+        "hdi": 0.579
+      },
+      {
+        "region": "Manus",
+        "hdi": 0.633
+      },
+      {
+        "region": "Milne Bay",
+        "hdi": 0.582
+      },
+      {
+        "region": "Morobe",
+        "hdi": 0.614
+      },
+      {
+        "region": "National Capital District",
+        "hdi": 0.752
+      },
+      {
+        "region": "New Ireland",
+        "hdi": 0.62
+      },
+      {
+        "region": "Northern, Oro",
+        "hdi": 0.575
+      },
+      {
+        "region": "Southern Highlands",
+        "hdi": 0.508
+      },
+      {
+        "region": "West New Britain",
+        "hdi": 0.614
+      },
+      {
+        "region": "West Sepik, Sandaun",
+        "hdi": 0.55
+      },
+      {
+        "region": "Western",
+        "hdi": 0.584
+      },
+      {
+        "region": "Western Highlands",
+        "hdi": 0.608
+      }
+    ]
+  },
+  {
+    "country": "Paraguay",
+    "regions": [
+      {
+        "region": "Central (Asuncion, Central)",
+        "hdi": 0.794
+      },
+      {
+        "region": "North-East (Caaguazu, Alto Parana, Canideyu)",
+        "hdi": 0.734
+      },
+      {
+        "region": "North-West (Boqueron, Alto Paraguay, Presidente Hayes, Conception, Amambay, San pedro, Cordillera)",
+        "hdi": 0.729
+      },
+      {
+        "region": "South-East (Guaira, Misiones, Paraguari, Neembucu)",
+        "hdi": 0.743
+      },
+      {
+        "region": "South-West (Caazapa, Itapua)",
+        "hdi": 0.739
+      }
+    ]
+  },
+  {
+    "country": "Peru",
+    "regions": [
+      {
+        "region": "Central (Huancavelica, Huanuco, Junin, Pasco)",
+        "hdi": 0.748
+      },
+      {
+        "region": "East (Madre de Dios, Cusco, Puno, Apurimac)",
+        "hdi": 0.731
+      },
+      {
+        "region": "North (Tumbes, Piura, Lambayeque, Cajamarca, La Libertad)",
+        "hdi": 0.762
+      },
+      {
+        "region": "North East (Amazonas, Loreto, San Martin, Ucayali)",
+        "hdi": 0.732
+      },
+      {
+        "region": "South (Tacna, Moquegua, Arequipa, Ica, Ayacucho)",
+        "hdi": 0.815
+      },
+      {
+        "region": "West (Ancash, Lima, Callao)",
+        "hdi": 0.854
+      }
+    ]
+  },
+  {
+    "country": "Philippines",
+    "regions": [
+      {
+        "region": "ARMM",
+        "hdi": 0.638
+      },
+      {
+        "region": "Cordillera Admin Region",
+        "hdi": 0.749
+      },
+      {
+        "region": "I-Ilocos",
+        "hdi": 0.719
+      },
+      {
+        "region": "II-Cagayan Valley",
+        "hdi": 0.728
+      },
+      {
+        "region": "III-Central Luzon",
+        "hdi": 0.735
+      },
+      {
+        "region": "IVA-CALABARZON",
+        "hdi": 0.734
+      },
+      {
+        "region": "IVB-MIMAROPA",
+        "hdi": 0.703
+      },
+      {
+        "region": "IX-Zamboanga Peninsula",
+        "hdi": 0.683
+      },
+      {
+        "region": "National Capital Region",
+        "hdi": 0.755
+      },
+      {
+        "region": "V-Bicol",
+        "hdi": 0.689
+      },
+      {
+        "region": "VI-Western Visayas",
+        "hdi": 0.723
+      },
+      {
+        "region": "VII-Central Visayas",
+        "hdi": 0.704
+      },
+      {
+        "region": "VIII-Eastern Visayas",
+        "hdi": 0.706
+      },
+      {
+        "region": "X-Northern Mindanao",
+        "hdi": 0.721
+      },
+      {
+        "region": "XI-Davao",
+        "hdi": 0.718
+      },
+      {
+        "region": "XII-SOCCSKSARGEN",
+        "hdi": 0.693
+      },
+      {
+        "region": "XIII-Caraga",
+        "hdi": 0.72
+      }
+    ]
+  },
+  {
+    "country": "Poland",
+    "regions": [
+      {
+        "region": "Poland",
+        "hdi": 0.906
+      },
+      {
+        "region": "Dolnoslaskie",
+        "hdi": 0.929
+      },
+      {
+        "region": "Kujawsko-Pomorskie",
+        "hdi": 0.887
+      },
+      {
+        "region": "Lodzkie",
+        "hdi": 0.901
+      },
+      {
+        "region": "Lubelskie",
+        "hdi": 0.886
+      },
+      {
+        "region": "Lubuskie",
+        "hdi": 0.874
+      },
+      {
+        "region": "Malopolskie",
+        "hdi": 0.924
+      },
+      {
+        "region": "Mazowieckie",
+        "hdi": 0.958
+      },
+      {
+        "region": "Opolskie",
+        "hdi": 0.888
+      },
+      {
+        "region": "Podkarpackie",
+        "hdi": 0.883
+      },
+      {
+        "region": "Podlaskie",
+        "hdi": 0.891
+      },
+      {
+        "region": "Pomorskie",
+        "hdi": 0.919
+      },
+      {
+        "region": "Slaskie",
+        "hdi": 0.91
+      },
+      {
+        "region": "Swietokrzyskie",
+        "hdi": 0.877
+      },
+      {
+        "region": "Warminsko-Mazurskie",
+        "hdi": 0.862
+      },
+      {
+        "region": "Wielkopolskie",
+        "hdi": 0.919
+      },
+      {
+        "region": "Zachodniopomorskie",
+        "hdi": 0.884
+      }
+    ]
+  },
+  {
+    "country": "Portugal",
+    "regions": [
+      {
+        "region": "Portugal",
+        "hdi": 0.89
+      },
+      {
+        "region": "Alentejo",
+        "hdi": 0.865
+      },
+      {
+        "region": "Algarve",
+        "hdi": 0.875
+      },
+      {
+        "region": "Area Metropolitana de Lisboa",
+        "hdi": 0.917
+      },
+      {
+        "region": "Centro",
+        "hdi": 0.881
+      },
+      {
+        "region": "Norte",
+        "hdi": 0.878
+      },
+      {
+        "region": "Regiao Autonoma da Madeira",
+        "hdi": 0.844
+      },
+      {
+        "region": "Regiao Autonoma dos Acores",
+        "hdi": 0.829
+      }
+    ]
+  },
+  {
+    "country": "Romania",
+    "regions": [
+      {
+        "region": "Romania",
+        "hdi": 0.845
+      },
+      {
+        "region": "Bucuresti",
+        "hdi": 0.938
+      },
+      {
+        "region": "Centru",
+        "hdi": 0.84
+      },
+      {
+        "region": "Nord-Est",
+        "hdi": 0.802
+      },
+      {
+        "region": "Nord-Vest",
+        "hdi": 0.848
+      },
+      {
+        "region": "Sud",
+        "hdi": 0.803
+      },
+      {
+        "region": "Sud-Est",
+        "hdi": 0.813
+      },
+      {
+        "region": "Sud-Vest Oltenia",
+        "hdi": 0.823
+      },
+      {
+        "region": "Vest",
+        "hdi": 0.848
+      }
+    ]
+  },
+  {
+    "country": "Russian Federation",
+    "regions": [
+      {
+        "region": "The Russian Federation",
+        "hdi": 0.832
+      },
+      {
+        "region": "The Central Federal District",
+        "hdi": 0.826
+      },
+      {
+        "region": "The Far East  Federal District",
+        "hdi": 0.78
+      },
+      {
+        "region": "The North West Federal District",
+        "hdi": 0.833
+      },
+      {
+        "region": "The North-Caucasian Federal District",
+        "hdi": 0.765
+      },
+      {
+        "region": "The Privolzhsky (Volga) Federal District",
+        "hdi": 0.789
+      },
+      {
+        "region": "The Siberian  Federal District",
+        "hdi": 0.779
+      },
+      {
+        "region": "The South Federal District",
+        "hdi": 0.776
+      },
+      {
+        "region": "The Urals  Federal District",
+        "hdi": 0.833
+      }
+    ]
+  },
+  {
+    "country": "Rwanda",
+    "regions": [
+      {
+        "region": "City of Kigali",
+        "hdi": 0.675
+      },
+      {
+        "region": "East",
+        "hdi": 0.569
+      },
+      {
+        "region": "North",
+        "hdi": 0.554
+      },
+      {
+        "region": "South",
+        "hdi": 0.555
+      },
+      {
+        "region": "West",
+        "hdi": 0.565
+      }
+    ]
+  },
+  {
+    "country": "Saint Lucia",
+    "regions": [
+      {
+        "region": "St Lucia rural",
+        "hdi": 0.749
+      },
+      {
+        "region": "St Lucia urban",
+        "hdi": 0.744
+      }
+    ]
+  },
+  {
+    "country": "Samoa",
+    "regions": [
+      {
+        "region": "Apia Urban Area",
+        "hdi": 0.738
+      },
+      {
+        "region": "North West Upolu",
+        "hdi": 0.7
+      },
+      {
+        "region": "Rest of Upolu",
+        "hdi": 0.703
+      },
+      {
+        "region": "Savaii",
+        "hdi": 0.697
+      }
+    ]
+  },
+  {
+    "country": "Sao Tome & Principe",
+    "regions": [
+      {
+        "region": "Regiao Centro",
+        "hdi": 0.657
+      },
+      {
+        "region": "Regiao Norte",
+        "hdi": 0.605
+      },
+      {
+        "region": "Regiao Sul",
+        "hdi": 0.605
+      },
+      {
+        "region": "Regiao do Principe",
+        "hdi": 0.64
+      }
+    ]
+  },
+  {
+    "country": "Saudi Arabia",
+    "regions": [
+      {
+        "region": "Center (Riadh, Qassim)",
+        "hdi": 0.924
+      },
+      {
+        "region": "Eastern province",
+        "hdi": 0.886
+      },
+      {
+        "region": "North (Northern Borders, Al Jawf, Hail)",
+        "hdi": 0.914
+      },
+      {
+        "region": "South (Bahah, Jizan, Asir, Najran)",
+        "hdi": 0.879
+      },
+      {
+        "region": "West (Makka, Madinah, Tabuk)",
+        "hdi": 0.895
+      }
+    ]
+  },
+  {
+    "country": "Senegal",
+    "regions": [
+      {
+        "region": "Dakar",
+        "hdi": 0.627
+      },
+      {
+        "region": "Diourbel",
+        "hdi": 0.436
+      },
+      {
+        "region": "Fatick",
+        "hdi": 0.533
+      },
+      {
+        "region": "Kaolack",
+        "hdi": 0.468
+      },
+      {
+        "region": "Kolda",
+        "hdi": 0.463
+      },
+      {
+        "region": "Louga",
+        "hdi": 0.466
+      },
+      {
+        "region": "Saint Louis",
+        "hdi": 0.482
+      },
+      {
+        "region": "Tambacounda",
+        "hdi": 0.448
+      },
+      {
+        "region": "Thies",
+        "hdi": 0.561
+      },
+      {
+        "region": "Ziguinchor",
+        "hdi": 0.607
+      }
+    ]
+  },
+  {
+    "country": "Serbia",
+    "regions": [
+      {
+        "region": "Belgrade",
+        "hdi": 0.863
+      },
+      {
+        "region": "South and East Serbia",
+        "hdi": 0.824
+      },
+      {
+        "region": "Sumadija and West Serbia",
+        "hdi": 0.822
+      },
+      {
+        "region": "Vojvodina",
+        "hdi": 0.826
+      }
+    ]
+  },
+  {
+    "country": "Seychelles",
+    "regions": [
+      {
+        "region": "Central (Greater Victoria, districts 9, 16, 17, 18",
+        "hdi": 0.848
+      },
+      {
+        "region": "East-South (districts 1, 4, 5, 6, 11, 20, 23)",
+        "hdi": 0.848
+      },
+      {
+        "region": "North (districts 3, 8, 12)",
+        "hdi": 0.845
+      },
+      {
+        "region": "Praslin and La Digue (districts 7, 14, 15)",
+        "hdi": 0.827
+      },
+      {
+        "region": "West (districts 2, 10, 13, 21)",
+        "hdi": 0.856
+      }
+    ]
+  },
+  {
+    "country": "Sierra Leone",
+    "regions": [
+      {
+        "region": "Bo",
+        "hdi": 0.455
+      },
+      {
+        "region": "Bombali",
+        "hdi": 0.468
+      },
+      {
+        "region": "Bonthe",
+        "hdi": 0.443
+      },
+      {
+        "region": "Kailahun",
+        "hdi": 0.447
+      },
+      {
+        "region": "Kambia",
+        "hdi": 0.432
+      },
+      {
+        "region": "Kenema",
+        "hdi": 0.442
+      },
+      {
+        "region": "Koinadugu",
+        "hdi": 0.426
+      },
+      {
+        "region": "Kono",
+        "hdi": 0.451
+      },
+      {
+        "region": "Moyamba",
+        "hdi": 0.423
+      },
+      {
+        "region": "Port Loko",
+        "hdi": 0.421
+      },
+      {
+        "region": "Pujehun",
+        "hdi": 0.414
+      },
+      {
+        "region": "Tonkolili",
+        "hdi": 0.435
+      },
+      {
+        "region": "Western Rural",
+        "hdi": 0.506
+      },
+      {
+        "region": "Western Urban",
+        "hdi": 0.59
+      }
+    ]
+  },
+  {
+    "country": "Slovakia",
+    "regions": [
+      {
+        "region": "Slovakia",
+        "hdi": 0.88
+      },
+      {
+        "region": "Bratislavsky kraj",
+        "hdi": 0.967
+      },
+      {
+        "region": "Stredne Slovensko",
+        "hdi": 0.863
+      },
+      {
+        "region": "Vychodne Slovensko",
+        "hdi": 0.844
+      },
+      {
+        "region": "Zapadne Slovensko",
+        "hdi": 0.871
+      }
+    ]
+  },
+  {
+    "country": "Slovenia",
+    "regions": [
+      {
+        "region": "Slovenia",
+        "hdi": 0.931
+      },
+      {
+        "region": "Gorenjska",
+        "hdi": 0.925
+      },
+      {
+        "region": "Goriska",
+        "hdi": 0.922
+      },
+      {
+        "region": "Jugovzhodna Slovenija",
+        "hdi": 0.917
+      },
+      {
+        "region": "Koroska",
+        "hdi": 0.905
+      },
+      {
+        "region": "Obalno-kraska",
+        "hdi": 0.931
+      },
+      {
+        "region": "Osrednjeslovenska",
+        "hdi": 0.966
+      },
+      {
+        "region": "Podravska",
+        "hdi": 0.914
+      },
+      {
+        "region": "Pomurska",
+        "hdi": 0.888
+      },
+      {
+        "region": "Posavska",
+        "hdi": 0.898
+      },
+      {
+        "region": "Primorsko-notranjska",
+        "hdi": 0.902
+      },
+      {
+        "region": "Savinjska",
+        "hdi": 0.914
+      },
+      {
+        "region": "Zasavska",
+        "hdi": 0.879
+      }
+    ]
+  },
+  {
+    "country": "Somalia",
+    "regions": [
+      {
+        "region": "Awdal",
+        "hdi": 0.43
+      },
+      {
+        "region": "Bakool",
+        "hdi": 0.371
+      },
+      {
+        "region": "Banadir",
+        "hdi": 0.428
+      },
+      {
+        "region": "Bari",
+        "hdi": 0.422
+      },
+      {
+        "region": "Bay",
+        "hdi": 0.381
+      },
+      {
+        "region": "Galguduud",
+        "hdi": 0.409
+      },
+      {
+        "region": "Gedo",
+        "hdi": 0.387
+      },
+      {
+        "region": "Hiran",
+        "hdi": 0.424
+      },
+      {
+        "region": "Lower Juba",
+        "hdi": 0.396
+      },
+      {
+        "region": "Lower Shabelle",
+        "hdi": 0.288
+      },
+      {
+        "region": "Middle Juba",
+        "hdi": 0.193
+      },
+      {
+        "region": "Middle Shabelle",
+        "hdi": 0.38
+      },
+      {
+        "region": "Mudug",
+        "hdi": 0.418
+      },
+      {
+        "region": "Nugal",
+        "hdi": 0.442
+      },
+      {
+        "region": "Sanaag",
+        "hdi": 0.417
+      },
+      {
+        "region": "Sool",
+        "hdi": 0.399
+      },
+      {
+        "region": "Togdhere",
+        "hdi": 0.365
+      },
+      {
+        "region": "W Galbeed",
+        "hdi": 0.425
+      }
+    ]
+  },
+  {
+    "country": "South Africa",
+    "regions": [
+      {
+        "region": "Eastern Cape",
+        "hdi": 0.72
+      },
+      {
+        "region": "Free State",
+        "hdi": 0.737
+      },
+      {
+        "region": "Gauteng",
+        "hdi": 0.759
+      },
+      {
+        "region": "KwaZulu Natal",
+        "hdi": 0.745
+      },
+      {
+        "region": "Mpumalanga",
+        "hdi": 0.718
+      },
+      {
+        "region": "North West",
+        "hdi": 0.718
+      },
+      {
+        "region": "Northern Cape",
+        "hdi": 0.719
+      },
+      {
+        "region": "Northern Province",
+        "hdi": 0.737
+      },
+      {
+        "region": "Western Cape",
+        "hdi": 0.75
+      }
+    ]
+  },
+  {
+    "country": "South Korea",
+    "regions": [
+      {
+        "region": "Korea",
+        "hdi": 0.937
+      },
+      {
+        "region": "Capital Region",
+        "hdi": 0.966
+      },
+      {
+        "region": "Chungcheong Region",
+        "hdi": 0.916
+      },
+      {
+        "region": "Gangwon Region",
+        "hdi": 0.915
+      },
+      {
+        "region": "Gyeongbuk Region",
+        "hdi": 0.871
+      },
+      {
+        "region": "Gyeongnam Region",
+        "hdi": 0.933
+      },
+      {
+        "region": "Jeju",
+        "hdi": 0.91
+      },
+      {
+        "region": "Jeolla Region",
+        "hdi": 0.916
+      }
+    ]
+  },
+  {
+    "country": "South Sudan",
+    "regions": [
+      {
+        "region": "Central Equatoria",
+        "hdi": 0.467
+      },
+      {
+        "region": "Eastern Equatoria",
+        "hdi": 0.374
+      },
+      {
+        "region": "Jonglei",
+        "hdi": 0.337
+      },
+      {
+        "region": "Lakes",
+        "hdi": 0.35
+      },
+      {
+        "region": "Northern Bahr El Ghazal",
+        "hdi": 0.311
+      },
+      {
+        "region": "Unity",
+        "hdi": 0.346
+      },
+      {
+        "region": "Upper Nile",
+        "hdi": 0.43
+      },
+      {
+        "region": "Warrap",
+        "hdi": 0.313
+      },
+      {
+        "region": "Western Bahr El Ghazal",
+        "hdi": 0.42
+      },
+      {
+        "region": "Western Equatoria",
+        "hdi": 0.434
+      }
+    ]
+  },
+  {
+    "country": "Spain",
+    "regions": [
+      {
+        "region": "Spain",
+        "hdi": 0.918
+      },
+      {
+        "region": "Andalucia",
+        "hdi": 0.889
+      },
+      {
+        "region": "Aragon",
+        "hdi": 0.923
+      },
+      {
+        "region": "Canarias",
+        "hdi": 0.884
+      },
+      {
+        "region": "Cantabria",
+        "hdi": 0.918
+      },
+      {
+        "region": "Castilla y Leon",
+        "hdi": 0.92
+      },
+      {
+        "region": "Castilla-la Mancha",
+        "hdi": 0.884
+      },
+      {
+        "region": "Cataluna",
+        "hdi": 0.929
+      },
+      {
+        "region": "Ciudad Autonoma de Ceuta",
+        "hdi": 0.868
+      },
+      {
+        "region": "Ciudad Autonoma de Melilla",
+        "hdi": 0.874
+      },
+      {
+        "region": "Comunidad Foral de Navarra",
+        "hdi": 0.936
+      },
+      {
+        "region": "Comunidad Valenciana",
+        "hdi": 0.905
+      },
+      {
+        "region": "Comunidad de Madrid",
+        "hdi": 0.951
+      },
+      {
+        "region": "Extremadura",
+        "hdi": 0.884
+      },
+      {
+        "region": "Galicia",
+        "hdi": 0.917
+      },
+      {
+        "region": "Illes Balears",
+        "hdi": 0.887
+      },
+      {
+        "region": "La Rioja",
+        "hdi": 0.924
+      },
+      {
+        "region": "Pais Vasco",
+        "hdi": 0.947
+      },
+      {
+        "region": "Principado de Asturias",
+        "hdi": 0.914
+      },
+      {
+        "region": "Region de Murcia",
+        "hdi": 0.893
+      }
+    ]
+  },
+  {
+    "country": "Sudan",
+    "regions": [
+      {
+        "region": "Al Gedarif",
+        "hdi": 0.457
+      },
+      {
+        "region": "Al Gezira",
+        "hdi": 0.555
+      },
+      {
+        "region": "Blue Nile",
+        "hdi": 0.425
+      },
+      {
+        "region": "Kassala",
+        "hdi": 0.461
+      },
+      {
+        "region": "Khartoum",
+        "hdi": 0.633
+      },
+      {
+        "region": "Nahr El Nil",
+        "hdi": 0.608
+      },
+      {
+        "region": "North Darfur",
+        "hdi": 0.469
+      },
+      {
+        "region": "North Kordofan",
+        "hdi": 0.469
+      },
+      {
+        "region": "Northern",
+        "hdi": 0.633
+      },
+      {
+        "region": "Red Sea",
+        "hdi": 0.527
+      },
+      {
+        "region": "Sinnar",
+        "hdi": 0.5
+      },
+      {
+        "region": "South Darfur",
+        "hdi": 0.443
+      },
+      {
+        "region": "South Kordofan",
+        "hdi": 0.439
+      },
+      {
+        "region": "West Darfur",
+        "hdi": 0.448
+      },
+      {
+        "region": "White Nile",
+        "hdi": 0.498
+      }
+    ]
+  },
+  {
+    "country": "Suriname",
+    "regions": [
+      {
+        "region": "Brokopondo and Sipaliwini",
+        "hdi": 0.591
+      },
+      {
+        "region": "Commewijne and Marowijne",
+        "hdi": 0.704
+      },
+      {
+        "region": "Nickerie, Coronie and Saramacca",
+        "hdi": 0.718
+      },
+      {
+        "region": "Paramaribo",
+        "hdi": 0.741
+      },
+      {
+        "region": "Wanica and Para",
+        "hdi": 0.728
+      }
+    ]
+  },
+  {
+    "country": "Sweden",
+    "regions": [
+      {
+        "region": "Sweden",
+        "hdi": 0.959
+      },
+      {
+        "region": "Mellersta Norrland",
+        "hdi": 0.946
+      },
+      {
+        "region": "Norra Mellansverige",
+        "hdi": 0.941
+      },
+      {
+        "region": "Ostra Mellansverige",
+        "hdi": 0.948
+      },
+      {
+        "region": "Ovre Norrland",
+        "hdi": 0.957
+      },
+      {
+        "region": "Smaland med oarna",
+        "hdi": 0.948
+      },
+      {
+        "region": "Stockholm",
+        "hdi": 0.976
+      },
+      {
+        "region": "Sydsverige",
+        "hdi": 0.948
+      },
+      {
+        "region": "Vastsverige",
+        "hdi": 0.958
+      }
+    ]
+  },
+  {
+    "country": "Switzerland",
+    "regions": [
+      {
+        "region": "Switzerland",
+        "hdi": 0.97
+      },
+      {
+        "region": "Central Switzerland",
+        "hdi": 0.962
+      },
+      {
+        "region": "Eastern Switzerland",
+        "hdi": 0.955
+      },
+      {
+        "region": "Espace Mittelland",
+        "hdi": 0.963
+      },
+      {
+        "region": "Lake Geneva region",
+        "hdi": 0.976
+      },
+      {
+        "region": "Northwestern Switzerland",
+        "hdi": 0.964
+      },
+      {
+        "region": "Ticino",
+        "hdi": 0.965
+      },
+      {
+        "region": "Zurich",
+        "hdi": 0.993
+      }
+    ]
+  },
+  {
+    "country": "Syria",
+    "regions": [
+      {
+        "region": "Al Hasaka",
+        "hdi": 0.513
+      },
+      {
+        "region": "Al Latakia",
+        "hdi": 0.606
+      },
+      {
+        "region": "Al Qunitara - Quneitra",
+        "hdi": 0.551
+      },
+      {
+        "region": "Al Raka-Raqqa",
+        "hdi": 0.505
+      },
+      {
+        "region": "Al Swida - Sweida",
+        "hdi": 0.611
+      },
+      {
+        "region": "Damascus",
+        "hdi": 0.605
+      },
+      {
+        "region": "Daraa",
+        "hdi": 0.573
+      },
+      {
+        "region": "Der El Zour - Deir Ezzor",
+        "hdi": 0.537
+      },
+      {
+        "region": "Edlab Idleb",
+        "hdi": 0.536
+      },
+      {
+        "region": "Halab - Aleppo",
+        "hdi": 0.534
+      },
+      {
+        "region": "Hamaa",
+        "hdi": 0.57
+      },
+      {
+        "region": "Homs",
+        "hdi": 0.585
+      },
+      {
+        "region": "Rural Damascus",
+        "hdi": 0.579
+      },
+      {
+        "region": "Tartous",
+        "hdi": 0.601
+      }
+    ]
+  },
+  {
+    "country": "Tajikistan",
+    "regions": [
+      {
+        "region": "DRS",
+        "hdi": 0.684
+      },
+      {
+        "region": "Duchanbe",
+        "hdi": 0.762
+      },
+      {
+        "region": "GBAO",
+        "hdi": 0.7
+      },
+      {
+        "region": "Khatlon",
+        "hdi": 0.671
+      },
+      {
+        "region": "Sughd (formerly Leninabad)",
+        "hdi": 0.695
+      }
+    ]
+  },
+  {
+    "country": "Tanzania",
+    "regions": [
+      {
+        "region": " Arusha, Manyara",
+        "hdi": 0.565
+      },
+      {
+        "region": " Dar Es Salam",
+        "hdi": 0.643
+      },
+      {
+        "region": " Dodoma",
+        "hdi": 0.567
+      },
+      {
+        "region": " Iringa, Njombe",
+        "hdi": 0.571
+      },
+      {
+        "region": " Kagera",
+        "hdi": 0.537
+      },
+      {
+        "region": " Kigoma",
+        "hdi": 0.49
+      },
+      {
+        "region": " Kilimanjaro",
+        "hdi": 0.613
+      },
+      {
+        "region": " Lindi",
+        "hdi": 0.547
+      },
+      {
+        "region": " Mara",
+        "hdi": 0.569
+      },
+      {
+        "region": " Mbeya",
+        "hdi": 0.55
+      },
+      {
+        "region": " Morogoro",
+        "hdi": 0.527
+      },
+      {
+        "region": " Mtwara",
+        "hdi": 0.543
+      },
+      {
+        "region": " Mwanza, Geita",
+        "hdi": 0.553
+      },
+      {
+        "region": " Pemba North",
+        "hdi": 0.595
+      },
+      {
+        "region": " Pemba South",
+        "hdi": 0.599
+      },
+      {
+        "region": " Pwani",
+        "hdi": 0.562
+      },
+      {
+        "region": " Rukwa, Katavi",
+        "hdi": 0.5
+      },
+      {
+        "region": " Ruvuma",
+        "hdi": 0.542
+      },
+      {
+        "region": " Shinyanga, Simiyu",
+        "hdi": 0.519
+      },
+      {
+        "region": " Singida",
+        "hdi": 0.568
+      },
+      {
+        "region": " Tabora",
+        "hdi": 0.477
+      },
+      {
+        "region": " Tanga",
+        "hdi": 0.553
+      },
+      {
+        "region": " Zanzibar North",
+        "hdi": 0.593
+      },
+      {
+        "region": " Zanzibar South",
+        "hdi": 0.614
+      },
+      {
+        "region": " Zanzibar West",
+        "hdi": 0.673
+      }
+    ]
+  },
+  {
+    "country": "Thailand",
+    "regions": [
+      {
+        "region": "Bangkok",
+        "hdi": 0.831
+      },
+      {
+        "region": "Central",
+        "hdi": 0.812
+      },
+      {
+        "region": "North",
+        "hdi": 0.779
+      },
+      {
+        "region": "Northeast",
+        "hdi": 0.779
+      },
+      {
+        "region": "South",
+        "hdi": 0.786
+      }
+    ]
+  },
+  {
+    "country": "Timor Leste",
+    "regions": [
+      {
+        "region": "Aileu",
+        "hdi": 0.62
+      },
+      {
+        "region": "Ainaro",
+        "hdi": 0.568
+      },
+      {
+        "region": "Baucau",
+        "hdi": 0.61
+      },
+      {
+        "region": "Bobonaro",
+        "hdi": 0.608
+      },
+      {
+        "region": "Cova Lima",
+        "hdi": 0.622
+      },
+      {
+        "region": "Dili",
+        "hdi": 0.747
+      },
+      {
+        "region": "Ermera",
+        "hdi": 0.566
+      },
+      {
+        "region": "Lautem",
+        "hdi": 0.612
+      },
+      {
+        "region": "Liquica",
+        "hdi": 0.64
+      },
+      {
+        "region": "Manatuto",
+        "hdi": 0.624
+      },
+      {
+        "region": "Manufahi",
+        "hdi": 0.625
+      },
+      {
+        "region": "Oecussi",
+        "hdi": 0.566
+      },
+      {
+        "region": "Viqueque",
+        "hdi": 0.61
+      }
+    ]
+  },
+  {
+    "country": "Togo",
+    "regions": [
+      {
+        "region": "Centrale",
+        "hdi": 0.557
+      },
+      {
+        "region": "Kara",
+        "hdi": 0.538
+      },
+      {
+        "region": "Lome",
+        "hdi": 0.644
+      },
+      {
+        "region": "Maritime",
+        "hdi": 0.551
+      },
+      {
+        "region": "Plateaux",
+        "hdi": 0.558
+      },
+      {
+        "region": "Savanes",
+        "hdi": 0.491
+      }
+    ]
+  },
+  {
+    "country": "Tonga",
+    "regions": [
+      {
+        "region": "Eua",
+        "hdi": 0.743
+      },
+      {
+        "region": "Ha-apai",
+        "hdi": 0.724
+      },
+      {
+        "region": "Ongo Niua",
+        "hdi": 0.728
+      },
+      {
+        "region": "Tongatapu",
+        "hdi": 0.778
+      },
+      {
+        "region": "Vava-u",
+        "hdi": 0.757
+      }
+    ]
+  },
+  {
+    "country": "Trinidad & Tobago",
+    "regions": [
+      {
+        "region": "Central",
+        "hdi": 0.816
+      },
+      {
+        "region": "East",
+        "hdi": 0.787
+      },
+      {
+        "region": "North West",
+        "hdi": 0.805
+      },
+      {
+        "region": "South West",
+        "hdi": 0.808
+      },
+      {
+        "region": "Tobago",
+        "hdi": 0.801
+      }
+    ]
+  },
+  {
+    "country": "Tunisia",
+    "regions": [
+      {
+        "region": "Centre Est (Sousse, Monastir, Mahdia, Sfax)",
+        "hdi": 0.741
+      },
+      {
+        "region": "Centre Ouest (Kairouan, Kasserine, Sidi Bouzid)",
+        "hdi": 0.681
+      },
+      {
+        "region": "Grand Tunis (Tunis, Ariana, Ben Arous, Manouba)",
+        "hdi": 0.791
+      },
+      {
+        "region": "Nord Est (Nabeul, Zaghouan, Bizerte)",
+        "hdi": 0.733
+      },
+      {
+        "region": "Nord Ouest (Beja, Jendouba, Kef, Siliana)",
+        "hdi": 0.722
+      },
+      {
+        "region": "Sud Est (Gabes, Medinine, Tataouine)",
+        "hdi": 0.745
+      },
+      {
+        "region": "Sud Ouest (Gafsa, Tozeur, Kebili)",
+        "hdi": 0.74
+      }
+    ]
+  },
+  {
+    "country": "Turkey",
+    "regions": [
+      {
+        "region": "Turkey",
+        "hdi": 0.853
+      },
+      {
+        "region": "Aegean (Afyon, Aydin, Denizli, Izmir, Kutahya, Man",
+        "hdi": 0.853
+      },
+      {
+        "region": "Central Anatolia (Kayseri, Kirsehir, Nevsehir, Nig",
+        "hdi": 0.832
+      },
+      {
+        "region": "Central East Anatolia (Bingol, Bitlis, Elazig, Hak",
+        "hdi": 0.795
+      },
+      {
+        "region": "East Black Sea (Artvin, Giresun, Gumushane, Ordu,",
+        "hdi": 0.826
+      },
+      {
+        "region": "East Marmara (Bilecik, Bolu, Bursa, Duzce, Eskiseh",
+        "hdi": 0.862
+      },
+      {
+        "region": "Istanbul",
+        "hdi": 0.886
+      },
+      {
+        "region": "Mediterranean (Adana, Antalya, Burdur, Hatay, Ispa",
+        "hdi": 0.842
+      },
+      {
+        "region": "North East Anatolia (Agri, Erzincan, Erzurum, Kars",
+        "hdi": 0.807
+      },
+      {
+        "region": "South East Anatolia (Adiyaman, Diyarbakir, Gaziant",
+        "hdi": 0.793
+      },
+      {
+        "region": "West Anatolia (Ankara, Konya, Karaman)",
+        "hdi": 0.869
+      },
+      {
+        "region": "West Black Sea (Amasya, Cankiri, Corum, Kastamonu,",
+        "hdi": 0.825
+      },
+      {
+        "region": "West Marmara (Balikesir, Canakkale, Edirne, Kirkla",
+        "hdi": 0.856
+      }
+    ]
+  },
+  {
+    "country": "Turkmenistan",
+    "regions": [
+      {
+        "region": "Akhal",
+        "hdi": 0.758
+      },
+      {
+        "region": "Ashgabat City",
+        "hdi": 0.822
+      },
+      {
+        "region": "Balkan",
+        "hdi": 0.776
+      },
+      {
+        "region": "Dashoguz",
+        "hdi": 0.742
+      },
+      {
+        "region": "Lebap",
+        "hdi": 0.771
+      },
+      {
+        "region": "Mary",
+        "hdi": 0.743
+      }
+    ]
+  },
+  {
+    "country": "Tuvalu",
+    "regions": [
+      {
+        "region": "Funafuti",
+        "hdi": 0.713
+      },
+      {
+        "region": "Nanumea, Nanumaga, Niutao",
+        "hdi": 0.626
+      },
+      {
+        "region": "Vaitupu, Nui, Nukufetau",
+        "hdi": 0.65
+      }
+    ]
+  },
+  {
+    "country": "Uganda",
+    "regions": [
+      {
+        "region": "Central 1 (Central South)",
+        "hdi": 0.644
+      },
+      {
+        "region": "Central 2 (Central North)",
+        "hdi": 0.595
+      },
+      {
+        "region": "East Central (Busoga)",
+        "hdi": 0.584
+      },
+      {
+        "region": "Eastern (Bukedi, Bugishu, Teso)",
+        "hdi": 0.582
+      },
+      {
+        "region": "Kampala",
+        "hdi": 0.7
+      },
+      {
+        "region": "North (Karamoja, Lango, Acholi)",
+        "hdi": 0.526
+      },
+      {
+        "region": "Southwest (Ankole, Kigezi)",
+        "hdi": 0.572
+      },
+      {
+        "region": "West Nile",
+        "hdi": 0.537
+      },
+      {
+        "region": "Western (Bunyoro, Tooro)",
+        "hdi": 0.55
+      }
+    ]
+  },
+  {
+    "country": "Ukraine",
+    "regions": [
+      {
+        "region": "Central",
+        "hdi": 0.77
+      },
+      {
+        "region": "East",
+        "hdi": 0.796
+      },
+      {
+        "region": "North",
+        "hdi": 0.78
+      },
+      {
+        "region": "South",
+        "hdi": 0.783
+      },
+      {
+        "region": "West",
+        "hdi": 0.759
+      }
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "regions": [
+      {
+        "region": "United KIngdom",
+        "hdi": 0.946
+      },
+      {
+        "region": "East Midlands",
+        "hdi": 0.931
+      },
+      {
+        "region": "East of England",
+        "hdi": 0.934
+      },
+      {
+        "region": "London",
+        "hdi": 0.982
+      },
+      {
+        "region": "North East",
+        "hdi": 0.916
+      },
+      {
+        "region": "North West",
+        "hdi": 0.932
+      },
+      {
+        "region": "Northern Ireland",
+        "hdi": 0.913
+      },
+      {
+        "region": "Scotland",
+        "hdi": 0.937
+      },
+      {
+        "region": "South East",
+        "hdi": 0.96
+      },
+      {
+        "region": "South West",
+        "hdi": 0.942
+      },
+      {
+        "region": "Wales",
+        "hdi": 0.915
+      },
+      {
+        "region": "West Midlands",
+        "hdi": 0.93
+      },
+      {
+        "region": "Yorkshire and The Humber",
+        "hdi": 0.926
+      }
+    ]
+  },
+  {
+    "country": "United States",
+    "regions": [
+      {
+        "region": "United States",
+        "hdi": 0.938
+      },
+      {
+        "region": "Alabama",
+        "hdi": 0.896
+      },
+      {
+        "region": "Alaska",
+        "hdi": 0.94
+      },
+      {
+        "region": "Arizona",
+        "hdi": 0.922
+      },
+      {
+        "region": "Arkansas",
+        "hdi": 0.898
+      },
+      {
+        "region": "California",
+        "hdi": 0.94
+      },
+      {
+        "region": "Colorado",
+        "hdi": 0.958
+      },
+      {
+        "region": "Connecticut",
+        "hdi": 0.955
+      },
+      {
+        "region": "Delaware",
+        "hdi": 0.935
+      },
+      {
+        "region": "District of Columbia",
+        "hdi": 0.952
+      },
+      {
+        "region": "Florida",
+        "hdi": 0.936
+      },
+      {
+        "region": "Georgia",
+        "hdi": 0.92
+      },
+      {
+        "region": "Hawaii",
+        "hdi": 0.959
+      },
+      {
+        "region": "Idaho",
+        "hdi": 0.934
+      },
+      {
+        "region": "Illinois",
+        "hdi": 0.94
+      },
+      {
+        "region": "Indiana",
+        "hdi": 0.917
+      },
+      {
+        "region": "Iowa",
+        "hdi": 0.938
+      },
+      {
+        "region": "Kansas",
+        "hdi": 0.934
+      },
+      {
+        "region": "Kentucky",
+        "hdi": 0.897
+      },
+      {
+        "region": "Louisiana",
+        "hdi": 0.897
+      },
+      {
+        "region": "Maine",
+        "hdi": 0.943
+      },
+      {
+        "region": "Maryland",
+        "hdi": 0.947
+      },
+      {
+        "region": "Massachusetts",
+        "hdi": 0.961
+      },
+      {
+        "region": "Michigan",
+        "hdi": 0.928
+      },
+      {
+        "region": "Minnesota",
+        "hdi": 0.96
+      },
+      {
+        "region": "Mississippi",
+        "hdi": 0.88
+      },
+      {
+        "region": "Missouri",
+        "hdi": 0.92
+      },
+      {
+        "region": "Montana",
+        "hdi": 0.938
+      },
+      {
+        "region": "Nebraska",
+        "hdi": 0.943
+      },
+      {
+        "region": "Nevada",
+        "hdi": 0.923
+      },
+      {
+        "region": "New Hampshire",
+        "hdi": 0.961
+      },
+      {
+        "region": "New Jersey",
+        "hdi": 0.948
+      },
+      {
+        "region": "New Mexico",
+        "hdi": 0.903
+      },
+      {
+        "region": "New York",
+        "hdi": 0.942
+      },
+      {
+        "region": "North Carolina",
+        "hdi": 0.923
+      },
+      {
+        "region": "North Dakota",
+        "hdi": 0.945
+      },
+      {
+        "region": "Ohio",
+        "hdi": 0.923
+      },
+      {
+        "region": "Oklahoma",
+        "hdi": 0.908
+      },
+      {
+        "region": "Oregon",
+        "hdi": 0.95
+      },
+      {
+        "region": "Pennsylvania",
+        "hdi": 0.938
+      },
+      {
+        "region": "Rhode Island",
+        "hdi": 0.944
+      },
+      {
+        "region": "South Carolina",
+        "hdi": 0.911
+      },
+      {
+        "region": "South Dakota",
+        "hdi": 0.94
+      },
+      {
+        "region": "Tennessee",
+        "hdi": 0.908
+      },
+      {
+        "region": "Texas",
+        "hdi": 0.919
+      },
+      {
+        "region": "Utah",
+        "hdi": 0.946
+      },
+      {
+        "region": "Vermont",
+        "hdi": 0.957
+      },
+      {
+        "region": "Virginia",
+        "hdi": 0.948
+      },
+      {
+        "region": "Washington",
+        "hdi": 0.957
+      },
+      {
+        "region": "West Virginia",
+        "hdi": 0.89
+      },
+      {
+        "region": "Wisconsin",
+        "hdi": 0.942
+      },
+      {
+        "region": "Wyoming",
+        "hdi": 0.941
+      }
+    ]
+  },
+  {
+    "country": "Uruguay",
+    "regions": [
+      {
+        "region": "Centro (Durazno and Tacuarembo)",
+        "hdi": 0.834
+      },
+      {
+        "region": "Centro Sur (Flores, Florida and Lavalleja)",
+        "hdi": 0.851
+      },
+      {
+        "region": "Costa Este (Canelones, Maldonado and Rocha)",
+        "hdi": 0.863
+      },
+      {
+        "region": "Litoral Norte (Paysandu, Salto and Rio Negro)",
+        "hdi": 0.82
+      },
+      {
+        "region": "Litoral Sur (Soriano, Colonia and San Jose)",
+        "hdi": 0.827
+      },
+      {
+        "region": "Montevideo and Metropolitan area",
+        "hdi": 0.878
+      },
+      {
+        "region": "Norte (Artigas, Rivera, Cerro Largo and Trienta y Tres)",
+        "hdi": 0.828
+      }
+    ]
+  },
+  {
+    "country": "Uzbekistan",
+    "regions": [
+      {
+        "region": "Central (Navoi, Bukhara, Samarkand)",
+        "hdi": 0.733
+      },
+      {
+        "region": "Central-East (Dzhizak, Syrdarya)",
+        "hdi": 0.762
+      },
+      {
+        "region": "East (Namangan, Fergana, Andizhan)",
+        "hdi": 0.733
+      },
+      {
+        "region": "South (Kashkadarya, Surkhandarya)",
+        "hdi": 0.707
+      },
+      {
+        "region": "Tashkent",
+        "hdi": 0.827
+      },
+      {
+        "region": "West (Karakalpakstan, Khorezm)",
+        "hdi": 0.738
+      }
+    ]
+  },
+  {
+    "country": "Vanuatu",
+    "regions": [
+      {
+        "region": "Luganville",
+        "hdi": 0.669
+      },
+      {
+        "region": "Malampa",
+        "hdi": 0.608
+      },
+      {
+        "region": "Penama",
+        "hdi": 0.563
+      },
+      {
+        "region": "Port Vila",
+        "hdi": 0.697
+      },
+      {
+        "region": "Sanma",
+        "hdi": 0.581
+      },
+      {
+        "region": "Shefa",
+        "hdi": 0.648
+      },
+      {
+        "region": "Tafea",
+        "hdi": 0.581
+      },
+      {
+        "region": "Torba",
+        "hdi": 0.548
+      }
+    ]
+  },
+  {
+    "country": "Venezuela",
+    "regions": [
+      {
+        "region": "Amacuros Delta Federal Territory",
+        "hdi": 0.693
+      },
+      {
+        "region": "Amazonas Federal Territory",
+        "hdi": 0.689
+      },
+      {
+        "region": "Anzoategui",
+        "hdi": 0.72
+      },
+      {
+        "region": "Apure",
+        "hdi": 0.637
+      },
+      {
+        "region": "Aragua",
+        "hdi": 0.735
+      },
+      {
+        "region": "Barinas",
+        "hdi": 0.655
+      },
+      {
+        "region": "Bolivar",
+        "hdi": 0.712
+      },
+      {
+        "region": "Carabobo",
+        "hdi": 0.73
+      },
+      {
+        "region": "Cojedes",
+        "hdi": 0.686
+      },
+      {
+        "region": "Falcon",
+        "hdi": 0.699
+      },
+      {
+        "region": "Federal District",
+        "hdi": 0.754
+      },
+      {
+        "region": "Guarico",
+        "hdi": 0.671
+      },
+      {
+        "region": "Lara",
+        "hdi": 0.689
+      },
+      {
+        "region": "Merida",
+        "hdi": 0.698
+      },
+      {
+        "region": "Miranda",
+        "hdi": 0.74
+      },
+      {
+        "region": "Monagas",
+        "hdi": 0.699
+      },
+      {
+        "region": "Nueva Esparta",
+        "hdi": 0.728
+      },
+      {
+        "region": "Portuguesa",
+        "hdi": 0.655
+      },
+      {
+        "region": "Sucre",
+        "hdi": 0.679
+      },
+      {
+        "region": "Tachira",
+        "hdi": 0.707
+      },
+      {
+        "region": "Trujillo",
+        "hdi": 0.678
+      },
+      {
+        "region": "Vargas",
+        "hdi": 0.729
+      },
+      {
+        "region": "Yaracuy",
+        "hdi": 0.675
+      },
+      {
+        "region": "Zulia",
+        "hdi": 0.694
+      }
+    ]
+  },
+  {
+    "country": "Vietnam",
+    "regions": [
+      {
+        "region": "Central Highlands",
+        "hdi": 0.722
+      },
+      {
+        "region": "Mekong River Delta",
+        "hdi": 0.723
+      },
+      {
+        "region": "North Central Coast and South Central Coast",
+        "hdi": 0.775
+      },
+      {
+        "region": "North East, North West",
+        "hdi": 0.723
+      },
+      {
+        "region": "Red River Delta",
+        "hdi": 0.81
+      },
+      {
+        "region": "South East",
+        "hdi": 0.778
+      }
+    ]
+  },
+  {
+    "country": "Yemen",
+    "regions": [
+      {
+        "region": "Abyan, Aden (town and countryside), Lahej, Ad Dali (Al Dhalih)",
+        "hdi": 0.521
+      },
+      {
+        "region": "Beida (Al Bayda), Dhamar, Raimah",
+        "hdi": 0.419
+      },
+      {
+        "region": "Hajja, Sada, Amran (Omran)",
+        "hdi": 0.413
+      },
+      {
+        "region": "Hodeida (Al Hudaydah), Mahweit (Al Mahwit)",
+        "hdi": 0.422
+      },
+      {
+        "region": "Ibb",
+        "hdi": 0.47
+      },
+      {
+        "region": "Jawf, Hadramet, Shabda (Shabwah), Marib, Mohra (Al Mahrah)",
+        "hdi": 0.512
+      },
+      {
+        "region": "Sana a (capital; Al Amana), Sana a (governorate)",
+        "hdi": 0.518
+      },
+      {
+        "region": "Taiz",
+        "hdi": 0.5
+      }
+    ]
+  },
+  {
+    "country": "Zambia",
+    "regions": [
+      {
+        "region": "Central",
+        "hdi": 0.591
+      },
+      {
+        "region": "Copperbelt",
+        "hdi": 0.664
+      },
+      {
+        "region": "Eastern",
+        "hdi": 0.536
+      },
+      {
+        "region": "Luapula",
+        "hdi": 0.519
+      },
+      {
+        "region": "Lusaka",
+        "hdi": 0.669
+      },
+      {
+        "region": "North-Western",
+        "hdi": 0.616
+      },
+      {
+        "region": "Northern",
+        "hdi": 0.548
+      },
+      {
+        "region": "Southern",
+        "hdi": 0.592
+      },
+      {
+        "region": "Western",
+        "hdi": 0.545
+      }
+    ]
+  },
+  {
+    "country": "Zimbabwe",
+    "regions": [
+      {
+        "region": "Bulawayo",
+        "hdi": 0.7
+      },
+      {
+        "region": "Harare",
+        "hdi": 0.672
+      },
+      {
+        "region": "Manicaland",
+        "hdi": 0.587
+      },
+      {
+        "region": "Mashonaland Central",
+        "hdi": 0.54
+      },
+      {
+        "region": "Mashonaland East",
+        "hdi": 0.586
+      },
+      {
+        "region": "Mashonaland West",
+        "hdi": 0.565
+      },
+      {
+        "region": "Masvingo",
+        "hdi": 0.593
+      },
+      {
+        "region": "Matebeleland North",
+        "hdi": 0.545
+      },
+      {
+        "region": "Matebeleland South",
+        "hdi": 0.589
+      },
+      {
+        "region": "Midlands",
+        "hdi": 0.595
+      }
+    ]
+  }
+]
