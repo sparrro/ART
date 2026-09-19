@@ -1,4 +1,5 @@
 import { dbAdd, dbTest } from "./apiCalls";
+import { createCountryMenu } from "./components";
 import {
     TOKEN,
     SERVER_ID,
@@ -33,10 +34,13 @@ client.once("clientReady", async () => {
         return;
     };
 
+    const components = createCountryMenu(0);
+
     await server.members.fetch();
     const father = server.members.cache.get(MY_ID!);
     await father?.send({
-        content: "Select your country:"
+        content: "Select your country:",
+        components
     });
 
     iqChannel = await client.channels.fetch(IQ_CHANNEL_ID!) as TextChannel;
@@ -46,7 +50,7 @@ client.once("clientReady", async () => {
     } else {
         const channelMsgs = await iqChannel.messages.fetch({limit: 1});
         if (channelMsgs.size > 0) {
-            await iqChannel.send("Test");
+            //await iqChannel.send("Test");
         };
     };
 
