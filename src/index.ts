@@ -35,7 +35,9 @@ client.once("clientReady", async () => {
 
     await server.members.fetch();
     const father = server.members.cache.get(MY_ID!);
-    await father?.send("I'm online");
+    await father?.send({
+        content: "Select your country:"
+    });
 
     iqChannel = await client.channels.fetch(IQ_CHANNEL_ID!) as TextChannel;
 
