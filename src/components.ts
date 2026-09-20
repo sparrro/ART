@@ -10,7 +10,7 @@ type countryType = {
     }[]
 };
 
-const countryPages = paginate(countries);
+export const countryPages = paginate(countries);
 
 export const createCountryMenu = (page: number) => {
 

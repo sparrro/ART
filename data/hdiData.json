@@ -40,51 +40,51 @@
     "country": "Albania",
     "regions": [
       {
-        "region": " Berat",
+        "region": "Berat",
         "hdi": 0.797
       },
       {
-        "region": " Diber",
+        "region": "Diber",
         "hdi": 0.769
       },
       {
-        "region": " Durres",
+        "region": "Durres",
         "hdi": 0.817
       },
       {
-        "region": " Elbasan",
+        "region": "Elbasan",
         "hdi": 0.799
       },
       {
-        "region": " Fier",
+        "region": "Fier",
         "hdi": 0.782
       },
       {
-        "region": " Gjirokaster",
+        "region": "Gjirokaster",
         "hdi": 0.81
       },
       {
-        "region": " Korce",
+        "region": "Korce",
         "hdi": 0.806
       },
       {
-        "region": " Kukes",
+        "region": "Kukes",
         "hdi": 0.765
       },
       {
-        "region": " Lezhe",
+        "region": "Lezhe",
         "hdi": 0.784
       },
       {
-        "region": " Shkoder",
+        "region": "Shkoder",
         "hdi": 0.799
       },
       {
-        "region": " Tirana",
+        "region": "Tirana",
         "hdi": 0.836
       },
       {
-        "region": " Vlore",
+        "region": "Vlore",
         "hdi": 0.818
       }
     ]
@@ -126,75 +126,75 @@
     "country": "Angola",
     "regions": [
       {
-        "region": " Bengo",
+        "region": "Bengo",
         "hdi": 0.608
       },
       {
-        "region": " Benguela",
+        "region": "Benguela",
         "hdi": 0.557
       },
       {
-        "region": " Bie",
+        "region": "Bie",
         "hdi": 0.526
       },
       {
-        "region": " Cabinda",
+        "region": "Cabinda",
         "hdi": 0.716
       },
       {
-        "region": " Cunene",
+        "region": "Cunene",
         "hdi": 0.544
       },
       {
-        "region": " Huambo",
+        "region": "Huambo",
         "hdi": 0.562
       },
       {
-        "region": " Huila",
+        "region": "Huila",
         "hdi": 0.542
       },
       {
-        "region": " Kuando Kubango",
+        "region": "Kuando Kubango",
         "hdi": 0.532
       },
       {
-        "region": " Kuanza Norte",
+        "region": "Kuanza Norte",
         "hdi": 0.569
       },
       {
-        "region": " Kuanza Sul",
+        "region": "Kuanza Sul",
         "hdi": 0.474
       },
       {
-        "region": " Luanda",
+        "region": "Luanda",
         "hdi": 0.738
       },
       {
-        "region": " Lunda Norte",
+        "region": "Lunda Norte",
         "hdi": 0.548
       },
       {
-        "region": " Lunda Sul",
+        "region": "Lunda Sul",
         "hdi": 0.61
       },
       {
-        "region": " Malange",
+        "region": "Malange",
         "hdi": 0.595
       },
       {
-        "region": " Moxico",
+        "region": "Moxico",
         "hdi": 0.53
       },
       {
-        "region": " Namibe",
+        "region": "Namibe",
         "hdi": 0.612
       },
       {
-        "region": " Uige",
+        "region": "Uige",
         "hdi": 0.569
       },
       {
-        "region": " Zaire",
+        "region": "Zaire",
         "hdi": 0.648
       }
     ]
@@ -412,95 +412,95 @@
     "country": "Bangladesh",
     "regions": [
       {
-        "region": " Bagerhat, Khulna, Satkhira",
+        "region": "Bagerhat, Khulna, Satkhira",
         "hdi": 0.719
       },
       {
-        "region": " Bandarban, Cox s Bazar",
+        "region": "Bandarban, Cox s Bazar",
         "hdi": 0.613
       },
       {
-        "region": " Barguna, Bhola, Patuakhali",
+        "region": "Barguna, Bhola, Patuakhali",
         "hdi": 0.675
       },
       {
-        "region": " Barisal, Jhalokati, Pirojpur",
+        "region": "Barisal, Jhalokati, Pirojpur",
         "hdi": 0.702
       },
       {
-        "region": " Bogra, Gaibandha, Jaypurhat",
+        "region": "Bogra, Gaibandha, Jaypurhat",
         "hdi": 0.674
       },
       {
-        "region": " Brahmanbaria, Chandpur, Comilla",
+        "region": "Brahmanbaria, Chandpur, Comilla",
         "hdi": 0.672
       },
       {
-        "region": " Chittagong",
+        "region": "Chittagong",
         "hdi": 0.696
       },
       {
-        "region": " Chuadanga, Jhenaidah, Kushtia, Meherpur",
+        "region": "Chuadanga, Jhenaidah, Kushtia, Meherpur",
         "hdi": 0.694
       },
       {
-        "region": " Dhaka",
+        "region": "Dhaka",
         "hdi": 0.743
       },
       {
-        "region": " Dinajpur, Nilphamari, Panchagarh, Thakurgaon",
+        "region": "Dinajpur, Nilphamari, Panchagarh, Thakurgaon",
         "hdi": 0.67
       },
       {
-        "region": " Faridpur, Manikganj, Rajbari",
+        "region": "Faridpur, Manikganj, Rajbari",
         "hdi": 0.677
       },
       {
-        "region": " Feni, Lakshmipur, Noakhali",
+        "region": "Feni, Lakshmipur, Noakhali",
         "hdi": 0.661
       },
       {
-        "region": " Gazipur, Narayanganj, Narsingdi",
+        "region": "Gazipur, Narayanganj, Narsingdi",
         "hdi": 0.701
       },
       {
-        "region": " Gopalganj, Madaripur, Munshiganj, Shariatpur",
+        "region": "Gopalganj, Madaripur, Munshiganj, Shariatpur",
         "hdi": 0.687
       },
       {
-        "region": " Habiganj, Sunamganj",
+        "region": "Habiganj, Sunamganj",
         "hdi": 0.642
       },
       {
-        "region": " Jamalpur, Sherpur, Tangail",
+        "region": "Jamalpur, Sherpur, Tangail",
         "hdi": 0.677
       },
       {
-        "region": " Jessore, Magura, Narail",
+        "region": "Jessore, Magura, Narail",
         "hdi": 0.704
       },
       {
-        "region": " Khagrachhari, Rangamati (Chattagram)",
+        "region": "Khagrachhari, Rangamati (Chattagram)",
         "hdi": 0.629
       },
       {
-        "region": " Kishoreganj, Mymensingh, Netrakona",
+        "region": "Kishoreganj, Mymensingh, Netrakona",
         "hdi": 0.66
       },
       {
-        "region": " Kurigram, Lalmonirhat, Rangpur",
+        "region": "Kurigram, Lalmonirhat, Rangpur",
         "hdi": 0.672
       },
       {
-        "region": " Maulvibazar, Sylhet",
+        "region": "Maulvibazar, Sylhet",
         "hdi": 0.648
       },
       {
-        "region": " Naogaon, Nawabganj, Rajshahi",
+        "region": "Naogaon, Nawabganj, Rajshahi",
         "hdi": 0.701
       },
       {
-        "region": " Natore, Pabna, Sirajganj",
+        "region": "Natore, Pabna, Sirajganj",
         "hdi": 0.696
       }
     ]
@@ -1696,51 +1696,51 @@
     "country": "Congo Brazzaville",
     "regions": [
       {
-        "region": " Bouenza",
+        "region": "Bouenza",
         "hdi": 0.563
       },
       {
-        "region": " Brazzaville",
+        "region": "Brazzaville",
         "hdi": 0.707
       },
       {
-        "region": " Cuvette",
+        "region": "Cuvette",
         "hdi": 0.616
       },
       {
-        "region": " Cuvette Ouest",
+        "region": "Cuvette Ouest",
         "hdi": 0.543
       },
       {
-        "region": " Kouilou",
+        "region": "Kouilou",
         "hdi": 0.53
       },
       {
-        "region": " Lekoumou",
+        "region": "Lekoumou",
         "hdi": 0.53
       },
       {
-        "region": " Likouala",
+        "region": "Likouala",
         "hdi": 0.559
       },
       {
-        "region": " Niari",
+        "region": "Niari",
         "hdi": 0.603
       },
       {
-        "region": " Plateaux",
+        "region": "Plateaux",
         "hdi": 0.576
       },
       {
-        "region": " Pointe Noire",
+        "region": "Pointe Noire",
         "hdi": 0.696
       },
       {
-        "region": " Pool",
+        "region": "Pool",
         "hdi": 0.514
       },
       {
-        "region": " Sangha",
+        "region": "Sangha",
         "hdi": 0.549
       }
     ]
@@ -7121,103 +7121,103 @@
     "country": "Tanzania",
     "regions": [
       {
-        "region": " Arusha, Manyara",
+        "region": "Arusha, Manyara",
         "hdi": 0.565
       },
       {
-        "region": " Dar Es Salam",
+        "region": "Dar Es Salam",
         "hdi": 0.643
       },
       {
-        "region": " Dodoma",
+        "region": "Dodoma",
         "hdi": 0.567
       },
       {
-        "region": " Iringa, Njombe",
+        "region": "Iringa, Njombe",
         "hdi": 0.571
       },
       {
-        "region": " Kagera",
+        "region": "Kagera",
         "hdi": 0.537
       },
       {
-        "region": " Kigoma",
+        "region": "Kigoma",
         "hdi": 0.49
       },
       {
-        "region": " Kilimanjaro",
+        "region": "Kilimanjaro",
         "hdi": 0.613
       },
       {
-        "region": " Lindi",
+        "region": "Lindi",
         "hdi": 0.547
       },
       {
-        "region": " Mara",
+        "region": "Mara",
         "hdi": 0.569
       },
       {
-        "region": " Mbeya",
+        "region": "Mbeya",
         "hdi": 0.55
       },
       {
-        "region": " Morogoro",
+        "region": "Morogoro",
         "hdi": 0.527
       },
       {
-        "region": " Mtwara",
+        "region": "Mtwara",
         "hdi": 0.543
       },
       {
-        "region": " Mwanza, Geita",
+        "region": "Mwanza, Geita",
         "hdi": 0.553
       },
       {
-        "region": " Pemba North",
+        "region": "Pemba North",
         "hdi": 0.595
       },
       {
-        "region": " Pemba South",
+        "region": "Pemba South",
         "hdi": 0.599
       },
       {
-        "region": " Pwani",
+        "region": "Pwani",
         "hdi": 0.562
       },
       {
-        "region": " Rukwa, Katavi",
+        "region": "Rukwa, Katavi",
         "hdi": 0.5
       },
       {
-        "region": " Ruvuma",
+        "region": "Ruvuma",
         "hdi": 0.542
       },
       {
-        "region": " Shinyanga, Simiyu",
+        "region": "Shinyanga, Simiyu",
         "hdi": 0.519
       },
       {
-        "region": " Singida",
+        "region": "Singida",
         "hdi": 0.568
       },
       {
-        "region": " Tabora",
+        "region": "Tabora",
         "hdi": 0.477
       },
       {
-        "region": " Tanga",
+        "region": "Tanga",
         "hdi": 0.553
       },
       {
-        "region": " Zanzibar North",
+        "region": "Zanzibar North",
         "hdi": 0.593
       },
       {
-        "region": " Zanzibar South",
+        "region": "Zanzibar South",
         "hdi": 0.614
       },
       {
-        "region": " Zanzibar West",
+        "region": "Zanzibar West",
         "hdi": 0.673
       }
     ]

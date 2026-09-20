@@ -1,0 +1,1 @@
+export const countrySelectionState = new Map<string, { country?: string }>();
