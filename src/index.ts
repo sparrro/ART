@@ -1,10 +1,11 @@
-import { dbAdd, dbTest } from "./apiCalls";
-import { countryPages, createCountryMenu, createRegionMenu } from "./components";
+import { dbAdd, dbAddHdi, dbTest } from "./apiCalls";
+import { countryPages, createCountryMenu, createHdiStartButton, createRegionMenu } from "./components";
 import {
     TOKEN,
     SERVER_ID,
     MY_ID,
     IQ_CHANNEL_ID,
+    LOLAPAZ_ID,
 } from "./config/environment";
 import countries from "../data/hdiData.json";
 import {
@@ -41,21 +42,41 @@ client.once("clientReady", async () => {
 
     await server.members.fetch();
     const father = server.members.cache.get(MY_ID!);
-    await father?.send({
-        content:
-            `Select your country:\n` +
-            `Page ${1}/${countryPages.length}`,
-        components
-    });
+    
+
+    const herOfficial = server.members.cache.get(LOLAPAZ_ID!);
+
+    /* for (const member of [father, herOfficial]) {
+        try {
+            const dm = await member?.createDM();
+
+            const messages = await dm?.messages.fetch({ limit: 100 });
+
+            for (const [, message] of messages!) {
+                if (message.author.id == client.user!.id) {
+                    await message.delete();
+                };
+            };
+        } catch (err) {
+            console.log(err);
+        };
+    }; */
+
+    await father?.send("I'm online");
 
     iqChannel = await client.channels.fetch(IQ_CHANNEL_ID!) as TextChannel;
 
     if (!iqChannel) {
         console.log("Couldn't find the iq channel");
     } else {
+        const startBtn = createHdiStartButton();
         const channelMsgs = await iqChannel.messages.fetch({limit: 1});
-        if (channelMsgs.size > 0) {
-            //await iqChannel.send("Test");
+        console.log(channelMsgs);
+        if (channelMsgs.size == 0) {
+            await iqChannel.send({
+                content: "Click my button to record your hdi",
+                components: startBtn
+            });
         };
     };
 
@@ -63,6 +84,19 @@ client.once("clientReady", async () => {
 
 client.login(TOKEN);
 
+//start hdi test
+client.on("interactionCreate", async (interaction) => {
+    if (!interaction.isButton()) return;
+    if (interaction.customId != "start_hdi_recording") return;
+    const components = createCountryMenu(0);
+    await interaction.user.send({
+        content:
+            `Select your country:\n` +
+            `Page ${1}/${countryPages.length}`,
+        components
+    });
+    return;
+});
 
 //test for api connection
 client.on("messageCreate", async (message) => {
@@ -136,10 +170,12 @@ client.on("interactionCreate", async (interaction) => {
                 components: []
             });
             
+            const dbEntry = await dbAddHdi(interaction.user.id, region!.hdi);
+            console.log(dbEntry)
 
             countrySelectionState.delete(interaction.user.id);
 
-            return;
+            return dbEntry;
         };
     };
 

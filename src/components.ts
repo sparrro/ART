@@ -84,3 +84,14 @@ export const createRegionMenu = (country: countryType, page: number) => {
 
 };
 
+export const createHdiStartButton = () => {
+    const start = new ButtonBuilder()
+    .setCustomId("start_hdi_recording")
+    .setLabel("Click me!")
+    .setStyle(ButtonStyle.Primary);
+
+    const buttonRow = new ActionRowBuilder<ButtonBuilder>()
+    .addComponents(start);
+
+    return [buttonRow];
+};
