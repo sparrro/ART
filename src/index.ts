@@ -8,8 +8,8 @@ import {
     LOLAPAZ_ID,
 } from "./environment";
 import countries from "../data/hdiData.json";
-import { questionIdType, questionType } from "./types";
-import questions from "../data/testQuestions.json";
+import { allowedQsType, questionType } from "./types";
+import questionsData from "../data/testQuestions.json";
 import {
     Channel,
     Client,
@@ -18,6 +18,8 @@ import {
 } from "discord.js";
 import { paginate, scramble } from "./helpers";
 import { personalisedQuestionsState, testProgressState } from "./state";
+
+const questions = questionsData as questionType[];
 
 let iqChannel: Channel | undefined | null;
 
@@ -103,13 +105,14 @@ client.on("interactionCreate", async (interaction) => {
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_hdi_recording") return;
     await interaction.deferReply();
-    const qCopy = scramble(questions);
+    const qCopy: questionType[] = scramble(questions);
     qCopy.forEach(q => {
         q.options = scramble(q.options);
     });
     const firstQ = qCopy[0];
     qCopy.shift();
     personalisedQuestionsState.set(interaction.user.id, qCopy);
+    testProgressState.set(interaction.user.id, {});
     const components = createIQQuestionnaire(firstQ);
     await interaction.user.send({
         content: firstQ.question,
@@ -129,14 +132,24 @@ client.on("interactionCreate", async (interaction) => {
         o.answer == interaction.values[0]
     );
     answer?.correct ? console.log("Correct!") : console.log("Wrong!");
-    if (answer?.correct) {
-        const qId: questionIdType = question!.category + question!.difficulty;
-        const progress = testProgressState.get(interaction.user.id);
+    const progress = testProgressState.get(interaction.user.id);
+    if (!progress) {
+        console.log("I somehow lost track of the test progress for " + interaction.user.displayName);
+        return;
     };
+    const qId = (question!.category + question!.difficulty) as `${"N" | "V"}${allowedQsType}`;
+    answer?.correct ? progress[qId] = true : progress[qId] = false;
     const qCopy = personalisedQuestionsState.get(interaction.user.id);
     const firstQ = qCopy?.shift();
     if (!firstQ) {
         console.log("That's all for now! Thanks for testing me!");
+        const components = createCountryMenu(0);
+        await interaction.message.edit({
+            content:
+                `Select your country:\n` +
+                `Page ${1}/${countryPages.length}`,
+            components
+        });
         return;
     };
     const components = createIQQuestionnaire(firstQ);
@@ -179,9 +192,8 @@ client.on("interactionCreate", async (interaction) => {
                 return;
             };
 
-            testProgressState.set(interaction.user.id, {
-                country: countryName
-            });
+            const progress = testProgressState.get(interaction.user.id);
+            progress!.country = countryName;
 
             const regionPages = paginate(country.regions);
             const components = createRegionMenu(country, 0);
@@ -218,6 +230,9 @@ client.on("interactionCreate", async (interaction) => {
                     `**${region!.region}** has an HDI of ${region?.hdi}`,
                 components: []
             });
+
+            const progress = testProgressState.get(interaction.user.id);
+            console.log(progress);
             
             const dbEntry = await dbAddHdi(interaction.user.id, region!.hdi);
             console.log(dbEntry)
@@ -287,8 +302,3 @@ client.on("interactionCreate", async (interaction) => {
 });
 
 //iq test
-client.on("interactionCreate", (interaction) =>{
-    if (interaction.isStringSelectMenu()) {
-        if (interaction.customId) {}
-    }
-});
