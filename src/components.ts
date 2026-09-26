@@ -1,14 +1,11 @@
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, StringSelectMenuBuilder, StringSelectMenuOptionBuilder } from "discord.js";
 import countries from "../data/hdiData.json";
+import questions from "../data/questions.json";
 import { paginate } from "./helpers";
-
-type countryType = {
-    country: string,
-    regions: {
-        region: string,
-        hdi: number
-    }[]
-};
+import {
+    questionType,
+    countryType
+} from "./types";
 
 export const countryPages = paginate(countries);
 
@@ -94,4 +91,23 @@ export const createHdiStartButton = () => {
     .addComponents(start);
 
     return [buttonRow];
+};
+
+export const createIQQuestionnaire = (question: questionType) => {
+
+    const menu = new StringSelectMenuBuilder()
+    .setCustomId(question.question)
+    .setPlaceholder("Choose the right answer")
+    .addOptions(
+        question.options.map(option =>
+            new StringSelectMenuOptionBuilder()
+            .setLabel(option.answer)
+            .setValue(option.answer)
+        )
+    );
+
+    const menuRow = new ActionRowBuilder<StringSelectMenuBuilder>()
+    .addComponents(menu)
+
+    return [menuRow];
 };

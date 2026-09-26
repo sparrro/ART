@@ -1,4 +1,4 @@
-import { API_BASE_URL } from "./config/environment";
+import { API_BASE_URL } from "./environment";
 
 export const dbAdd = async (id: string, score: string) => {
     try {

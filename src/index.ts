@@ -1,13 +1,15 @@
 import { dbAdd, dbAddHdi, dbTest } from "./apiCalls";
-import { countryPages, createCountryMenu, createHdiStartButton, createRegionMenu } from "./components";
+import { countryPages, createCountryMenu, createHdiStartButton, createIQQuestionnaire, createRegionMenu } from "./components";
 import {
     TOKEN,
     SERVER_ID,
     MY_ID,
     IQ_CHANNEL_ID,
     LOLAPAZ_ID,
-} from "./config/environment";
+} from "./environment";
 import countries from "../data/hdiData.json";
+import { questionType } from "./types";
+import questions from "../data/questions.json";
 import {
     Channel,
     Client,
@@ -71,7 +73,6 @@ client.once("clientReady", async () => {
     } else {
         const startBtn = createHdiStartButton();
         const channelMsgs = await iqChannel.messages.fetch({limit: 1});
-        console.log(channelMsgs);
         if (channelMsgs.size == 0) {
             await iqChannel.send({
                 content: "Click my button to record your hdi",
@@ -85,7 +86,7 @@ client.once("clientReady", async () => {
 client.login(TOKEN);
 
 //start hdi test
-client.on("interactionCreate", async (interaction) => {
+/* client.on("interactionCreate", async (interaction) => {
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_hdi_recording") return;
     const components = createCountryMenu(0);
@@ -95,6 +96,31 @@ client.on("interactionCreate", async (interaction) => {
             `Page ${1}/${countryPages.length}`,
         components
     });
+    return;
+}); */
+
+client.on("interactionCreate", async (interaction) => {
+    if (!interaction.isButton()) return;
+    if (interaction.customId != "start_hdi_recording") return;
+    const qCopy = questions;
+    const components = createIQQuestionnaire(questions[0]);
+    await interaction.user.send({
+        content: questions[0].question,
+        components
+    });
+    return;
+});
+
+client.on("interactionCreate", async (interaction) => {
+    if (!interaction.isStringSelectMenu()) return;
+    if (!interaction.customId.endsWith("?")) return;
+    const question = questions.find(q =>
+        q.question == interaction.customId
+    );
+    const answer = question!.options.find(o =>
+        o.answer == interaction.values[0]
+    );
+    await interaction.update(answer?.correct ? "Correct!" : "Wrong!")
     return;
 });
 
@@ -235,4 +261,11 @@ client.on("interactionCreate", async (interaction) => {
             return;
         }
     }
-})
+});
+
+//iq test
+client.on("interactionCreate", (interaction) =>{
+    if (interaction.isStringSelectMenu()) {
+        if (interaction.customId) {}
+    }
+});
