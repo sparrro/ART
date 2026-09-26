@@ -8,16 +8,16 @@ import {
     LOLAPAZ_ID,
 } from "./environment";
 import countries from "../data/hdiData.json";
-import { questionType } from "./types";
-import questions from "../data/questions.json";
+import { questionIdType, questionType } from "./types";
+import questions from "../data/testQuestions.json";
 import {
     Channel,
     Client,
     GatewayIntentBits,
     TextChannel,
 } from "discord.js";
-import { paginate } from "./helpers";
-import { countrySelectionState } from "./state";
+import { paginate, scramble } from "./helpers";
+import { personalisedQuestionsState, testProgressState } from "./state";
 
 let iqChannel: Channel | undefined | null;
 
@@ -48,7 +48,7 @@ client.once("clientReady", async () => {
 
     const herOfficial = server.members.cache.get(LOLAPAZ_ID!);
 
-    /* for (const member of [father, herOfficial]) {
+    for (const member of [father, herOfficial]) {
         try {
             const dm = await member?.createDM();
 
@@ -62,7 +62,7 @@ client.once("clientReady", async () => {
         } catch (err) {
             console.log(err);
         };
-    }; */
+    };
 
     await father?.send("I'm online");
 
@@ -102,10 +102,17 @@ client.login(TOKEN);
 client.on("interactionCreate", async (interaction) => {
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_hdi_recording") return;
-    const qCopy = questions;
-    const components = createIQQuestionnaire(questions[0]);
+    await interaction.deferReply();
+    const qCopy = scramble(questions);
+    qCopy.forEach(q => {
+        q.options = scramble(q.options);
+    });
+    const firstQ = qCopy[0];
+    qCopy.shift();
+    personalisedQuestionsState.set(interaction.user.id, qCopy);
+    const components = createIQQuestionnaire(firstQ);
     await interaction.user.send({
-        content: questions[0].question,
+        content: firstQ.question,
         components
     });
     return;
@@ -114,13 +121,29 @@ client.on("interactionCreate", async (interaction) => {
 client.on("interactionCreate", async (interaction) => {
     if (!interaction.isStringSelectMenu()) return;
     if (!interaction.customId.endsWith("?")) return;
+    await interaction.deferUpdate();
     const question = questions.find(q =>
         q.question == interaction.customId
     );
     const answer = question!.options.find(o =>
         o.answer == interaction.values[0]
     );
-    await interaction.update(answer?.correct ? "Correct!" : "Wrong!")
+    answer?.correct ? console.log("Correct!") : console.log("Wrong!");
+    if (answer?.correct) {
+        const qId: questionIdType = question!.category + question!.difficulty;
+        const progress = testProgressState.get(interaction.user.id);
+    };
+    const qCopy = personalisedQuestionsState.get(interaction.user.id);
+    const firstQ = qCopy?.shift();
+    if (!firstQ) {
+        console.log("That's all for now! Thanks for testing me!");
+        return;
+    };
+    const components = createIQQuestionnaire(firstQ);
+    await interaction.message.edit({
+        content: firstQ.question,
+        components
+    });
     return;
 });
 
@@ -156,7 +179,7 @@ client.on("interactionCreate", async (interaction) => {
                 return;
             };
 
-            countrySelectionState.set(interaction.user.id, {
+            testProgressState.set(interaction.user.id, {
                 country: countryName
             });
 
@@ -174,7 +197,7 @@ client.on("interactionCreate", async (interaction) => {
         //region selected
         if (interaction.customId.startsWith("region_select")) {
 
-            const state = countrySelectionState.get(interaction.user.id);
+            const state = testProgressState.get(interaction.user.id);
             if (!state?.country) {
                 console.log("Couldn't remember the country");
                 return;
@@ -199,7 +222,7 @@ client.on("interactionCreate", async (interaction) => {
             const dbEntry = await dbAddHdi(interaction.user.id, region!.hdi);
             console.log(dbEntry)
 
-            countrySelectionState.delete(interaction.user.id);
+            testProgressState.delete(interaction.user.id);
 
             return dbEntry;
         };
@@ -234,7 +257,7 @@ client.on("interactionCreate", async (interaction) => {
 
         if (type == "region") {
 
-            const state = countrySelectionState.get(
+            const state = testProgressState.get(
                 interaction.user.id
             );
             if (!state?.country) {

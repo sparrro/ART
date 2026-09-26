@@ -5,3 +5,14 @@ export const paginate = <T>(array: T[]): T[][] => {
     };
     return pages;
 };
+
+export const scramble = <T>(a: T[]) => {
+    const copyA: T[] = a.slice();
+    for (let i = 0; i < copyA.length; i++) {
+        const current = copyA[i];
+        const random = Math.floor(Math.random() * (i + 1));
+        copyA[i] = copyA[random];
+        copyA[random] = current;
+    };
+    return copyA;
+};

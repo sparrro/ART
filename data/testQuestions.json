@@ -1,0 +1,95 @@
+[
+    {
+        "category": "V",
+        "difficulty": "_1",
+        "question": "Which of these is a vowel?",
+        "options": [
+            {
+                "answer": "A",
+                "correct": true
+            },
+            {
+                "answer": "B",
+                "correct": false
+            },
+            {
+                "answer": "C",
+                "correct": false
+            },
+            {
+                "answer": "D",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "category": "V",
+        "difficulty": "_2",
+        "question": "What is the opposite of hot?",
+        "options": [
+            {
+                "answer": "slimy",
+                "correct": false
+            },
+            {
+                "answer": "turkish",
+                "correct": false
+            },
+            {
+                "answer": "cold",
+                "correct": true
+            },
+            {
+                "answer": "elegant",
+                "correct": false
+            }
+
+        ]
+    },
+    {
+        "category": "V",
+        "difficulty": "_3",
+        "question": "Which sentence is an example of the passive voice?",
+        "options": [
+            {
+                "answer": "The suspect died in an officer-involved shooting",
+                "correct": false
+            },
+            {
+                "answer": "Such practices are best avoided, most would say",
+                "correct": true
+            },
+            {
+                "answer": "There may have been mistakes in our conduct",
+                "correct": false
+            },
+            {
+                "answer": "The disputes have led to much violence",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "category": "V",
+        "difficulty": "_4",
+        "question": "Cod : roe - chicken : ?",
+        "options": [
+            {
+                "answer": "shit",
+                "correct": false
+            },
+            {
+                "answer": "egg",
+                "correct": true
+            },
+            {
+                "answer": "nugget",
+                "correct": false
+            },
+            {
+                "answer": "little",
+                "correct": false
+            }
+        ]
+    }
+]

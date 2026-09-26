@@ -1,3 +1,5 @@
+import { questionType } from "./types";
+
 type testProgressType = {
     country?: string,
     V_1?: boolean,
@@ -42,4 +44,6 @@ type testProgressType = {
     N_20?: boolean
 };
 
-export const countrySelectionState = new Map<string, testProgressType>();
+export const testProgressState = new Map<string, testProgressType>();
+
+export const personalisedQuestionsState = new Map<string, questionType[]>();
