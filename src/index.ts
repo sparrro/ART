@@ -160,22 +160,6 @@ client.on("interactionCreate", async (interaction) => {
     return;
 });
 
-//test for api connection
-client.on("messageCreate", async (message) => {
-    if (message.author.id != MY_ID) return;
-    if (message.content.toLowerCase().includes("store")) {
-        const extracts = message.content.match(/"([^"]+)"/);
-        if (!extracts) {
-            console.log("No userId found");
-            return;
-        };
-        const userId = extracts[1];
-        const score = message.content.slice(-3);
-        const response = await dbAdd(userId, score);
-        console.log(response);
-    };
-});
-
 //country + region selection
 client.on("interactionCreate", async (interaction) => {
     if (interaction.isStringSelectMenu()) {

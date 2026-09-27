@@ -1,13 +1,21 @@
 import { API_BASE_URL } from "./environment";
+import { resultDataType } from "./types";
 
-export const dbAdd = async (id: string, score: string) => {
+export const dbAdd = async (input: resultDataType) => {
     try {
         console.log(`${API_BASE_URL}/add`)
         const response = await fetch(`${API_BASE_URL}/add`, {
             method: "post",
             body: JSON.stringify({
-                "userId": id,
-                "score": score
+                "userId": input.userId,
+                "score": input.score,
+                "verbalScore": input.verbalScore,
+                "numericalScore": input.numericalScore,
+                "abstractScore": input.abstractScore,
+                "generalKnowledge": input.generalKnowledge,
+                "hdi": input.hdi,
+                "country": input.country,
+                "region": input.region
             }),
             headers: {
                 "Content-Type": "application/json"
