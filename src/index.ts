@@ -104,7 +104,7 @@ client.login(TOKEN);
 client.on("interactionCreate", async (interaction) => {
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_hdi_recording") return;
-    await interaction.deferReply();
+    await interaction.deferUpdate();
     const qCopy: questionType[] = scramble(questions);
     qCopy.forEach(q => {
         q.options = scramble(q.options);
