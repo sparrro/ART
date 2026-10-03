@@ -20,12 +20,12 @@ export type countryType = {
 
 export type resultDataType = {
     userId: string,
-    score: number,
-    verbalScore: number,
-    numericalScore: number,
-    abstractScore: number,
-    generalKnowledge: number,
-    hdi: number,
-    country: string,
-    region: string
+    score?: number,
+    verbalScore?: number,
+    numericalScore?: number,
+    abstractScore?: number,
+    generalKnowledge?: number,
+    hdi?: number,
+    country?: string,
+    region?: string
 };

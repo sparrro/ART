@@ -16,7 +16,7 @@ import {
     GatewayIntentBits,
     TextChannel,
 } from "discord.js";
-import { paginate, scramble } from "./helpers";
+import { countScores, paginate, scramble } from "./helpers";
 import { personalisedQuestionsState, testProgressState } from "./state";
 
 const questions = questionsData as questionType[];
@@ -215,10 +215,16 @@ client.on("interactionCreate", async (interaction) => {
                 components: []
             });
 
-            const progress = testProgressState.get(interaction.user.id);
-            console.log(progress);
             
-            const dbEntry = await dbAddHdi(interaction.user.id, region!.hdi);
+            state!.region = region?.region;
+            state!.hdi = region?.hdi;
+
+            console.log(state);
+
+            const score = countScores(interaction.user.id, state);
+            console.log(score);
+            
+            const dbEntry = await dbAddHdi(interaction.user.id, state.country, region!.region, region!.hdi);
             console.log(dbEntry)
 
             testProgressState.delete(interaction.user.id);
