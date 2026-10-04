@@ -112,16 +112,19 @@ export const createStartButtons = () => {
 
     const hdi = new ButtonBuilder()
     .setCustomId("start_hdi_recording")
-    .setLabel("Record ")
+    .setLabel("Record your region and hdi")
     .setStyle(ButtonStyle.Secondary);
 
     const mainButtonRow = new ActionRowBuilder<ButtonBuilder>()
-    .addComponents(full);
+    .addComponents(full, hdi);
 
-    const secondaryButtonRow = new ActionRowBuilder<ButtonBuilder>()
-    .addComponents(verbal, numerical, abstract, general, hdi)
+    const verbalRow = new ActionRowBuilder<ButtonBuilder>()
+    .addComponents(verbal, numerical);
 
-    return [mainButtonRow, secondaryButtonRow];
+    const abstractRow = new ActionRowBuilder<ButtonBuilder>()
+    .addComponents(abstract, general);
+
+    return [mainButtonRow, verbalRow, abstractRow];
 };
 
 
