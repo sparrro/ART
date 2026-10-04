@@ -81,17 +81,52 @@ export const createRegionMenu = (country: countryType, page: number) => {
 
 };
 
-export const createHdiStartButton = () => {
-    const start = new ButtonBuilder()
-    .setCustomId("start_hdi_recording")
-    .setLabel("Click me!")
+
+//test start buttons
+export const createStartButtons = () => {
+
+    const full = new ButtonBuilder()
+    .setCustomId("start_full_test")
+    .setLabel("Do the full test")
     .setStyle(ButtonStyle.Primary);
+    
+    const verbal = new ButtonBuilder()
+    .setCustomId("start_verbal_test")
+    .setLabel("Do verbal reasoning test")
+    .setStyle(ButtonStyle.Secondary);
 
-    const buttonRow = new ActionRowBuilder<ButtonBuilder>()
-    .addComponents(start);
+    const numerical = new ButtonBuilder()
+    .setCustomId("start_numerical_test")
+    .setLabel("Do numerical reasoning test")
+    .setStyle(ButtonStyle.Secondary);
 
-    return [buttonRow];
+    const abstract = new ButtonBuilder()
+    .setCustomId("start_abstract_test")
+    .setLabel("Do abstract reasoning test")
+    .setStyle(ButtonStyle.Secondary);
+
+    const general = new ButtonBuilder()
+    .setCustomId("start_general_test")
+    .setLabel("Do general knowledge test")
+    .setStyle(ButtonStyle.Secondary);
+
+    const hdi = new ButtonBuilder()
+    .setCustomId("start_hdi_recording")
+    .setLabel("Record ")
+    .setStyle(ButtonStyle.Secondary);
+
+    const mainButtonRow = new ActionRowBuilder<ButtonBuilder>()
+    .addComponents(full);
+
+    const secondaryButtonRow = new ActionRowBuilder<ButtonBuilder>()
+    .addComponents(verbal, numerical, abstract, general, hdi)
+
+    return [mainButtonRow, secondaryButtonRow];
 };
+
+
+
+
 
 export const createIQQuestionnaire = (question: questionType) => {
 

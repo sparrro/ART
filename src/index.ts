@@ -1,5 +1,5 @@
 import { dbAdd, dbAddHdi, dbTest } from "./apiCalls";
-import { countryPages, createCountryMenu, createHdiStartButton, createIQQuestionnaire, createRegionMenu } from "./components";
+import { countryPages, createCountryMenu, createIQQuestionnaire, createRegionMenu, createStartButtons } from "./components";
 import {
     TOKEN,
     SERVER_ID,
@@ -42,13 +42,10 @@ client.once("clientReady", async () => {
         return;
     };
 
-    const components = createCountryMenu(0);
-
     await server.members.fetch();
     const father = server.members.cache.get(MY_ID!);
     
-
-    const herOfficial = server.members.cache.get(LOLAPAZ_ID!);
+    /* const herOfficial = server.members.cache.get(LOLAPAZ_ID!);
 
     for (const member of [father, herOfficial]) {
         try {
@@ -64,7 +61,7 @@ client.once("clientReady", async () => {
         } catch (err) {
             console.log(err);
         };
-    };
+    }; */
 
     await father?.send("I'm online");
 
@@ -73,14 +70,21 @@ client.once("clientReady", async () => {
     if (!iqChannel) {
         console.log("Couldn't find the iq channel");
     } else {
-        const startBtn = createHdiStartButton();
+        /* const startBtn = createHdiStartButton();
         const channelMsgs = await iqChannel.messages.fetch({limit: 1});
         if (channelMsgs.size == 0) {
             await iqChannel.send({
                 content: "Click my button to record your hdi",
                 components: startBtn
             });
-        };
+        }; */
+
+        const components = createStartButtons();
+
+        await iqChannel.send({
+            content: "Do my whole IQ test at once or one section at a time",
+            components
+        });
     };
 
 });
