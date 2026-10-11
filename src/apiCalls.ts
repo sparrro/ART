@@ -1,10 +1,9 @@
 import { API_BASE_URL } from "./environment";
-import { resultDataType } from "./types";
+import { backGroundDataType, resultDataType } from "./types";
 
 export const dbAdd = async (input: resultDataType) => {
     try {
-        console.log(`${API_BASE_URL}/add`)
-        const response = await fetch(`${API_BASE_URL}/add`, {
+        const response = await fetch(`${API_BASE_URL}/results/add`, {
             method: "post",
             body: JSON.stringify({
                 "userId": input.userId,
@@ -29,7 +28,7 @@ export const dbAdd = async (input: resultDataType) => {
 
 export const dbAddHdi = async (id: string, country: string, region: string, hdi: number) => {
     try {
-        const response = await fetch(`${API_BASE_URL}/hdi`, {
+        const response = await fetch(`${API_BASE_URL}/results/hdi`, {
             method: "post",
             body: JSON.stringify({
                 "userId": id,
@@ -50,7 +49,7 @@ export const dbAddHdi = async (id: string, country: string, region: string, hdi:
 
 export const dbAddVerbal = async (id: string, verbalScore: number) => {
     try {
-        const response = await fetch(`${API_BASE_URL}/verbal`, {
+        const response = await fetch(`${API_BASE_URL}/results/verbal`, {
             method: "post",
             body: JSON.stringify({
                 "userId": id,
@@ -69,7 +68,7 @@ export const dbAddVerbal = async (id: string, verbalScore: number) => {
 
 export const dbAddNumerical = async (id: string, numericalScore: number) => {
     try {
-        const response = await fetch(`${API_BASE_URL}/numerical`, {
+        const response = await fetch(`${API_BASE_URL}/results/numerical`, {
             method: "post",
             body: JSON.stringify({
                 "userId": id,
@@ -88,7 +87,7 @@ export const dbAddNumerical = async (id: string, numericalScore: number) => {
 
 export const dbAddAbstract = async (id: string, abstractScore: number) => {
     try {
-        const response = await fetch(`${API_BASE_URL}/abstract`, {
+        const response = await fetch(`${API_BASE_URL}/results/abstract`, {
             method: "post",
             body: JSON.stringify({
                 "userId": id,
@@ -107,7 +106,7 @@ export const dbAddAbstract = async (id: string, abstractScore: number) => {
 
 export const dbAddGeneral = async (id: string, generalKnowledge: number) => {
     try {
-        const response = await fetch(`${API_BASE_URL}/general`, {
+        const response = await fetch(`${API_BASE_URL}/results/general`, {
             method: "post",
             body: JSON.stringify({
                 "userId": id,
@@ -126,7 +125,7 @@ export const dbAddGeneral = async (id: string, generalKnowledge: number) => {
 
 export const dbGetOne = async (id: string) => {
     try {
-        const response = await fetch(`${API_BASE_URL}/${id}`, {
+        const response = await fetch(`${API_BASE_URL}/results/${id}`, {
             method: "get",
             headers: {
                 "Content-Type": "application/json"
@@ -142,6 +141,38 @@ export const dbGetOne = async (id: string) => {
 export const dbTest = async () => {
     try {
         const response = await fetch(API_BASE_URL!, {
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await response.json();
+        return data;
+    } catch (err) {
+        return err;
+    };
+};
+
+//background data ones
+export const dbDataAdd = async (input: backGroundDataType) => {
+    try {
+        const response = await fetch(`${API_BASE_URL}/data/add`, {
+            method: "post",
+            body: JSON.stringify(input),
+            headers: {
+                "Content-type": "application/json"
+            }
+        });
+        const data = await response.json();
+        return data;
+    } catch (err) {
+        return err;
+    };
+};
+
+export const dbDataRetrieve = async (userId: string) => {
+    try {
+        const response = await fetch(`${API_BASE_URL}/data/${userId}`, {
+            method: "get",
             headers: {
                 "Content-Type": "application/json"
             }

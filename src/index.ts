@@ -1,4 +1,4 @@
-import { dbAdd, dbAddHdi, dbTest } from "./apiCalls";
+import { dbAdd, dbAddAbstract, dbAddHdi, dbAddVerbal, dbDataAdd, dbDataRetrieve, dbGetOne, dbTest } from "./apiCalls";
 import { countryPages, createCountryMenu, createIQQuestionnaire, createRegionMenu, createStartButtons } from "./components";
 import {
     TOKEN,
@@ -79,12 +79,12 @@ client.once("clientReady", async () => {
             });
         }; */
 
-        const components = createStartButtons();
+        /* const components = createStartButtons();
 
         await iqChannel.send({
             content: "Do my whole IQ test at once or one section at a time",
             components
-        });
+        }); */
     };
 
 });
@@ -294,5 +294,3 @@ client.on("interactionCreate", async (interaction) => {
         }
     }
 });
-
-//iq test

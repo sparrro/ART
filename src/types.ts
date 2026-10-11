@@ -29,3 +29,18 @@ export type resultDataType = {
     country?: string,
     region?: string
 };
+
+export type questionAndAnswerType = {
+    question: string,
+    answer: string,
+    correct: boolean,
+    difficulty: number
+};
+
+export type backGroundDataType = {
+    userId: string,
+    verbalAnswers?: questionAndAnswerType[],
+    numericalAnswers?: questionAndAnswerType[],
+    abstractAnswers?: questionAndAnswerType[],
+    generalAnswers?: questionAndAnswerType[],
+};
