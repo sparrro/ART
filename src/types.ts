@@ -22,9 +22,13 @@ export type resultDataType = {
     userId: string,
     score?: number,
     verbalScore?: number,
+    verbalUpdatedAt?: number,
     numericalScore?: number,
+    numericalUpdatedAt?: number,
     abstractScore?: number,
+    abstractUpdatedAt?: number,
     generalKnowledge?: number,
+    generalUpdatedAt?: number,
     hdi?: number,
     country?: string,
     region?: string

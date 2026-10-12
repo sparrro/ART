@@ -8,7 +8,7 @@ import {
     LOLAPAZ_ID,
 } from "./environment";
 import countries from "../data/hdiData.json";
-import { allowedQsType, questionType } from "./types";
+import { allowedQsType, questionType, resultDataType } from "./types";
 import questionsData from "../data/testQuestions.json";
 import {
     Channel,
@@ -293,4 +293,116 @@ client.on("interactionCreate", async (interaction) => {
             return;
         }
     }
+});
+
+//test start buttons
+
+client.on("interactionCreate", async (interaction) => {
+    if (!interaction.isButton()) return;
+    if (interaction.customId != "start_full_test") return;
+    interaction.deferUpdate();
+    const priorTest = await dbGetOne(interaction.user.id);
+    if (priorTest.success) {
+        const oldResult: resultDataType = priorTest.data
+        if (
+            !oldResult.verbalScore ||
+            !oldResult.numericalScore ||
+            !oldResult.abstractScore ||
+            !oldResult.generalKnowledge ||
+            !oldResult.hdi
+        ) {
+            await interaction.user.send("As you have already done some parts of the test separately you may not do the full test\nInstead, you must also do the remaining parts separately");
+            return;
+        };
+        const now = Date.now();
+        const verbalTime = new Date(oldResult.verbalUpdatedAt!).toLocaleDateString();
+        const numericalTime = new Date(oldResult.numericalUpdatedAt!).toLocaleDateString();
+        const abstractTime = new Date(oldResult.abstractUpdatedAt!).toLocaleDateString();
+        const generalTime = new Date(oldResult.generalUpdatedAt!).toLocaleDateString();
+        const sixMonths = 1000 * 60 * 60 * 24 * 30;
+        if (now - oldResult.verbalUpdatedAt! < sixMonths) {
+            await interaction.user.send(`You must wait six months before retaking the test or any part of it\nYou most recently took the verbal reasoning test on ${verbalTime}`);
+            return;
+        };
+        if (now - oldResult.numericalUpdatedAt! < sixMonths) {
+            await interaction.user.send(`You must wait six months before retaking the test or any part of it\nYou most recently took the numerical reasoning test on ${numericalTime}`);
+            return;
+        };
+        if (now - oldResult.abstractUpdatedAt! < sixMonths) {
+            await interaction.user.send(`You must wait six months before retaking the test or any part of it\nYou most recently took the abstract reasoning test on ${abstractTime}`);
+            return;
+        };
+        if (now - oldResult.generalUpdatedAt! < sixMonths) {
+            await interaction.user.send(`You must wait six months before retaking the test or any part of it\nYou most recently took the general knowledge test on ${generalTime}`);
+            return;
+        };
+    }
+});
+
+//verbal test
+client.on("interactionCreate", async (interaction) => {
+    if (!interaction.isButton()) return;
+    if (interaction.customId != "start_verbal_test") return;
+    const priorTest = await dbGetOne(interaction.user.id);
+    if (priorTest.success && priorTest.data.verbalScore) {
+        const oldResult: resultDataType = priorTest.data;
+        const now = Date.now();
+        const verbalTime = new Date(oldResult.verbalUpdatedAt!).toLocaleDateString();
+        const sixMonths = 1000 * 60 * 60 * 24 * 30;
+        if (now - oldResult.verbalUpdatedAt! < sixMonths) {
+            await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the verbal reasoning test on ${verbalTime}`);
+            return;
+        };
+    };
+});
+
+//numerical test
+client.on("interactionCreate", async (interaction) => {
+    if (!interaction.isButton()) return;
+    if (interaction.customId != "start_numerical_test") return;
+    const priorTest = await dbGetOne(interaction.user.id);
+    if (priorTest.success && priorTest.data.numericalScore) {
+        const oldResult: resultDataType = priorTest.data;
+        const now = Date.now();
+        const numericalTime = new Date(oldResult.numericalUpdatedAt!).toLocaleDateString();
+        const sixMonths = 1000 * 60 * 60 * 24 * 30;
+        if (now - oldResult.numericalUpdatedAt! < sixMonths) {
+            await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the verbal reasoning test on ${numericalTime}`);
+            return;
+        };
+    };
+});
+
+//abstract test
+client.on("interactionCreate", async (interaction) => {
+    if (!interaction.isButton()) return;
+    if (interaction.customId != "start_abstract_test") return;
+    const priorTest = await dbGetOne(interaction.user.id);
+    if (priorTest.success && priorTest.data.abstractScore) {
+        const oldResult: resultDataType = priorTest.data;
+        const now = Date.now();
+        const abstractTime = new Date(oldResult.abstractUpdatedAt!).toLocaleDateString();
+        const sixMonths = 1000 * 60 * 60 * 24 * 30;
+        if (now - oldResult.abstractUpdatedAt! < sixMonths) {
+            await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the verbal reasoning test on ${abstractTime}`);
+            return;
+        };
+    };
+});
+
+//general knowledge test
+client.on("interactionCreate", async (interaction) => {
+    if (!interaction.isButton()) return;
+    if (interaction.customId != "start_general_test") return;
+    const priorTest = await dbGetOne(interaction.user.id);
+    if (priorTest.success && priorTest.data.generalKnowledge) {
+        const oldResult: resultDataType = priorTest.data;
+        const now = Date.now();
+        const generalTime = new Date(oldResult.generalUpdatedAt!).toLocaleDateString();
+        const sixMonths = 1000 * 60 * 60 * 24 * 30;
+        if (now - oldResult.generalUpdatedAt! < sixMonths) {
+            await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the verbal reasoning test on ${generalTime}`);
+            return;
+        };
+    };
 });
