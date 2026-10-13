@@ -16,7 +16,7 @@ import {
     GatewayIntentBits,
     TextChannel,
 } from "discord.js";
-import { countScores, paginate, scramble } from "./helpers";
+import { countScores, paginate, scramble, splitQuestions } from "./helpers";
 import { personalisedQuestionsState, testProgressState } from "./state";
 
 const questions = questionsData as questionType[];
@@ -297,6 +297,7 @@ client.on("interactionCreate", async (interaction) => {
 
 //test start buttons
 
+//full test
 client.on("interactionCreate", async (interaction) => {
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_full_test") return;
@@ -319,24 +320,27 @@ client.on("interactionCreate", async (interaction) => {
         const numericalTime = new Date(oldResult.numericalUpdatedAt!).toLocaleDateString();
         const abstractTime = new Date(oldResult.abstractUpdatedAt!).toLocaleDateString();
         const generalTime = new Date(oldResult.generalUpdatedAt!).toLocaleDateString();
-        const sixMonths = 1000 * 60 * 60 * 24 * 30;
+        const sixMonths = 1000 * 60 * 60 * 24 * 30 * 6;
+        const tooSoon = [false, false, false, false]
         if (now - oldResult.verbalUpdatedAt! < sixMonths) {
-            await interaction.user.send(`You must wait six months before retaking the test or any part of it\nYou most recently took the verbal reasoning test on ${verbalTime}`);
-            return;
+            tooSoon[0] = true;
         };
         if (now - oldResult.numericalUpdatedAt! < sixMonths) {
-            await interaction.user.send(`You must wait six months before retaking the test or any part of it\nYou most recently took the numerical reasoning test on ${numericalTime}`);
-            return;
+            tooSoon[1] = true;
         };
         if (now - oldResult.abstractUpdatedAt! < sixMonths) {
-            await interaction.user.send(`You must wait six months before retaking the test or any part of it\nYou most recently took the abstract reasoning test on ${abstractTime}`);
-            return;
+            tooSoon[2] = true;
         };
         if (now - oldResult.generalUpdatedAt! < sixMonths) {
-            await interaction.user.send(`You must wait six months before retaking the test or any part of it\nYou most recently took the general knowledge test on ${generalTime}`);
-            return;
+            tooSoon[3] = true;
         };
-    }
+        if (tooSoon.includes(true)) {
+            const message = `You must wait six months before retaking the test or any part of it\n${tooSoon[0] == true ? `You last took the verbal reasoning test on ${verbalTime}\n` : ""}${tooSoon[1] == true ? `You last took the numerical reasoning test on ${numericalTime}\n` : ""}${tooSoon[2] == true ? `You last took the abstract reasoning test on ${abstractTime}\n` : ""}${tooSoon[3] == true ? `You last took the general knowledge test on ${generalTime}` : ""}`;
+            await interaction.user.send(message);
+            return;
+        }
+    };
+    const qCopy = scramble(questions);
 });
 
 //verbal test
@@ -348,12 +352,13 @@ client.on("interactionCreate", async (interaction) => {
         const oldResult: resultDataType = priorTest.data;
         const now = Date.now();
         const verbalTime = new Date(oldResult.verbalUpdatedAt!).toLocaleDateString();
-        const sixMonths = 1000 * 60 * 60 * 24 * 30;
+        const sixMonths = 1000 * 60 * 60 * 24 * 30 * 6;
         if (now - oldResult.verbalUpdatedAt! < sixMonths) {
             await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the verbal reasoning test on ${verbalTime}`);
             return;
         };
     };
+    const qCopy = scramble(splitQuestions("V"));
 });
 
 //numerical test
@@ -365,12 +370,13 @@ client.on("interactionCreate", async (interaction) => {
         const oldResult: resultDataType = priorTest.data;
         const now = Date.now();
         const numericalTime = new Date(oldResult.numericalUpdatedAt!).toLocaleDateString();
-        const sixMonths = 1000 * 60 * 60 * 24 * 30;
+        const sixMonths = 1000 * 60 * 60 * 24 * 30 * 6;
         if (now - oldResult.numericalUpdatedAt! < sixMonths) {
-            await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the verbal reasoning test on ${numericalTime}`);
+            await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the numerical reasoning test on ${numericalTime}`);
             return;
         };
     };
+    const qCopy = scramble(splitQuestions("N"));
 });
 
 //abstract test
@@ -382,12 +388,13 @@ client.on("interactionCreate", async (interaction) => {
         const oldResult: resultDataType = priorTest.data;
         const now = Date.now();
         const abstractTime = new Date(oldResult.abstractUpdatedAt!).toLocaleDateString();
-        const sixMonths = 1000 * 60 * 60 * 24 * 30;
+        const sixMonths = 1000 * 60 * 60 * 24 * 30 * 6;
         if (now - oldResult.abstractUpdatedAt! < sixMonths) {
-            await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the verbal reasoning test on ${abstractTime}`);
+            await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the abstract reasoning test on ${abstractTime}`);
             return;
         };
     };
+    const qCopy = scramble(splitQuestions("A"));
 });
 
 //general knowledge test
@@ -399,10 +406,11 @@ client.on("interactionCreate", async (interaction) => {
         const oldResult: resultDataType = priorTest.data;
         const now = Date.now();
         const generalTime = new Date(oldResult.generalUpdatedAt!).toLocaleDateString();
-        const sixMonths = 1000 * 60 * 60 * 24 * 30;
+        const sixMonths = 1000 * 60 * 60 * 24 * 30 * 6;
         if (now - oldResult.generalUpdatedAt! < sixMonths) {
-            await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the verbal reasoning test on ${generalTime}`);
+            await interaction.user.send(`You must wait six months before retaking a part of the test\nYou most recently took the general knowledge test on ${generalTime}`);
             return;
         };
     };
+    const qCopy = scramble(splitQuestions("G"));
 });

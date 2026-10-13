@@ -1,5 +1,8 @@
 import { testProgressType } from "./state";
-import { resultDataType } from "./types";
+import { questionType, resultDataType } from "./types";
+import questionsData from "../data/questions.json";
+
+const questions = questionsData as questionType[];
 
 export const paginate = <T>(array: T[]): T[][] => {
     const pages: T[][] = [];
@@ -50,4 +53,9 @@ export const countScores = (id: string, input: testProgressType) => {
         score: 1 //placeholder; will be calculated once there's enough data from people taking the test
     }
     return finalScores;
+};
+
+export const splitQuestions = (category: "V" | "N" | "A" | "G") => {
+    const categoryQuestions = questions.filter(question => question.category == category);
+    return categoryQuestions;
 };
