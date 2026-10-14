@@ -17,7 +17,7 @@ import {
     TextChannel,
 } from "discord.js";
 import { countScores, paginate, preventedFromTesting, scramble, splitQuestions } from "./helpers";
-import { personalisedQuestionsState, testProgressState } from "./state";
+import { backgroundProgressState, personalisedQuestionsState, testProgressState } from "./state";
 
 const questions = questionsData as questionType[];
 
@@ -126,9 +126,11 @@ client.on("interactionCreate", async (interaction) => {
 });
 
 client.on("interactionCreate", async (interaction) => {
+
     if (!interaction.isStringSelectMenu()) return;
     if (!interaction.customId.endsWith("?")) return;
     await interaction.deferUpdate();
+
     const question = questions.find(q =>
         q.question == interaction.customId
     );
@@ -311,6 +313,27 @@ client.on("interactionCreate", async (interaction) => {
     };
 
     const qCopy = scramble(questions);
+    qCopy.forEach(q => {
+        q.options = scramble(q.options);
+    });
+
+    const firstQ = qCopy[0];
+    qCopy.shift();
+    personalisedQuestionsState.set(interaction.user.id, qCopy);
+    testProgressState.set(interaction.user.id, {});
+    backgroundProgressState.set(interaction.user.id, {
+        userId: interaction.user.id,
+        verbalAnswers: [],
+        numericalAnswers: [],
+        abstractAnswers: [],
+        generalAnswers: []
+    });
+
+    const components = createIQQuestionnaire(firstQ);
+    await interaction.user.send({
+        content: firstQ.question,
+        components
+    });
 });
 
 //verbal test
@@ -327,6 +350,24 @@ client.on("interactionCreate", async (interaction) => {
     };
 
     const qCopy = scramble(splitQuestions("V"));
+    qCopy.forEach(q => {
+        q.options = scramble(q.options);
+    });
+
+    const firstQ = qCopy[0];
+    qCopy.shift();
+    personalisedQuestionsState.set(interaction.user.id, qCopy);
+    testProgressState.set(interaction.user.id, {});
+    backgroundProgressState.set(interaction.user.id, {
+        userId: interaction.user.id,
+        verbalAnswers: []
+    });
+
+    const components = createIQQuestionnaire(firstQ);
+    await interaction.user.send({
+        content: firstQ.question,
+        components
+    });
 });
 
 //numerical test
@@ -343,6 +384,24 @@ client.on("interactionCreate", async (interaction) => {
     };
 
     const qCopy = scramble(splitQuestions("N"));
+    qCopy.forEach(q => {
+        q.options = scramble(q.options);
+    });
+
+    const firstQ = qCopy[0];
+    qCopy.shift();
+    personalisedQuestionsState.set(interaction.user.id, qCopy);
+    testProgressState.set(interaction.user.id, {});
+    backgroundProgressState.set(interaction.user.id, {
+        userId: interaction.user.id,
+        numericalAnswers: []
+    });
+
+    const components = createIQQuestionnaire(firstQ);
+    await interaction.user.send({
+        content: firstQ.question,
+        components
+    });
 });
 
 //abstract test
@@ -359,6 +418,24 @@ client.on("interactionCreate", async (interaction) => {
     };
 
     const qCopy = scramble(splitQuestions("A"));
+    qCopy.forEach(q => {
+        q.options = scramble(q.options);
+    });
+
+    const firstQ = qCopy[0];
+    qCopy.shift();
+    personalisedQuestionsState.set(interaction.user.id, qCopy);
+    testProgressState.set(interaction.user.id, {});
+    backgroundProgressState.set(interaction.user.id, {
+        userId: interaction.user.id,
+        abstractAnswers: []
+    });
+
+    const components = createIQQuestionnaire(firstQ);
+    await interaction.user.send({
+        content: firstQ.question,
+        components
+    });
 });
 
 //general knowledge test
@@ -375,4 +452,22 @@ client.on("interactionCreate", async (interaction) => {
     };
 
     const qCopy = scramble(splitQuestions("G"));
+    qCopy.forEach(q => {
+        q.options = scramble(q.options);
+    });
+
+    const firstQ = qCopy[0];
+    qCopy.shift();
+    personalisedQuestionsState.set(interaction.user.id, qCopy);
+    testProgressState.set(interaction.user.id, {});
+    backgroundProgressState.set(interaction.user.id, {
+        userId: interaction.user.id,
+        generalAnswers: []
+    });
+
+    const components = createIQQuestionnaire(firstQ);
+    await interaction.user.send({
+        content: firstQ.question,
+        components
+    });
 });
