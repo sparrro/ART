@@ -1,5 +1,74 @@
 [
     {
+        "category": "N",
+        "difficulty": "_1",
+        "question": "What is 2+2?",
+        "options": [
+            {
+                "answer": "4",
+                "correct": true
+            },
+            {
+                "answer": "2",
+                "correct": false
+            },
+            {
+                "answer": "5",
+                "correct": false
+            },
+            {
+                "answer": "16",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "category": "A",
+        "difficulty": "_1",
+        "question": "Can you suck your own dick?",
+        "options": [
+            {
+                "answer": "Yes",
+                "correct": true
+            },
+            {
+                "answer": "no",
+                "correct": false
+            },
+            {
+                "answer": "maybe",
+                "correct": false
+            },
+            {
+                "answer": "I don't have a dick",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "category": "G",
+        "difficulty": "_1",
+        "question": "Who had the biggest dick?",
+        "options": [
+            {
+                "answer": "Charles X Gustaf",
+                "correct": true
+            },
+            {
+                "answer": "Alexander the Great",
+                "correct": false
+            },
+            {
+                "answer": "Julius Caesar",
+                "correct": false
+            },
+            {
+                "answer": "me",
+                "correct": false
+            }
+        ]
+    },
+    {
         "category": "V",
         "difficulty": "_1",
         "question": "Which of these is a vowel?",

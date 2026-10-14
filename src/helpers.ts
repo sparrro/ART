@@ -1,7 +1,8 @@
-import { testProgressType } from "./state";
+import { testProgressType } from "./types";
 import { questionType, resultDataType } from "./types";
-import questionsData from "../data/questions.json";
+import questionsData from "../data/testQuestions.json";
 import { dbGetOne } from "./apiCalls";
+import { testProgressState } from "./state";
 
 const questions = questionsData as questionType[];
 
@@ -25,28 +26,33 @@ export const scramble = <T>(a: T[]) => {
 };
 
 export const countScores = (id: string, input: testProgressType) => {
-    let verbalScore = 0;
-    let numericalScore = 0;
-    let abstractScore = 0;
-    let generalKnowledge = 0;
+    let verbalScore: undefined | number;
+    let numericalScore: undefined | number;
+    let abstractScore: undefined | number;
+    let generalKnowledge: undefined | number;
     for (const [property, value] of Object.entries(input as Record<string, unknown>)) {
         if (value === true) {
             if (property.startsWith("V_")) {
-                verbalScore++;
+                verbalScore ? verbalScore++ : verbalScore = 1;
             } else if (property.startsWith("N_")) {
-                numericalScore++;
+                numericalScore ? numericalScore++ : numericalScore = 1;
             } else if (property.startsWith("A_")) {
-                abstractScore++;
+                abstractScore ? abstractScore++ : abstractScore = 1;
             } else if (property.startsWith("G_")) {
-                generalKnowledge++;
+                generalKnowledge ? generalKnowledge++ : generalKnowledge = 1;
             };
+        } else {
+            if (property.startsWith("V_") && !verbalScore) verbalScore = 0;
+            if (property.startsWith("N_") && !numericalScore) numericalScore = 0;
+            if (property.startsWith("A_") && !abstractScore) abstractScore = 0;
+            if (property.startsWith("G_") && !generalKnowledge) generalKnowledge = 0;
         };
     };
     const finalScores: resultDataType = {
         userId: id,
-        country: input.country!,
-        region: input.region!,
-        hdi: input.hdi!,
+        country: input.country,
+        region: input.region,
+        hdi: input.hdi,
         verbalScore,
         numericalScore,
         abstractScore,
@@ -61,7 +67,12 @@ export const splitQuestions = (category: "V" | "N" | "A" | "G") => {
     return categoryQuestions;
 };
 
-export const preventedFromTesting = async (id: string, mode: "full" | "V" | "N" | "A" | "G") => {
+export const preventedFromTesting = async (id: string, mode: "hdi" | "full" | "V" | "N" | "A" | "G") => {
+    
+    const alreadyTesting = testProgressState.get(id);
+    if (alreadyTesting) return "You may only do one test at a time\nFinish the one you're already on first";
+    if (mode == "hdi") return false;
+
     const priortest = await dbGetOne(id);
     if (!priortest.success) return false;
     const oldResult = priortest.data;
@@ -69,10 +80,10 @@ export const preventedFromTesting = async (id: string, mode: "full" | "V" | "N" 
     const sixMonths = 1000 * 60 * 60 * 24 * 30 * 6;
     if (mode == "full") {
         if (
-            !oldResult.verbalScore ||
-            !oldResult.numericalScore ||
-            !oldResult.abstractScore ||
-            !oldResult.generalKnowledge
+            typeof oldResult.verbalScore != "number" ||
+            typeof oldResult.numericalScore != "number" ||
+            typeof oldResult.abstractScore != "number" ||
+            typeof oldResult.generalKnowledge != "number"
         ) return "As you have already done some parts of the test separately you may not do the full test\nInstead, you must also do the remaining parts separately";
         const verbalTime = new Date(oldResult.verbalUpdatedAt!).toLocaleDateString();
         const numericalTime = new Date(oldResult.numericalUpdatedAt!).toLocaleDateString();
@@ -97,25 +108,25 @@ export const preventedFromTesting = async (id: string, mode: "full" | "V" | "N" 
         return false;
     };
     if (mode == "V") {
-        if (!oldResult.verbalScore) return false;
+        if (typeof oldResult.verbalScore != "number") return false;
         const verbalTime = new Date(oldResult.verbalUpdatedAt).toLocaleDateString();
         if (now - oldResult.verbalUpdatedAt < sixMonths) return `You must wait six months before retaking a part of the test\nYou most recently took the verbal reasoning test on ${verbalTime}`;
         return false;
     };
     if (mode == "N") {
-        if (!oldResult.numericalScore) return false;
+        if (typeof oldResult.numericalScore != "number") return false;
         const numericalTime = new Date(oldResult.numericalUpdatedAt).toLocaleDateString();
         if (now - oldResult.numericalUpdatedAt < sixMonths) return `You must wait six months before retaking a part of the test\nYou most recently took the numerical reasoning test on ${numericalTime}`;
         return false;
     };
     if (mode == "A") {
-        if (!oldResult.abstractScore) return false;
+        if (typeof oldResult.abstractScore != "number") return false;
         const abstractTime = new Date(oldResult.abstractUpdatedAt).toLocaleDateString();
         if (now - oldResult.abstractUpdatedAt < sixMonths) return `You must wait six months before retaking a part of the test\nYou most recently took the abstract reasoning test on ${abstractTime}`;
         return false;
     };
     if (mode == "G") {
-        if (!oldResult.generalKnowledge) return false;
+        if (typeof oldResult.generalKnowledge != "number") return false;
         const generalTime = new Date(oldResult.generalUpdatedAt).toLocaleDateString();
         if (now - oldResult.generalUpdatedAt < sixMonths) return `You must wait six months before retaking a part of the test\nYou most recently took the general knowledge test on ${generalTime}`;
         return false;

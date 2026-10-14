@@ -1,4 +1,4 @@
-import { dbAdd, dbAddAbstract, dbAddHdi, dbAddVerbal, dbDataAdd, dbDataRetrieve, dbGetOne, dbTest } from "./apiCalls";
+import { dbAdd, dbAddAbstract, dbAddGeneral, dbAddHdi, dbAddNumerical, dbAddVerbal, dbDataAdd, dbDataRetrieve, dbGetOne, dbTest } from "./apiCalls";
 import { countryPages, createCountryMenu, createIQQuestionnaire, createRegionMenu, createStartButtons } from "./components";
 import {
     TOKEN,
@@ -42,26 +42,24 @@ client.once("clientReady", async () => {
         return;
     };
 
-    await server.members.fetch();
+    const members = await server.members.fetch();
     const father = server.members.cache.get(MY_ID!);
     
-    /* const herOfficial = server.members.cache.get(LOLAPAZ_ID!);
-
-    for (const member of [father, herOfficial]) {
+    //deletes all its dms - shouldn't be needed again but you never know
+    for (const member of members.values()) {
+        if (member.user.bot) continue;
         try {
-            const dm = await member?.createDM();
-
-            const messages = await dm?.messages.fetch({ limit: 100 });
-
-            for (const [, message] of messages!) {
+            const dm = await member.user.createDM();
+            const messages = await dm.messages.fetch({ limit: 100 });
+            for (const message of messages.values()) {
                 if (message.author.id == client.user!.id) {
                     await message.delete();
                 };
             };
         } catch (err) {
-            console.log(err);
+            await father?.send(`I couldn't delete my dms to ${member.displayName}`);
         };
-    }; */
+    }
 
     await father?.send("I'm online");
 
@@ -69,7 +67,7 @@ client.once("clientReady", async () => {
 
     if (!iqChannel) {
         console.log("Couldn't find the iq channel");
-    } else {
+    } else { //posting the start buttons for the test
         /* const startBtn = createHdiStartButton();
         const channelMsgs = await iqChannel.messages.fetch({limit: 1});
         if (channelMsgs.size == 0) {
@@ -92,9 +90,18 @@ client.once("clientReady", async () => {
 client.login(TOKEN);
 
 //start hdi test
-/* client.on("interactionCreate", async (interaction) => {
+client.on("interactionCreate", async (interaction) => {
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_hdi_recording") return;
+    await interaction.deferUpdate();
+
+    const reasonPreventing = await preventedFromTesting(interaction.user.id, "hdi");
+    if (reasonPreventing) {
+        await interaction.user.send(reasonPreventing);
+        return;
+    };
+
+    testProgressState.set(interaction.user.id, {});
     const components = createCountryMenu(0);
     await interaction.user.send({
         content:
@@ -103,9 +110,9 @@ client.login(TOKEN);
         components
     });
     return;
-}); */
+});
 
-client.on("interactionCreate", async (interaction) => {
+/* client.on("interactionCreate", async (interaction) => {
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_hdi_recording") return;
     await interaction.deferUpdate();
@@ -117,19 +124,22 @@ client.on("interactionCreate", async (interaction) => {
     qCopy.shift();
     personalisedQuestionsState.set(interaction.user.id, qCopy);
     testProgressState.set(interaction.user.id, {});
+    backgroundProgressState.set(interaction.user.id, {
+        userId: interaction.user.id,
+        verbalAnswers: []
+    })
     const components = createIQQuestionnaire(firstQ);
     await interaction.user.send({
         content: firstQ.question,
         components
     });
     return;
-});
+}); */
 
 client.on("interactionCreate", async (interaction) => {
 
     if (!interaction.isStringSelectMenu()) return;
     if (!interaction.customId.endsWith("?")) return;
-    await interaction.deferUpdate();
 
     const question = questions.find(q =>
         q.question == interaction.customId
@@ -137,38 +147,118 @@ client.on("interactionCreate", async (interaction) => {
     const answer = question!.options.find(o =>
         o.answer == interaction.values[0]
     );
-    answer?.correct ? console.log("Correct!") : console.log("Wrong!");
     const progress = testProgressState.get(interaction.user.id);
-    if (!progress) {
+    const backGroundProgress = backgroundProgressState.get(interaction.user.id);
+    if (!progress || !backGroundProgress) {
         console.log("I somehow lost track of the test progress for " + interaction.user.displayName);
         return;
     };
-    const qId = (question!.category + question!.difficulty) as `${"N" | "V"}${allowedQsType}`;
+    const qId = (question!.category + question!.difficulty) as `${"V" | "N" | "A" | "G"}${allowedQsType}`;
+
     answer?.correct ? progress[qId] = true : progress[qId] = false;
+    switch (question!.category) {
+        case "V": {
+            backGroundProgress.verbalAnswers!.push({
+                question: question!.question,
+                answer: answer!.answer,
+                correct: answer!.correct,
+                difficulty: Number(question!.difficulty.slice(1))
+            });
+            break;
+        };
+        case "N": {
+            backGroundProgress.numericalAnswers!.push({
+                question: question!.question,
+                answer: answer!.answer,
+                correct: answer!.correct,
+                difficulty: Number(question!.difficulty.slice(1))
+            });
+            break;
+        };
+        case "A": {
+            backGroundProgress.abstractAnswers!.push({
+                question: question!.question,
+                answer: answer!.answer,
+                correct: answer!.correct,
+                difficulty: Number(question!.difficulty.slice(1))
+            });
+            break;
+        };
+        case "G": {
+            backGroundProgress.generalAnswers!.push({
+                question: question!.question,
+                answer: answer!.answer,
+                correct: answer!.correct,
+                difficulty: Number(question!.difficulty.slice(1))
+            });
+            break;
+        };
+    };
+
     const qCopy = personalisedQuestionsState.get(interaction.user.id);
     const firstQ = qCopy?.shift();
+
     if (!firstQ) {
-        console.log("That's all for now! Thanks for testing me!");
-        const components = createCountryMenu(0);
+        if (typeof progress.V_1 == "boolean" && typeof progress.N_1 == "boolean") {
+            const components = createCountryMenu(0);
+            await interaction.message.edit({
+                content: `Select your country:\nPage ${1}/${countryPages.length}`,
+                components
+            });
+        } else {
+            const finalScore = countScores(interaction.user.id, progress);
+            //skicka poängen till resultattabellen
+            let result;
+            if (typeof finalScore.verbalScore == "number" && typeof finalScore.numericalScore == "number") {
+                result = await dbAdd(finalScore);
+            } else if (typeof finalScore.verbalScore == "number") {
+                result = await dbAddVerbal(finalScore.userId, finalScore.verbalScore);
+            } else if (typeof finalScore.numericalScore == "number") {
+                result = await dbAddNumerical(finalScore.userId, finalScore.numericalScore);
+            } else if (typeof finalScore.abstractScore == "number") {
+                result = await dbAddAbstract(finalScore.userId, finalScore.abstractScore);
+            } else if (typeof finalScore.generalKnowledge == "number") {
+                result = await dbAddGeneral(finalScore.userId, finalScore.generalKnowledge);
+            } else {
+                result = await dbAddHdi(finalScore.userId, finalScore.country!, finalScore.region!, finalScore.hdi!);
+            };
+            if (!result.success) {
+                await interaction.message.edit({
+                    content: `Whoops, something went wrong: ${result.message}`,
+                    components: []
+                });
+                console.log(`Error when ${interaction.user.displayName} tried taking the test: ${result.message}`);
+                testProgressState.delete(interaction.user.id);
+                backgroundProgressState.delete(interaction.user.id);
+                personalisedQuestionsState.delete(interaction.user.id);
+                return;
+            };
+            //skicka bakgrundsdatan till sin tabell när resultattabellen har skickat 200/201
+            await dbDataAdd(backGroundProgress);
+            await interaction.message.edit({
+                content: "Thank you for taking my test!",
+                components: []
+            });
+            testProgressState.delete(interaction.user.id);
+            backgroundProgressState.delete(interaction.user.id);
+            personalisedQuestionsState.delete(interaction.user.id);
+        };
+        return;
+    } else {
+        const components = createIQQuestionnaire(firstQ);
         await interaction.message.edit({
-            content:
-                `Select your country:\n` +
-                `Page ${1}/${countryPages.length}`,
+            content: firstQ.question,
             components
         });
-        return;
     };
-    const components = createIQQuestionnaire(firstQ);
-    await interaction.message.edit({
-        content: firstQ.question,
-        components
-    });
     return;
 });
 
 //country + region selection
 client.on("interactionCreate", async (interaction) => {
     if (interaction.isStringSelectMenu()) {
+
+        await interaction.deferUpdate();
 
         //country selected
         if (interaction.customId.startsWith("country_select")) {
@@ -188,7 +278,7 @@ client.on("interactionCreate", async (interaction) => {
             const regionPages = paginate(country.regions);
             const components = createRegionMenu(country, 0);
 
-            await interaction.update({
+            await interaction.message.edit({
                 content: `**${country.country}** selected; now select your region:\nPage 1/${regionPages.length}`,
                 components
             });
@@ -199,13 +289,15 @@ client.on("interactionCreate", async (interaction) => {
         //region selected
         if (interaction.customId.startsWith("region_select")) {
 
-            const state = testProgressState.get(interaction.user.id);
-            if (!state?.country) {
+            const backGroundProgress = backgroundProgressState.get(interaction.user.id);
+
+            const progress = testProgressState.get(interaction.user.id);
+            if (!progress?.country) {
                 console.log("Couldn't remember the country");
                 return;
             };
             const country = countries.find(country =>
-                country.country == state.country
+                country.country == progress.country
             );
 
             const regionName = interaction.values[0];
@@ -214,28 +306,61 @@ client.on("interactionCreate", async (interaction) => {
                 }
             );
 
-            await interaction.update({
+            await interaction.message.edit({
                 content:
                     `**${region!.region}** selected\n` +
                     `**${region!.region}** has an HDI of ${region?.hdi}`,
                 components: []
             });
-
             
-            state!.region = region?.region;
-            state!.hdi = region?.hdi;
+            progress!.region = region?.region;
+            progress!.hdi = region?.hdi;
 
-            console.log(state);
+            const score = countScores(interaction.user.id, progress);
 
-            const score = countScores(interaction.user.id, state);
-            console.log(score);
-            
-            const dbEntry = await dbAddHdi(interaction.user.id, state.country, region!.region, region!.hdi);
-            console.log(dbEntry)
+            if (backGroundProgress) {
+                const result = await dbAdd(score);
+                if (!result.success) {
+                    await interaction.message.edit({
+                        content: `Whoops, something went wrong: ${result.message}`,
+                        components: []
+                    });
+                    console.log(`Error when ${interaction.user.id} tried taking the test: ${result.message}`);
+                    testProgressState.delete(interaction.user.id);
+                    backgroundProgressState.delete(interaction.user.id);
+                    personalisedQuestionsState.delete(interaction.user.id);
+                    return;
+                };
+                await dbDataAdd(backGroundProgress);
+                await interaction.message.edit({
+                    content: "Thank you for taking my test",
+                    components: []
+                });
+                testProgressState.delete(interaction.user.id);
+                backgroundProgressState.delete(interaction.user.id);
+                personalisedQuestionsState.delete(interaction.user.id);
+            } else {
+                const result = await dbAddHdi(interaction.user.id, country!.country, region!.region, region!.hdi);
+                if (!result.success) {
+                    await interaction.message.edit({
+                        content: `Whoops, something went wrong: ${result.message}`,
+                        components: []
+                    });
+                    console.log(`Error when ${interaction.user.displayName} tried taking the test: ${result.message}`);
+                    testProgressState.delete(interaction.user.id);
+                    backgroundProgressState.delete(interaction.user.id);
+                    personalisedQuestionsState.delete(interaction.user.id);
+                    return;
+                };
+                interaction.message.edit({
+                    content: "Thank you for taking my test",
+                    components: []
+                });
+            };
 
             testProgressState.delete(interaction.user.id);
-
-            return dbEntry;
+            backgroundProgressState.delete(interaction.user.id);
+            personalisedQuestionsState.delete(interaction.user.id);
         };
     };
 
@@ -244,6 +369,7 @@ client.on("interactionCreate", async (interaction) => {
 
         const match = interaction.customId.match(/^(country|region)_(previous|next)_(\d+)$/);
         if (!match) return;
+        await interaction.deferUpdate();
 
         const type = match[1];
         const direction = match[2];
@@ -256,7 +382,7 @@ client.on("interactionCreate", async (interaction) => {
 
             const components = createCountryMenu(newPage);
 
-            await interaction.update({
+            await interaction.message.edit({
                 content:
                     `Select your country:\n` +
                     `Page ${newPage + 1}/${countryPages.length}`,
@@ -285,7 +411,7 @@ client.on("interactionCreate", async (interaction) => {
 
             const components = createRegionMenu(country!, newPage);
 
-            await interaction.update({
+            await interaction.message.edit({
                 content:
                     `Select your region in **${country!.country}**:\n` +
                     `Page ${newPage + 1}/${regionPages.length}`,
@@ -304,7 +430,7 @@ client.on("interactionCreate", async (interaction) => {
 
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_full_test") return;
-    interaction.deferUpdate();
+    await interaction.deferUpdate();
 
     const reasonPreventing = await preventedFromTesting(interaction.user.id, "full");
     if (reasonPreventing) {
@@ -334,6 +460,7 @@ client.on("interactionCreate", async (interaction) => {
         content: firstQ.question,
         components
     });
+    return;
 });
 
 //verbal test
@@ -341,7 +468,7 @@ client.on("interactionCreate", async (interaction) => {
 
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_verbal_test") return;
-    interaction.deferUpdate();
+    await interaction.deferUpdate();
 
     const reasonPreventing = await preventedFromTesting(interaction.user.id, "V");
     if (reasonPreventing) {
@@ -368,6 +495,7 @@ client.on("interactionCreate", async (interaction) => {
         content: firstQ.question,
         components
     });
+    return;
 });
 
 //numerical test
@@ -375,7 +503,7 @@ client.on("interactionCreate", async (interaction) => {
 
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_numerical_test") return;
-    interaction.deferUpdate();
+    await interaction.deferUpdate();
 
     const reasonPreventing = await preventedFromTesting(interaction.user.id, "N");
     if (reasonPreventing) {
@@ -402,6 +530,7 @@ client.on("interactionCreate", async (interaction) => {
         content: firstQ.question,
         components
     });
+    return;
 });
 
 //abstract test
@@ -409,7 +538,7 @@ client.on("interactionCreate", async (interaction) => {
 
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_abstract_test") return;
-    interaction.deferUpdate();
+    await interaction.deferUpdate();
 
     const reasonPreventing = await preventedFromTesting(interaction.user.id, "A");
     if (reasonPreventing) {
@@ -436,6 +565,7 @@ client.on("interactionCreate", async (interaction) => {
         content: firstQ.question,
         components
     });
+    return;
 });
 
 //general knowledge test
@@ -443,7 +573,7 @@ client.on("interactionCreate", async (interaction) => {
 
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_general_test") return;
-    interaction.deferUpdate();
+    await interaction.deferUpdate();
 
     const reasonPreventing = await preventedFromTesting(interaction.user.id, "G");
     if (reasonPreventing) {
@@ -470,4 +600,5 @@ client.on("interactionCreate", async (interaction) => {
         content: firstQ.question,
         components
     });
+    return;
 });
