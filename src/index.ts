@@ -16,8 +16,8 @@ import {
     GatewayIntentBits,
     TextChannel,
 } from "discord.js";
-import { countScores, paginate, preventedFromTesting, scramble, splitQuestions } from "./helpers";
-import { backgroundProgressState, personalisedQuestionsState, testProgressState } from "./state";
+import { countScores, formatTime, paginate, preventedFromTesting, scramble, splitQuestions } from "./helpers";
+import { backgroundProgressState, personalisedQuestionsState, testProgressState, timerState } from "./state";
 
 const questions = questionsData as questionType[];
 
@@ -77,12 +77,12 @@ client.once("clientReady", async () => {
             });
         }; */
 
-        /* const components = createStartButtons();
+        const components = createStartButtons();
 
         await iqChannel.send({
             content: "Do my whole IQ test at once or one section at a time",
             components
-        }); */
+        });
     };
 
 });
@@ -136,6 +136,7 @@ client.on("interactionCreate", async (interaction) => {
     return;
 }); */
 
+//answering a question during a test
 client.on("interactionCreate", async (interaction) => {
 
     if (!interaction.isStringSelectMenu()) return;
@@ -245,6 +246,11 @@ client.on("interactionCreate", async (interaction) => {
         };
         return;
     } else {
+        const timer = timerState.get(interaction.user.id);
+        const now = Date.now();
+        const difference = now - timer!.startedAt;
+        console.log(formatTime(difference))
+        console.log(difference > timer!.allotedTime ? "Out of time!" : "Still on time!") //looking good, make it actually do something tomorrow
         const components = createIQQuestionnaire(firstQ);
         await interaction.message.edit({
             content: firstQ.question,
@@ -454,6 +460,8 @@ client.on("interactionCreate", async (interaction) => {
         abstractAnswers: [],
         generalAnswers: []
     });
+
+    timerState.set(interaction.user.id, { allotedTime: 10000, startedAt: Date.now() });
 
     const components = createIQQuestionnaire(firstQ);
     await interaction.user.send({
