@@ -134,7 +134,7 @@ export const createStartButtons = () => {
 export const createIQQuestionnaire = (question: questionType) => {
 
     const menu = new StringSelectMenuBuilder()
-    .setCustomId(question.question)
+    .setCustomId(question.question.substring(question.question.length - 50))
     .setPlaceholder("Choose the right answer")
     .addOptions(
         question.options.map(option =>

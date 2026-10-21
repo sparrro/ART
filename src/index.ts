@@ -77,12 +77,12 @@ client.once("clientReady", async () => {
             });
         }; */
 
-        const components = createStartButtons();
+        /* const components = createStartButtons();
 
         await iqChannel.send({
             content: "Do my whole IQ test at once or one section at a time",
             components
-        });
+        }); */
     };
 
 });
@@ -143,7 +143,7 @@ client.on("interactionCreate", async (interaction) => {
     if (!interaction.customId.endsWith("?")) return;
 
     const question = questions.find(q =>
-        q.question == interaction.customId
+        q.question.endsWith(interaction.customId)
     );
     const answer = question!.options.find(o =>
         o.answer == interaction.values[0]
@@ -246,16 +246,33 @@ client.on("interactionCreate", async (interaction) => {
         };
         return;
     } else {
-        const timer = timerState.get(interaction.user.id);
+        const timer = timerState.get(interaction.user.id); 
+        if (!timer) {
+            console.log(`Failed to retrieve the timer while ${interaction.user.displayName} was taking one of my tests`);
+            return;
+        };
         const now = Date.now();
-        const difference = now - timer!.startedAt;
-        console.log(formatTime(difference))
-        console.log(difference > timer!.allotedTime ? "Out of time!" : "Still on time!") //looking good, make it actually do something tomorrow
-        const components = createIQQuestionnaire(firstQ);
-        await interaction.message.edit({
-            content: firstQ.question,
-            components
-        });
+        const difference = now - timer.startedAt;
+        const remaining = timer.allotedTime - difference;
+        console.log(formatTime(remaining))
+        console.log(remaining < 1 ? "Out of time!" : "Still on time!") //looking good, make it actually do something tomorrow
+        if (remaining < 1) {
+            await interaction.message.edit({
+                content: "Unfortunately you ran out of time, better luck next time",
+                components: []
+            });
+            testProgressState.delete(interaction.user.id);
+            personalisedQuestionsState.delete(interaction.user.id);
+            backgroundProgressState.delete(interaction.user.id);
+            timerState.delete(interaction.user.id);
+            return;
+        } else {
+            const components = createIQQuestionnaire(firstQ);
+            await interaction.message.edit({
+                content: `${formatTime(remaining)} left\n${firstQ.question}`,
+                components
+            });
+        };
     };
     return;
 });
@@ -461,7 +478,7 @@ client.on("interactionCreate", async (interaction) => {
         generalAnswers: []
     });
 
-    timerState.set(interaction.user.id, { allotedTime: 10000, startedAt: Date.now() });
+    timerState.set(interaction.user.id, { allotedTime: 5400000, startedAt: Date.now() });
 
     const components = createIQQuestionnaire(firstQ);
     await interaction.user.send({
