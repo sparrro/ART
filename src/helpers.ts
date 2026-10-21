@@ -2,7 +2,8 @@ import { testProgressType } from "./types";
 import { questionType, resultDataType } from "./types";
 import questionsData from "../data/testQuestions.json";
 import { dbGetOne } from "./apiCalls";
-import { testProgressState } from "./state";
+import { backgroundProgressState, personalisedQuestionsState, testProgressState, timerState } from "./state";
+import { CacheType, StringSelectMenuInteraction } from "discord.js";
 
 const questions = questionsData as questionType[];
 
@@ -140,4 +141,23 @@ export const formatTime = (milliseconds: number) => {
     const remainingSeconds = seconds % 60;
     const timeString = `${minutes > 0 ? `${minutes} minute${minutes != 1 ? "s" : ""} and ` : ""}${remainingSeconds} second${remainingSeconds != 1 ? "s" : ""}`
     return timeString;
+};
+
+export const checkTimer = (id: string) => {
+    const timer = timerState.get(id);
+    if (!timer) {
+        console.log("Failed to retrieve the timer");
+        return true;
+    };
+    const now = Date.now();
+    const difference = now - timer.startedAt;
+    const remaining = timer.allotedTime - difference;
+    return remaining < 1;
+};
+
+export const clearStates = (id: string) => {
+    testProgressState.delete(id);
+    backgroundProgressState.delete(id);
+    personalisedQuestionsState.delete(id);
+    timerState.delete(id);
 };

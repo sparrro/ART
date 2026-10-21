@@ -16,7 +16,7 @@ import {
     GatewayIntentBits,
     TextChannel,
 } from "discord.js";
-import { countScores, formatTime, paginate, preventedFromTesting, scramble, splitQuestions } from "./helpers";
+import { clearStates, countScores, formatTime, paginate, preventedFromTesting, scramble, splitQuestions } from "./helpers";
 import { backgroundProgressState, personalisedQuestionsState, testProgressState, timerState } from "./state";
 
 const questions = questionsData as questionType[];
@@ -196,6 +196,28 @@ client.on("interactionCreate", async (interaction) => {
         };
     };
 
+    const timer = timerState.get(interaction.user.id);
+    if (!timer) {
+        console.log(`Failed to retrieve the timer while ${interaction.user.displayName} was taking one of my tests`);
+        await interaction.message.edit({
+            content: "Something went wrong in my code",
+            components: []
+        });
+        clearStates(interaction.user.id);
+        return;
+    };
+    const now = Date.now();
+    const difference = now - timer.startedAt;
+    const remaining = timer.allotedTime - difference;
+    if (remaining < 1) {
+        await interaction.message.edit({
+            content: "Unfortunately you ran out of time",
+            components: []
+        });
+        clearStates(interaction.user.id);
+        return;
+    };
+
     const qCopy = personalisedQuestionsState.get(interaction.user.id);
     const firstQ = qCopy?.shift();
 
@@ -229,9 +251,7 @@ client.on("interactionCreate", async (interaction) => {
                     components: []
                 });
                 console.log(`Error when ${interaction.user.displayName} tried taking the test: ${result.message}`);
-                testProgressState.delete(interaction.user.id);
-                backgroundProgressState.delete(interaction.user.id);
-                personalisedQuestionsState.delete(interaction.user.id);
+                clearStates(interaction.user.id);
                 return;
             };
             //skicka bakgrundsdatan till sin tabell när resultattabellen har skickat 200/201
@@ -240,39 +260,15 @@ client.on("interactionCreate", async (interaction) => {
                 content: "Thank you for taking my test!",
                 components: []
             });
-            testProgressState.delete(interaction.user.id);
-            backgroundProgressState.delete(interaction.user.id);
-            personalisedQuestionsState.delete(interaction.user.id);
+            clearStates(interaction.user.id);
         };
         return;
     } else {
-        const timer = timerState.get(interaction.user.id); 
-        if (!timer) {
-            console.log(`Failed to retrieve the timer while ${interaction.user.displayName} was taking one of my tests`);
-            return;
-        };
-        const now = Date.now();
-        const difference = now - timer.startedAt;
-        const remaining = timer.allotedTime - difference;
-        console.log(formatTime(remaining))
-        console.log(remaining < 1 ? "Out of time!" : "Still on time!") //looking good, make it actually do something tomorrow
-        if (remaining < 1) {
-            await interaction.message.edit({
-                content: "Unfortunately you ran out of time, better luck next time",
-                components: []
-            });
-            testProgressState.delete(interaction.user.id);
-            personalisedQuestionsState.delete(interaction.user.id);
-            backgroundProgressState.delete(interaction.user.id);
-            timerState.delete(interaction.user.id);
-            return;
-        } else {
-            const components = createIQQuestionnaire(firstQ);
-            await interaction.message.edit({
-                content: `${formatTime(remaining)} left\n${firstQ.question}`,
-                components
-            });
-        };
+        const components = createIQQuestionnaire(firstQ);
+        await interaction.message.edit({
+            content: `${formatTime(remaining)} left\n${firstQ.question}`,
+            components
+        });
     };
     return;
 });
@@ -349,9 +345,7 @@ client.on("interactionCreate", async (interaction) => {
                         components: []
                     });
                     console.log(`Error when ${interaction.user.id} tried taking the test: ${result.message}`);
-                    testProgressState.delete(interaction.user.id);
-                    backgroundProgressState.delete(interaction.user.id);
-                    personalisedQuestionsState.delete(interaction.user.id);
+                    clearStates(interaction.user.id);
                     return;
                 };
                 await dbDataAdd(backGroundProgress);
@@ -359,9 +353,7 @@ client.on("interactionCreate", async (interaction) => {
                     content: "Thank you for taking my test",
                     components: []
                 });
-                testProgressState.delete(interaction.user.id);
-                backgroundProgressState.delete(interaction.user.id);
-                personalisedQuestionsState.delete(interaction.user.id);
+                clearStates(interaction.user.id);
             } else {
                 const result = await dbAddHdi(interaction.user.id, country!.country, region!.region, region!.hdi);
                 if (!result.success) {
@@ -370,9 +362,7 @@ client.on("interactionCreate", async (interaction) => {
                         components: []
                     });
                     console.log(`Error when ${interaction.user.displayName} tried taking the test: ${result.message}`);
-                    testProgressState.delete(interaction.user.id);
-                    backgroundProgressState.delete(interaction.user.id);
-                    personalisedQuestionsState.delete(interaction.user.id);
+                    clearStates(interaction.user.id);
                     return;
                 };
                 interaction.message.edit({
@@ -381,9 +371,7 @@ client.on("interactionCreate", async (interaction) => {
                 });
             };
 
-            testProgressState.delete(interaction.user.id);
-            backgroundProgressState.delete(interaction.user.id);
-            personalisedQuestionsState.delete(interaction.user.id);
+            clearStates(interaction.user.id);
         };
     };
 
@@ -515,6 +503,8 @@ client.on("interactionCreate", async (interaction) => {
         verbalAnswers: []
     });
 
+    timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
+
     const components = createIQQuestionnaire(firstQ);
     await interaction.user.send({
         content: firstQ.question,
@@ -549,6 +539,8 @@ client.on("interactionCreate", async (interaction) => {
         userId: interaction.user.id,
         numericalAnswers: []
     });
+
+    timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
 
     const components = createIQQuestionnaire(firstQ);
     await interaction.user.send({
@@ -585,6 +577,8 @@ client.on("interactionCreate", async (interaction) => {
         abstractAnswers: []
     });
 
+    timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
+
     const components = createIQQuestionnaire(firstQ);
     await interaction.user.send({
         content: firstQ.question,
@@ -619,6 +613,8 @@ client.on("interactionCreate", async (interaction) => {
         userId: interaction.user.id,
         generalAnswers: []
     });
+
+    timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
 
     const components = createIQQuestionnaire(firstQ);
     await interaction.user.send({
