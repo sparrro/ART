@@ -6,6 +6,7 @@ import {
     MY_ID,
     IQ_CHANNEL_ID,
     LOLAPAZ_ID,
+    TEST_TAKER_ID,
 } from "./environment";
 import countries from "../data/hdiData.json";
 import { allowedQsType, questionType, resultDataType } from "./types";
@@ -29,7 +30,7 @@ const client = new Client({
         GatewayIntentBits.Guilds,
         GatewayIntentBits.MessageContent,
         GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.GuildMembers
+        GatewayIntentBits.GuildMembers,
     ]
 });
 
@@ -252,10 +253,18 @@ client.on("interactionCreate", async (interaction) => {
                 });
                 console.log(`Error when ${interaction.user.displayName} tried taking the test: ${result.message}`);
                 clearStates(interaction.user.id);
+
                 return;
             };
-            //skicka bakgrundsdatan till sin tabell när resultattabellen har skickat 200/201
             await dbDataAdd(backGroundProgress);
+            if (result.data.verbalScore && result.data.numericalScore && result.data.abstractScore && result.data.generalKnowledge && result.data.hdi) {
+                await client.guilds.fetch();
+                const server = client.guilds.cache.get(SERVER_ID!);
+                const member = server?.members.cache.get(interaction.user.id);
+                if (member) {
+                    if (!member.roles.cache.has(TEST_TAKER_ID!)) member.roles.add(TEST_TAKER_ID!);
+                };
+            };
             await interaction.message.edit({
                 content: "Thank you for taking my test!",
                 components: []
