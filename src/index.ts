@@ -262,11 +262,11 @@ client.on("interactionCreate", async (interaction) => {
                 const server = client.guilds.cache.get(SERVER_ID!);
                 const member = server?.members.cache.get(interaction.user.id);
                 if (member) {
-                    if (!member.roles.cache.has(TEST_TAKER_ID!)) member.roles.add(TEST_TAKER_ID!);
+                    if (!member.roles.cache.has(TEST_TAKER_ID!)) await member.roles.add(TEST_TAKER_ID!);
                 };
             };
             await interaction.message.edit({
-                content: "Thank you for taking my test!",
+                content: "Thank you for taking my test",
                 components: []
             });
             clearStates(interaction.user.id);
@@ -358,6 +358,14 @@ client.on("interactionCreate", async (interaction) => {
                     return;
                 };
                 await dbDataAdd(backGroundProgress);
+                if (result.data.verbalScore && result.data.numericalScore && result.data.abstractScore && result.data.generalKnowledge) {
+                    await client.guilds.fetch();
+                    const server = client.guilds.cache.get(SERVER_ID!);
+                    const member = server?.members.cache.get(interaction.user.id);
+                    if (member) {
+                        if (!member.roles.cache.has(TEST_TAKER_ID!)) await member.roles.add(TEST_TAKER_ID!);
+                    };
+                };
                 await interaction.message.edit({
                     content: "Thank you for taking my test",
                     components: []
@@ -373,6 +381,14 @@ client.on("interactionCreate", async (interaction) => {
                     console.log(`Error when ${interaction.user.displayName} tried taking the test: ${result.message}`);
                     clearStates(interaction.user.id);
                     return;
+                };
+                if (result.data.verbalScore && result.data.numericalScore && result.data.abstractScore && result.data.generalKnowledge) {
+                    await client.guilds.fetch();
+                    const server = client.guilds.cache.get(SERVER_ID!);
+                    const member = server?.members.cache.get(interaction.user.id);
+                    if (member) {
+                        if (!member.roles.cache.has(TEST_TAKER_ID!)) await member.roles.add(TEST_TAKER_ID!);
+                    };
                 };
                 interaction.message.edit({
                     content: "Thank you for taking my test",
