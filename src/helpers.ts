@@ -161,3 +161,31 @@ export const clearStates = (id: string) => {
     personalisedQuestionsState.delete(id);
     timerState.delete(id);
 };
+
+export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
+    const questionSubset: questionType[] = [];
+    const scrambledQuestions = scramble(questions);
+
+    for(let i = 1; i < 21; i++) {
+        if (mode == "full") {
+            for (let j = 0; j < 4; j++) {
+                const draw = scrambledQuestions.find(question => {
+                    let category;
+                    if (j == 0) category = "V";
+                    if (j == 1) category = "N";
+                    if (j == 2) category = "A";
+                    if (j == 3) category = "G";
+                    return question.category == category && question.difficulty == `_${i.toString()}`;
+                });
+                if (draw) questionSubset.push(draw);
+            };
+        } else {
+            const draw = scrambledQuestions.find(question => {
+                return question.category == mode && question.difficulty == `_${i.toString()}`;
+            });
+            if (draw) questionSubset.push(draw);
+        };
+    };
+
+    return scramble(questionSubset);
+};

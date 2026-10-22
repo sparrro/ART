@@ -16,7 +16,7 @@ import {
     GatewayIntentBits,
     TextChannel,
 } from "discord.js";
-import { clearStates, countScores, formatTime, paginate, preventedFromTesting, scramble, splitQuestions } from "./helpers";
+import { clearStates, countScores, formatTime, paginate, preventedFromTesting, randomQuestions, scramble, splitQuestions } from "./helpers";
 import { backgroundProgressState, personalisedQuestionsState, testProgressState, timerState } from "./state";
 
 const questions = questionsData as questionType[];
@@ -449,7 +449,8 @@ client.on("interactionCreate", async (interaction) => {
         return;
     };
 
-    const qCopy = scramble(questions);
+    //make it select random questions into a template
+    const qCopy = randomQuestions("full");
     qCopy.forEach(q => {
         q.options = scramble(q.options);
     });
@@ -489,7 +490,7 @@ client.on("interactionCreate", async (interaction) => {
         return;
     };
 
-    const qCopy = scramble(splitQuestions("V"));
+    const qCopy = randomQuestions("V");
     qCopy.forEach(q => {
         q.options = scramble(q.options);
     });
@@ -526,7 +527,7 @@ client.on("interactionCreate", async (interaction) => {
         return;
     };
 
-    const qCopy = scramble(splitQuestions("N"));
+    const qCopy = randomQuestions("N");
     qCopy.forEach(q => {
         q.options = scramble(q.options);
     });
@@ -563,7 +564,7 @@ client.on("interactionCreate", async (interaction) => {
         return;
     };
 
-    const qCopy = scramble(splitQuestions("A"));
+    const qCopy = randomQuestions("A");
     qCopy.forEach(q => {
         q.options = scramble(q.options);
     });
@@ -600,7 +601,7 @@ client.on("interactionCreate", async (interaction) => {
         return;
     };
 
-    const qCopy = scramble(splitQuestions("G"));
+    const qCopy = randomQuestions("G");
     qCopy.forEach(q => {
         q.options = scramble(q.options);
     });
