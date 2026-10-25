@@ -104,10 +104,11 @@ client.on("interactionCreate", async (interaction) => {
 
     testProgressState.set(interaction.user.id, {});
     const components = createCountryMenu(0);
+    const page = countryPages[0]
     await interaction.user.send({
         content:
             `Select your country:\n` +
-            `Page ${1}/${countryPages.length}`,
+            `Page ${1}/${countryPages.length}: ${page[0].country} - ${page[page.length - 1].country}`,
         components
     });
     return;
@@ -225,8 +226,9 @@ client.on("interactionCreate", async (interaction) => {
     if (!firstQ) {
         if (typeof progress.V_1 == "boolean" && typeof progress.N_1 == "boolean") {
             const components = createCountryMenu(0);
+            const page = countryPages[0];
             await interaction.message.edit({
-                content: `Select your country:\nPage ${1}/${countryPages.length}`,
+                content: `Select your country:\nPage ${1}/${countryPages.length}: ${page[0].country} - ${page[page.length - 1].country}`,
                 components
             });
         } else {
@@ -304,10 +306,12 @@ client.on("interactionCreate", async (interaction) => {
             progress!.country = countryName;
 
             const regionPages = paginate(country.regions);
+            const page = regionPages[0];
             const components = createRegionMenu(country, 0);
 
             await interaction.message.edit({
-                content: `**${country.country}** selected; now select your region:\nPage 1/${regionPages.length}`,
+                content: `**${country.country}** selected; now select your region:` +
+                         `${regionPages.length > 1 ? `\nPage 1/${regionPages.length}: ${page[0].region} - ${page[page.length - 1].region}` : ""}`,
                 components
             });
 
@@ -417,11 +421,11 @@ client.on("interactionCreate", async (interaction) => {
             if (newPage < 0 || newPage >= countryPages.length) return;
 
             const components = createCountryMenu(newPage);
-
+            const page = countryPages[newPage];
             await interaction.message.edit({
                 content:
                     `Select your country:\n` +
-                    `Page ${newPage + 1}/${countryPages.length}`,
+                    `Page ${newPage + 1}/${countryPages.length}: ${page[0].country} - ${page[page.length - 1].country}`,
                 components
             });
 
@@ -444,13 +448,13 @@ client.on("interactionCreate", async (interaction) => {
             const regionPages = paginate(country!.regions);
 
             if (newPage < 0 || newPage >= regionPages.length) return;
-
+            const page = regionPages[newPage];
             const components = createRegionMenu(country!, newPage);
 
             await interaction.message.edit({
                 content:
                     `Select your region in **${country!.country}**:\n` +
-                    `Page ${newPage + 1}/${regionPages.length}`,
+                    `Page ${newPage + 1}/${regionPages.length}: ${page[0].region} - ${page[page.length - 1].region}`,
                     components
             });
 
