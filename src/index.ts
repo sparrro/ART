@@ -1,4 +1,4 @@
-import { dbAdd, dbAddAbstract, dbAddGeneral, dbAddHdi, dbAddNumerical, dbAddVerbal, dbDataAdd, dbDataRetrieve, dbGetOne, dbTest } from "./apiCalls";
+import { dbAdd, dbAddAbstract, dbAddGeneral, dbAddHdi, dbAddNumerical, dbAddVerbal, dbDataAdd, dbDataRetrieve, dbGetOne, dbPing, dbTest } from "./apiCalls";
 import { countryPages, createCountryMenu, createIQQuestionnaire, createRegionMenu, createStartButtons } from "./components";
 import {
     TOKEN,
@@ -45,6 +45,12 @@ client.once("clientReady", async () => {
 
     const members = await server.members.fetch();
     const father = server.members.cache.get(MY_ID!);
+
+    setInterval(async () => {
+        if (testProgressState.size > 0) {
+            await dbPing();
+        };
+    }, 1000 * 60 * 60 * 6);
     
     //deletes all its dms - shouldn't be needed again but you never know
     for (const member of members.values()) {
@@ -94,24 +100,41 @@ client.login(TOKEN);
 client.on("interactionCreate", async (interaction) => {
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_hdi_recording") return;
+
     await interaction.deferUpdate();
+
+    const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
 
     const reasonPreventing = await preventedFromTesting(interaction.user.id, "hdi");
     if (reasonPreventing) {
-        await interaction.user.send(reasonPreventing);
+        await initialDm.edit(reasonPreventing);
         return;
     };
 
-    testProgressState.set(interaction.user.id, {});
-    const components = createCountryMenu(0);
-    const page = countryPages[0]
-    await interaction.user.send({
-        content:
-            `Select your country:\n` +
-            `Page ${1}/${countryPages.length}: ${page[0].country} - ${page[page.length - 1].country}`,
-        components
-    });
-    return;
+    const pingResponse = await dbPing();
+    if (pingResponse.success) {
+        testProgressState.set(interaction.user.id, {});
+        const components = createCountryMenu(0);
+        const page = countryPages[0]
+        await initialDm.edit({
+            content:
+                `Select your country:\n` +
+                `Page ${1}/${countryPages.length}: ${page[0].country} - ${page[page.length - 1].country}`,
+            components
+        });
+        setTimeout(async () => {
+            if (testProgressState.get(interaction.user.id)) {
+                await initialDm.edit({
+                    content: "You have been timed out",
+                    components: []
+                });
+                clearStates(interaction.user.id);
+            };
+        }, 1000 * 60 * 10);
+        return;
+    } else {
+        await initialDm.edit("There seems to be something wrong with my api");
+    };
 });
 
 /* client.on("interactionCreate", async (interaction) => {
@@ -472,38 +495,56 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.customId != "start_full_test") return;
     await interaction.deferUpdate();
 
-    const reasonPreventing = await preventedFromTesting(interaction.user.id, "full");
-    if (reasonPreventing) {
-        await interaction.user.send(reasonPreventing);
+    const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
+
+    const pingResponse = await dbPing();
+
+    if (pingResponse.success) {
+        const reasonPreventing = await preventedFromTesting(interaction.user.id, "full");
+        if (reasonPreventing) {
+            await initialDm.edit(reasonPreventing);
+            return;
+        };
+
+        //make it select random questions into a template
+        const qCopy = randomQuestions("full");
+        qCopy.forEach(q => {
+            q.options = scramble(q.options);
+        });
+
+        const firstQ = qCopy[0];
+        qCopy.shift();
+        personalisedQuestionsState.set(interaction.user.id, qCopy);
+        testProgressState.set(interaction.user.id, {});
+        backgroundProgressState.set(interaction.user.id, {
+            userId: interaction.user.id,
+            verbalAnswers: [],
+            numericalAnswers: [],
+            abstractAnswers: [],
+            generalAnswers: []
+        });
+
+        timerState.set(interaction.user.id, { allotedTime: 5400000, startedAt: Date.now() });
+
+        const components = createIQQuestionnaire(firstQ);
+        await initialDm.edit({
+            content: firstQ.question,
+            components
+        });
+        setTimeout(async () => {
+            if (testProgressState.get(interaction.user.id)) {
+                await initialDm.edit({
+                    content: "You have been timed out",
+                    components: []
+                });
+                clearStates(interaction.user.id);
+            }
+        }, 5400000 + (1000 * 60 * 10));
+        return;
+    } else {
+        await initialDm.edit("There seems to be something wrong with my api");
         return;
     };
-
-    //make it select random questions into a template
-    const qCopy = randomQuestions("full");
-    qCopy.forEach(q => {
-        q.options = scramble(q.options);
-    });
-
-    const firstQ = qCopy[0];
-    qCopy.shift();
-    personalisedQuestionsState.set(interaction.user.id, qCopy);
-    testProgressState.set(interaction.user.id, {});
-    backgroundProgressState.set(interaction.user.id, {
-        userId: interaction.user.id,
-        verbalAnswers: [],
-        numericalAnswers: [],
-        abstractAnswers: [],
-        generalAnswers: []
-    });
-
-    timerState.set(interaction.user.id, { allotedTime: 5400000, startedAt: Date.now() });
-
-    const components = createIQQuestionnaire(firstQ);
-    await interaction.user.send({
-        content: firstQ.question,
-        components
-    });
-    return;
 });
 
 //verbal test
@@ -513,34 +554,52 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.customId != "start_verbal_test") return;
     await interaction.deferUpdate();
 
-    const reasonPreventing = await preventedFromTesting(interaction.user.id, "V");
-    if (reasonPreventing) {
-        await interaction.user.send(reasonPreventing);
+    const initialDm = await interaction.user.send("Please be patient while i make sure my api is awake...");
+
+    const pingResponse = await dbPing();
+
+    if (pingResponse.success) {
+        const reasonPreventing = await preventedFromTesting(interaction.user.id, "V");
+        if (reasonPreventing) {
+            await initialDm.edit(reasonPreventing);
+            return;
+        };
+
+        const qCopy = randomQuestions("V");
+        qCopy.forEach(q => {
+            q.options = scramble(q.options);
+        });
+
+        const firstQ = qCopy[0];
+        qCopy.shift();
+        personalisedQuestionsState.set(interaction.user.id, qCopy);
+        testProgressState.set(interaction.user.id, {});
+        backgroundProgressState.set(interaction.user.id, {
+            userId: interaction.user.id,
+            verbalAnswers: []
+        });
+
+        timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
+
+        const components = createIQQuestionnaire(firstQ);
+        await initialDm.edit({
+            content: firstQ.question,
+            components
+        });
+        setTimeout(async () => {
+            if (testProgressState.get(interaction.user.id)) {
+                await initialDm.edit({
+                    content: "You have been timed out",
+                    components: []
+                });
+                clearStates(interaction.user.id);
+            }
+        }, 1500000 + (1000 * 60 * 10));
+        return;
+    } else {
+        await initialDm.edit("There seems to be something wrong with my api");
         return;
     };
-
-    const qCopy = randomQuestions("V");
-    qCopy.forEach(q => {
-        q.options = scramble(q.options);
-    });
-
-    const firstQ = qCopy[0];
-    qCopy.shift();
-    personalisedQuestionsState.set(interaction.user.id, qCopy);
-    testProgressState.set(interaction.user.id, {});
-    backgroundProgressState.set(interaction.user.id, {
-        userId: interaction.user.id,
-        verbalAnswers: []
-    });
-
-    timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
-
-    const components = createIQQuestionnaire(firstQ);
-    await interaction.user.send({
-        content: firstQ.question,
-        components
-    });
-    return;
 });
 
 //numerical test
@@ -550,34 +609,52 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.customId != "start_numerical_test") return;
     await interaction.deferUpdate();
 
-    const reasonPreventing = await preventedFromTesting(interaction.user.id, "N");
-    if (reasonPreventing) {
-        await interaction.user.send(reasonPreventing);
+    const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
+
+    const pingResponse = await dbPing();
+
+    if (pingResponse.success) {
+        const reasonPreventing = await preventedFromTesting(interaction.user.id, "N");
+        if (reasonPreventing) {
+            await initialDm.edit(reasonPreventing);
+            return;
+        };
+
+        const qCopy = randomQuestions("N");
+        qCopy.forEach(q => {
+            q.options = scramble(q.options);
+        });
+
+        const firstQ = qCopy[0];
+        qCopy.shift();
+        personalisedQuestionsState.set(interaction.user.id, qCopy);
+        testProgressState.set(interaction.user.id, {});
+        backgroundProgressState.set(interaction.user.id, {
+            userId: interaction.user.id,
+            numericalAnswers: []
+        });
+
+        timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
+
+        const components = createIQQuestionnaire(firstQ);
+        await initialDm.edit({
+            content: firstQ.question,
+            components
+        });
+        setTimeout(async () => {
+            if (testProgressState.get(interaction.user.id)) {
+                await initialDm.edit({
+                    content: "You have been timed out",
+                    components: []
+                });
+                clearStates(interaction.user.id);
+            }
+        }, 1500000 + (1000 * 60 * 10));
         return;
-    };
-
-    const qCopy = randomQuestions("N");
-    qCopy.forEach(q => {
-        q.options = scramble(q.options);
-    });
-
-    const firstQ = qCopy[0];
-    qCopy.shift();
-    personalisedQuestionsState.set(interaction.user.id, qCopy);
-    testProgressState.set(interaction.user.id, {});
-    backgroundProgressState.set(interaction.user.id, {
-        userId: interaction.user.id,
-        numericalAnswers: []
-    });
-
-    timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
-
-    const components = createIQQuestionnaire(firstQ);
-    await interaction.user.send({
-        content: firstQ.question,
-        components
-    });
-    return;
+    } else {
+        await initialDm.edit("There seems to be something wrong with my api");
+        return;
+    }
 });
 
 //abstract test
@@ -587,34 +664,52 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.customId != "start_abstract_test") return;
     await interaction.deferUpdate();
 
-    const reasonPreventing = await preventedFromTesting(interaction.user.id, "A");
-    if (reasonPreventing) {
-        await interaction.user.send(reasonPreventing);
+    const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
+
+    const pingResponse = await dbPing();
+
+    if (pingResponse.success) {
+        const reasonPreventing = await preventedFromTesting(interaction.user.id, "A");
+        if (reasonPreventing) {
+            await initialDm.edit(reasonPreventing);
+            return;
+        };
+
+        const qCopy = randomQuestions("A");
+        qCopy.forEach(q => {
+            q.options = scramble(q.options);
+        });
+
+        const firstQ = qCopy[0];
+        qCopy.shift();
+        personalisedQuestionsState.set(interaction.user.id, qCopy);
+        testProgressState.set(interaction.user.id, {});
+        backgroundProgressState.set(interaction.user.id, {
+            userId: interaction.user.id,
+            abstractAnswers: []
+        });
+
+        timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
+
+        const components = createIQQuestionnaire(firstQ);
+        await initialDm.edit({
+            content: firstQ.question,
+            components
+        });
+        setTimeout(async () => {
+            if (testProgressState.get(interaction.user.id)) {
+                await initialDm.edit({
+                    content: "You have been timed out",
+                    components: []
+                });
+                clearStates(interaction.user.id);
+            }
+        }, 1500000 + (1000 * 60 * 10));
         return;
-    };
-
-    const qCopy = randomQuestions("A");
-    qCopy.forEach(q => {
-        q.options = scramble(q.options);
-    });
-
-    const firstQ = qCopy[0];
-    qCopy.shift();
-    personalisedQuestionsState.set(interaction.user.id, qCopy);
-    testProgressState.set(interaction.user.id, {});
-    backgroundProgressState.set(interaction.user.id, {
-        userId: interaction.user.id,
-        abstractAnswers: []
-    });
-
-    timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
-
-    const components = createIQQuestionnaire(firstQ);
-    await interaction.user.send({
-        content: firstQ.question,
-        components
-    });
-    return;
+    } else {
+        await initialDm.edit("There seems to be something wrong with my api");
+        return;
+    }
 });
 
 //general knowledge test
@@ -624,32 +719,50 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.customId != "start_general_test") return;
     await interaction.deferUpdate();
 
-    const reasonPreventing = await preventedFromTesting(interaction.user.id, "G");
-    if (reasonPreventing) {
-        await interaction.user.send(reasonPreventing);
+    const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
+
+    const pingResponse = await dbPing();
+
+    if (pingResponse.success) {
+        const reasonPreventing = await preventedFromTesting(interaction.user.id, "G");
+        if (reasonPreventing) {
+            await initialDm.edit(reasonPreventing);
+            return;
+        };
+
+        const qCopy = randomQuestions("G");
+        qCopy.forEach(q => {
+            q.options = scramble(q.options);
+        });
+
+        const firstQ = qCopy[0];
+        qCopy.shift();
+        personalisedQuestionsState.set(interaction.user.id, qCopy);
+        testProgressState.set(interaction.user.id, {});
+        backgroundProgressState.set(interaction.user.id, {
+            userId: interaction.user.id,
+            generalAnswers: []
+        });
+
+        timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
+
+        const components = createIQQuestionnaire(firstQ);
+        await initialDm.edit({
+            content: firstQ.question,
+            components
+        });
+        setTimeout(async () => {
+            if (testProgressState.get(interaction.user.id)) {
+                await initialDm.edit({
+                    content: "You have been timed out",
+                    components: []
+                });
+                clearStates(interaction.user.id);
+            }
+        }, 1500000 + (1000 * 60 * 10));
+        return;
+    } else {
+        await initialDm.edit("There seems to be something wrong with my api");
         return;
     };
-
-    const qCopy = randomQuestions("G");
-    qCopy.forEach(q => {
-        q.options = scramble(q.options);
-    });
-
-    const firstQ = qCopy[0];
-    qCopy.shift();
-    personalisedQuestionsState.set(interaction.user.id, qCopy);
-    testProgressState.set(interaction.user.id, {});
-    backgroundProgressState.set(interaction.user.id, {
-        userId: interaction.user.id,
-        generalAnswers: []
-    });
-
-    timerState.set(interaction.user.id, { allotedTime: 1500000, startedAt: Date.now() });
-
-    const components = createIQQuestionnaire(firstQ);
-    await interaction.user.send({
-        content: firstQ.question,
-        components
-    });
-    return;
 });

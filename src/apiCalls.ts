@@ -183,3 +183,13 @@ export const dbDataRetrieve = async (userId: string) => {
         return err;
     };
 };
+
+export const dbPing = async () => {
+    try {
+        const response = await fetch(`${API_BASE_URL}/ping`);
+        const data = await response.json();
+        return data;
+    } catch (err) {
+        return err;
+    };
+};
