@@ -500,7 +500,7 @@ client.on("interactionCreate", async (interaction) => {
     await interaction.deferUpdate();
 
     const dm = await interaction.user.createDM();
-    const messages = await dm.messages.fetch({ limit: 10 });
+    const messages = await dm.messages.fetch({ limit: 5 });
     if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
 
     const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
@@ -560,7 +560,7 @@ client.on("interactionCreate", async (interaction) => {
     await interaction.deferUpdate();
 
     const dm = await interaction.user.createDM();
-    const messages = await dm.messages.fetch({ limit: 10 });
+    const messages = await dm.messages.fetch({ limit: 5 });
     if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
 
     const initialDm = await interaction.user.send("Please be patient while i make sure my api is awake...");
@@ -575,9 +575,6 @@ client.on("interactionCreate", async (interaction) => {
         };
 
         const qCopy = randomQuestions("V");
-        qCopy.forEach(q => {
-            q.options = scramble(q.options);
-        });
 
         const firstQ = qCopy[0];
         qCopy.shift();
@@ -619,7 +616,7 @@ client.on("interactionCreate", async (interaction) => {
     await interaction.deferUpdate();
 
     const dm = await interaction.user.createDM();
-    const messages = await dm.messages.fetch({ limit: 10 });
+    const messages = await dm.messages.fetch({ limit: 5 });
     if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
 
     const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
@@ -634,9 +631,6 @@ client.on("interactionCreate", async (interaction) => {
         };
 
         const qCopy = randomQuestions("N");
-        qCopy.forEach(q => {
-            q.options = scramble(q.options);
-        });
 
         const firstQ = qCopy[0];
         qCopy.shift();
@@ -678,7 +672,7 @@ client.on("interactionCreate", async (interaction) => {
     await interaction.deferUpdate();
 
     const dm = await interaction.user.createDM();
-    const messages = await dm.messages.fetch({ limit: 10 });
+    const messages = await dm.messages.fetch({ limit: 5 });
     if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
 
     const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
@@ -693,9 +687,6 @@ client.on("interactionCreate", async (interaction) => {
         };
 
         const qCopy = randomQuestions("A");
-        qCopy.forEach(q => {
-            q.options = scramble(q.options);
-        });
 
         const firstQ = qCopy[0];
         qCopy.shift();
@@ -737,7 +728,7 @@ client.on("interactionCreate", async (interaction) => {
     await interaction.deferUpdate();
 
     const dm = await interaction.user.createDM();
-    const messages = await dm.messages.fetch({ limit: 10 });
+    const messages = await dm.messages.fetch({ limit: 5 });
     if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
 
     const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
@@ -752,9 +743,6 @@ client.on("interactionCreate", async (interaction) => {
         };
 
         const qCopy = randomQuestions("G");
-        qCopy.forEach(q => {
-            q.options = scramble(q.options);
-        });
 
         const firstQ = qCopy[0];
         qCopy.shift();
