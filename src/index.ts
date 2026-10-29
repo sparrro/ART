@@ -103,6 +103,10 @@ client.on("interactionCreate", async (interaction) => {
 
     await interaction.deferUpdate();
 
+    const dm = await interaction.user.createDM();
+    const messages = await dm.messages.fetch({ limit: 10 });
+    if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
+
     const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
 
     const reasonPreventing = await preventedFromTesting(interaction.user.id, "hdi");
@@ -495,6 +499,10 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.customId != "start_full_test") return;
     await interaction.deferUpdate();
 
+    const dm = await interaction.user.createDM();
+    const messages = await dm.messages.fetch({ limit: 10 });
+    if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
+
     const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
 
     const pingResponse = await dbPing();
@@ -551,6 +559,10 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.customId != "start_verbal_test") return;
     await interaction.deferUpdate();
 
+    const dm = await interaction.user.createDM();
+    const messages = await dm.messages.fetch({ limit: 10 });
+    if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
+
     const initialDm = await interaction.user.send("Please be patient while i make sure my api is awake...");
 
     const pingResponse = await dbPing();
@@ -605,6 +617,10 @@ client.on("interactionCreate", async (interaction) => {
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_numerical_test") return;
     await interaction.deferUpdate();
+
+    const dm = await interaction.user.createDM();
+    const messages = await dm.messages.fetch({ limit: 10 });
+    if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
 
     const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
 
@@ -661,6 +677,10 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.customId != "start_abstract_test") return;
     await interaction.deferUpdate();
 
+    const dm = await interaction.user.createDM();
+    const messages = await dm.messages.fetch({ limit: 10 });
+    if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
+
     const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
 
     const pingResponse = await dbPing();
@@ -715,6 +735,10 @@ client.on("interactionCreate", async (interaction) => {
     if (!interaction.isButton()) return;
     if (interaction.customId != "start_general_test") return;
     await interaction.deferUpdate();
+
+    const dm = await interaction.user.createDM();
+    const messages = await dm.messages.fetch({ limit: 10 });
+    if (messages.find(message => message.author != interaction.user && message.content.startsWith("Please be patient"))) return;
 
     const initialDm = await interaction.user.send("Please be patient while I make sure my api is awake...");
 
