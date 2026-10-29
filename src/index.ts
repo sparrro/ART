@@ -508,9 +508,6 @@ client.on("interactionCreate", async (interaction) => {
 
         //make it select random questions into a template
         const qCopy = randomQuestions("full");
-        qCopy.forEach(q => {
-            q.options = scramble(q.options);
-        });
 
         const firstQ = qCopy[0];
         qCopy.shift();
