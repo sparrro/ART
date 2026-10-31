@@ -10,7 +10,7 @@ import {
 } from "./environment";
 import countries from "../data/hdiData.json";
 import { allowedQsType, questionType, resultDataType } from "./types";
-import questionsData from "../data/testQuestions.json";
+import questionsData from "../data/verbalQuestions.json";
 import {
     Channel,
     Client,

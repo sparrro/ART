@@ -1,0 +1,462 @@
+[
+  {
+    "category": "V",
+    "difficulty": "_1",
+    "question": "Which word means the opposite of 'hot'?",
+    "options": [
+      {
+        "answer": "Warm",
+        "correct": false
+      },
+      {
+        "answer": "Cold",
+        "correct": true
+      },
+      {
+        "answer": "Dry",
+        "correct": false
+      },
+      {
+        "answer": "Bright",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_2",
+    "question": "Which word does not belong with the others?",
+    "options": [
+      {
+        "answer": "Apple",
+        "correct": false
+      },
+      {
+        "answer": "Pear",
+        "correct": false
+      },
+      {
+        "answer": "Carrot",
+        "correct": true
+      },
+      {
+        "answer": "Orange",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_3",
+    "question": "Bird is to nest as bee is to what?",
+    "options": [
+      {
+        "answer": "Hive",
+        "correct": true
+      },
+      {
+        "answer": "Web",
+        "correct": false
+      },
+      {
+        "answer": "Burrow",
+        "correct": false
+      },
+      {
+        "answer": "Pond",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_4",
+    "question": "Which word is closest in meaning to 'rapid'?",
+    "options": [
+      {
+        "answer": "Heavy",
+        "correct": false
+      },
+      {
+        "answer": "Quiet",
+        "correct": false
+      },
+      {
+        "answer": "Distant",
+        "correct": false
+      },
+      {
+        "answer": "Fast",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_5",
+    "question": "Glove is to hand as sock is to what?",
+    "options": [
+      {
+        "answer": "Shoe",
+        "correct": false
+      },
+      {
+        "answer": "Foot",
+        "correct": true
+      },
+      {
+        "answer": "Leg",
+        "correct": false
+      },
+      {
+        "answer": "Toe",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_6",
+    "question": "Which word is most nearly opposite in meaning to 'scarce'?",
+    "options": [
+      {
+        "answer": "Abundant",
+        "correct": true
+      },
+      {
+        "answer": "Rare",
+        "correct": false
+      },
+      {
+        "answer": "Valuable",
+        "correct": false
+      },
+      {
+        "answer": "Limited",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_7",
+    "question": "Odometer is to distance as thermometer is to what?",
+    "options": [
+      {
+        "answer": "Weather",
+        "correct": false
+      },
+      {
+        "answer": "Mercury",
+        "correct": false
+      },
+      {
+        "answer": "Temperature",
+        "correct": true
+      },
+      {
+        "answer": "Pressure",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_8",
+    "question": "Which word best completes the sentence: Although the twins looked almost identical, their personalities were remarkably ___?",
+    "options": [
+      {
+        "answer": "Obscure",
+        "correct": false
+      },
+      {
+        "answer": "Similar",
+        "correct": false
+      },
+      {
+        "answer": "Artificial",
+        "correct": false
+      },
+      {
+        "answer": "Different",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_9",
+    "question": "Sapling is to tree as calf is to what?",
+    "options": [
+      {
+        "answer": "Cow",
+        "correct": true
+      },
+      {
+        "answer": "Foal",
+        "correct": false
+      },
+      {
+        "answer": "Herd",
+        "correct": false
+      },
+      {
+        "answer": "Pasture",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_10",
+    "question": "Which pair of words has the most similar relationship to 'author : novel'?",
+    "options": [
+      {
+        "answer": "Reader : library",
+        "correct": false
+      },
+      {
+        "answer": "Composer : symphony",
+        "correct": true
+      },
+      {
+        "answer": "Actor : theatre",
+        "correct": false
+      },
+      {
+        "answer": "Teacher : student",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_11",
+    "question": "All kestrels are falcons, and no falcons are flightless; which statement must therefore be true?",
+    "options": [
+      {
+        "answer": "All flying animals are kestrels",
+        "correct": false
+      },
+      {
+        "answer": "Some falcons are flightless",
+        "correct": false
+      },
+      {
+        "answer": "No kestrels are flightless",
+        "correct": true
+      },
+      {
+        "answer": "All falcons are kestrels",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_12",
+    "question": "Which word best completes the sentence: The witness's account was so ___ that investigators could not reconcile it with the physical evidence?",
+    "options": [
+      {
+        "answer": "Inconsistent",
+        "correct": true
+      },
+      {
+        "answer": "Meticulous",
+        "correct": false
+      },
+      {
+        "answer": "Lucid",
+        "correct": false
+      },
+      {
+        "answer": "Conclusive",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_13",
+    "question": "Blueprint is to building as score is to what?",
+    "options": [
+      {
+        "answer": "Instrument",
+        "correct": false
+      },
+      {
+        "answer": "Composer",
+        "correct": false
+      },
+      {
+        "answer": "Audience",
+        "correct": false
+      },
+      {
+        "answer": "Performance",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_14",
+    "question": "Some poets are historians, all historians are scholars, and no scholars are illiterate; which statement must be true?",
+    "options": [
+      {
+        "answer": "All poets are scholars",
+        "correct": false
+      },
+      {
+        "answer": "Some poets are not illiterate",
+        "correct": true
+      },
+      {
+        "answer": "No poets are illiterate",
+        "correct": false
+      },
+      {
+        "answer": "All scholars are historians",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_15",
+    "question": "Which word best describes a statement that appears self-contradictory but may nevertheless express a truth?",
+    "options": [
+      {
+        "answer": "Euphemism",
+        "correct": false
+      },
+      {
+        "answer": "Tautology",
+        "correct": false
+      },
+      {
+        "answer": "Paradox",
+        "correct": true
+      },
+      {
+        "answer": "Analogy",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_16",
+    "question": "Ephemeral is to permanent as taciturn is to what?",
+    "options": [
+      {
+        "answer": "Garrulous",
+        "correct": true
+      },
+      {
+        "answer": "Reticent",
+        "correct": false
+      },
+      {
+        "answer": "Reserved",
+        "correct": false
+      },
+      {
+        "answer": "Laconic",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_17",
+    "question": "All merels are vorins; some vorins are taves; no taves are lorms; which statement is necessarily true?",
+    "options": [
+      {
+        "answer": "Some merels are taves",
+        "correct": false
+      },
+      {
+        "answer": "No merels are lorms",
+        "correct": false
+      },
+      {
+        "answer": "Some vorins are not lorms",
+        "correct": true
+      },
+      {
+        "answer": "All vorins are merels",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_18",
+    "question": "Which pair exhibits the same relationship as 'profligate : frugal'?",
+    "options": [
+      {
+        "answer": "Obstinate : stubborn",
+        "correct": false
+      },
+      {
+        "answer": "Sporadic : intermittent",
+        "correct": false
+      },
+      {
+        "answer": "Audacious : courageous",
+        "correct": false
+      },
+      {
+        "answer": "Loquacious : taciturn",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_19",
+    "question": "A critic argues: 'Every novel that has remained continuously popular for two centuries possesses literary merit. This novel possesses literary merit. Therefore, it will remain continuously popular for two centuries.' Which flaw best describes the reasoning?",
+    "options": [
+      {
+        "answer": "It treats a necessary condition as though it were sufficient",
+        "correct": true
+      },
+      {
+        "answer": "It assumes that no unpopular novel can possess literary merit",
+        "correct": false
+      },
+      {
+        "answer": "It contradicts its original premise",
+        "correct": false
+      },
+      {
+        "answer": "It concludes that literary merit cannot change over time",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "V",
+    "difficulty": "_20",
+    "question": "No dral who is neither a fen nor a cor is a pel; every siv is a dral; some sivs are pels; which conclusion necessarily follows?",
+    "options": [
+      {
+        "answer": "Every siv is both a fen and a cor",
+        "correct": false
+      },
+      {
+        "answer": "Some siv is either a fen or a cor",
+        "correct": true
+      },
+      {
+        "answer": "No siv is both a fen and a cor",
+        "correct": false
+      },
+      {
+        "answer": "Every dral that is a pel is a siv",
+        "correct": false
+      }
+    ]
+  }
+]

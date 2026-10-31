@@ -1,6 +1,6 @@
 import { testProgressType } from "./types";
 import { questionType, resultDataType } from "./types";
-import questionsData from "../data/testQuestions.json";
+import questionsData from "../data/verbalQuestions.json";
 import { dbGetOne } from "./apiCalls";
 import { backgroundProgressState, personalisedQuestionsState, testProgressState, timerState } from "./state";
 import { CacheType, StringSelectMenuInteraction } from "discord.js";
@@ -163,7 +163,7 @@ export const clearStates = (id: string) => {
 };
 
 export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
-    const questionSubset: questionType[] = [];
+    let questionSubset: questionType[] = [];
     const scrambledQuestions = scramble(questions);
 
     for(let i = 1; i < 21; i++) {
@@ -187,6 +187,7 @@ export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
         };
     };
 
+    questionSubset = scramble(questionSubset);
     questionSubset.forEach(q => {
         q.options = scramble(q.options);
     });
