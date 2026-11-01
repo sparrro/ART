@@ -1,1 +1,222 @@
-[]
+[
+  {
+    "category": "N",
+    "difficulty": "_1",
+    "question": "What number comes next in the sequence 2, 4, 6, 8, ...?",
+    "options": [
+      { "answer": "10", "correct": true },
+      { "answer": "12", "correct": false },
+      { "answer": "9", "correct": false },
+      { "answer": "16", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_2",
+    "question": "What number comes next in the sequence 3, 6, 12, 24, ...?",
+    "options": [
+      { "answer": "36", "correct": false },
+      { "answer": "48", "correct": true },
+      { "answer": "42", "correct": false },
+      { "answer": "54", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_3",
+    "question": "If four identical notebooks cost 24 kronor, how much do two notebooks cost?",
+    "options": [
+      { "answer": "8 kronor", "correct": false },
+      { "answer": "10 kronor", "correct": false },
+      { "answer": "12 kronor", "correct": true },
+      { "answer": "16 kronor", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_4",
+    "question": "If 4 is multiplied by 3 to obtain 12, what is the result of multiplying 16 by the same number?",
+    "options": [
+      { "answer": "32", "correct": false },
+      { "answer": "36", "correct": false },
+      { "answer": "48", "correct": true },
+      { "answer": "64", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_5",
+    "question": "A worker earns 20 kronor per hour. How much does the worker earn after working 15 hours?",
+    "options": [
+      { "answer": "250 kronor", "correct": false },
+      { "answer": "280 kronor", "correct": false },
+      { "answer": "300 kronor", "correct": true },
+      { "answer": "320 kronor", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_6",
+    "question": "What number comes next in the sequence 1, 4, 9, 16, 25, ...?",
+    "options": [
+      { "answer": "30", "correct": false },
+      { "answer": "35", "correct": false },
+      { "answer": "36", "correct": true },
+      { "answer": "49", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_7",
+    "question": "A car travels 240 kilometres in 3 hours at a constant speed. What is its average speed?",
+    "options": [
+      { "answer": "60 km/h", "correct": false },
+      { "answer": "70 km/h", "correct": false },
+      { "answer": "80 km/h", "correct": true },
+      { "answer": "90 km/h", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_8",
+    "question": "If 5x - 12 = 28, what is the value of x?",
+    "options": [
+      { "answer": "6", "correct": false },
+      { "answer": "7", "correct": false },
+      { "answer": "8", "correct": true },
+      { "answer": "10", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_9",
+    "question": "A container holds 350 grams of a substance. If 40% of the substance is removed, how many grams are removed?",
+    "options": [
+      { "answer": "120 grams", "correct": false },
+      { "answer": "130 grams", "correct": false },
+      { "answer": "140 grams", "correct": true },
+      { "answer": "150 grams", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_10",
+    "question": "What number comes next in the sequence 7, 14, 21, 28, 35, ...?",
+    "options": [
+      { "answer": "40", "correct": false },
+      { "answer": "42", "correct": true },
+      { "answer": "45", "correct": false },
+      { "answer": "49", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_11",
+    "question": "A product's price decreases from 250 kronor to 240 kronor. By what percentage has its price decreased?",
+    "options": [
+      { "answer": "2%", "correct": false },
+      { "answer": "4%", "correct": true },
+      { "answer": "5%", "correct": false },
+      { "answer": "10%", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_12",
+    "question": "One worker can complete a task in 15 days, while another can complete the same task in 30 days. If they work together at constant rates, how many days will they need to complete the task?",
+    "options": [
+      { "answer": "8 days", "correct": false },
+      { "answer": "9 days", "correct": false },
+      { "answer": "10 days", "correct": true },
+      { "answer": "12 days", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_13",
+    "question": "What is the smallest positive integer that is divisible by both 12 and 18 and leaves a remainder of 5 when divided by 7?",
+    "options": [
+      { "answer": "108", "correct": false },
+      { "answer": "144", "correct": false },
+      { "answer": "180", "correct": true },
+      { "answer": "252", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_14",
+    "question": "A bag contains 5 red balls and 7 blue balls. Two balls are drawn at random without replacement. What is the probability that both balls are red?",
+    "options": [
+      { "answer": "5/33", "correct": true },
+      { "answer": "5/24", "correct": false },
+      { "answer": "2/11", "correct": false },
+      { "answer": "10/33", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_15",
+    "question": "If x and y are positive integers, x is less than or equal to y, and x² + y² = 80, what is the value of x + y?",
+    "options": [
+      { "answer": "10", "correct": false },
+      { "answer": "11", "correct": false },
+      { "answer": "12", "correct": true },
+      { "answer": "13", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_16",
+    "question": "A sequence is defined by a₁ = 2 and aₙ₊₁ = 3aₙ - 1. What is the value of a₅?",
+    "options": [
+      { "answer": "81", "correct": false },
+      { "answer": "108", "correct": false },
+      { "answer": "121", "correct": false },
+      { "answer": "122", "correct": true }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_17",
+    "question": "How many pairs of positive integers (x, y), with x less than or equal to y, satisfy the equation 1/x + 1/y = 1/6?",
+    "options": [
+      { "answer": "3", "correct": false },
+      { "answer": "4", "correct": false },
+      { "answer": "5", "correct": true },
+      { "answer": "6", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_18",
+    "question": "How many distinct arrangements of the letters in BANANA are possible if no two A's may be adjacent?",
+    "options": [
+      { "answer": "10", "correct": false },
+      { "answer": "20", "correct": true },
+      { "answer": "40", "correct": false },
+      { "answer": "60", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_19",
+    "question": "Which of the following numbers has exactly 24 positive integer divisors?",
+    "options": [
+      { "answer": "2⁵ × 3²", "correct": false },
+      { "answer": "2⁴ × 3³", "correct": false },
+      { "answer": "2⁵ × 3³", "correct": true },
+      { "answer": "2⁶ × 3²", "correct": false }
+    ]
+  },
+  {
+    "category": "N",
+    "difficulty": "_20",
+    "question": "A fair coin is tossed 10 times. Given that the first toss is heads, what is the probability that exactly 5 of the 10 tosses are heads?",
+    "options": [
+      { "answer": "21/128", "correct": false },
+      { "answer": "63/256", "correct": true },
+      { "answer": "5/32", "correct": false },
+      { "answer": "1/2", "correct": false }
+    ]
+  }
+]
