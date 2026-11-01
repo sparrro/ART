@@ -1,6 +1,5 @@
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, StringSelectMenuBuilder, StringSelectMenuOptionBuilder } from "discord.js";
 import countries from "../data/hdiData.json";
-import questions from "../data/questions.json";
 import { paginate } from "./helpers";
 import {
     questionType,

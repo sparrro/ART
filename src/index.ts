@@ -10,7 +10,7 @@ import {
 } from "./environment";
 import countries from "../data/hdiData.json";
 import { allowedQsType, questionType, resultDataType } from "./types";
-import questionsData from "../data/verbalQuestions.json";
+import { questions } from "./dataConfig";
 import {
     Channel,
     Client,
@@ -19,8 +19,6 @@ import {
 } from "discord.js";
 import { clearStates, countScores, formatTime, paginate, preventedFromTesting, randomQuestions, scramble, splitQuestions } from "./helpers";
 import { backgroundProgressState, personalisedQuestionsState, testProgressState, timerState } from "./state";
-
-const questions = questionsData as questionType[];
 
 let iqChannel: Channel | undefined | null;
 

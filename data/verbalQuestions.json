@@ -2,461 +2,221 @@
   {
     "category": "V",
     "difficulty": "_1",
-    "question": "Which word means the opposite of 'hot'?",
+    "question": "Which word is closest in meaning to \"concise\"?",
     "options": [
-      {
-        "answer": "Warm",
-        "correct": false
-      },
-      {
-        "answer": "Cold",
-        "correct": true
-      },
-      {
-        "answer": "Dry",
-        "correct": false
-      },
-      {
-        "answer": "Bright",
-        "correct": false
-      }
+      { "answer": "Brief", "correct": true },
+      { "answer": "Confusing", "correct": false },
+      { "answer": "Detailed", "correct": false },
+      { "answer": "Repetitive", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_2",
-    "question": "Which word does not belong with the others?",
+    "question": "Which word is the opposite of \"scarce\"?",
     "options": [
-      {
-        "answer": "Apple",
-        "correct": false
-      },
-      {
-        "answer": "Pear",
-        "correct": false
-      },
-      {
-        "answer": "Carrot",
-        "correct": true
-      },
-      {
-        "answer": "Orange",
-        "correct": false
-      }
+      { "answer": "Rare", "correct": false },
+      { "answer": "Abundant", "correct": true },
+      { "answer": "Limited", "correct": false },
+      { "answer": "Insufficient", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_3",
-    "question": "Bird is to nest as bee is to what?",
+    "question": "Seed is to tree as egg is to what?",
     "options": [
-      {
-        "answer": "Hive",
-        "correct": true
-      },
-      {
-        "answer": "Web",
-        "correct": false
-      },
-      {
-        "answer": "Burrow",
-        "correct": false
-      },
-      {
-        "answer": "Pond",
-        "correct": false
-      }
+      { "answer": "Nest", "correct": false },
+      { "answer": "Feather", "correct": false },
+      { "answer": "Bird", "correct": true },
+      { "answer": "Shell", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_4",
-    "question": "Which word is closest in meaning to 'rapid'?",
+    "question": "Which item does not belong with the others?",
     "options": [
-      {
-        "answer": "Heavy",
-        "correct": false
-      },
-      {
-        "answer": "Quiet",
-        "correct": false
-      },
-      {
-        "answer": "Distant",
-        "correct": false
-      },
-      {
-        "answer": "Fast",
-        "correct": true
-      }
+      { "answer": "Height", "correct": false },
+      { "answer": "Length", "correct": false },
+      { "answer": "Width", "correct": false },
+      { "answer": "Weight", "correct": true }
     ]
   },
   {
     "category": "V",
     "difficulty": "_5",
-    "question": "Glove is to hand as sock is to what?",
+    "question": "Book is to author as painting is to whom?",
     "options": [
-      {
-        "answer": "Shoe",
-        "correct": false
-      },
-      {
-        "answer": "Foot",
-        "correct": true
-      },
-      {
-        "answer": "Leg",
-        "correct": false
-      },
-      {
-        "answer": "Toe",
-        "correct": false
-      }
+      { "answer": "Curator", "correct": false },
+      { "answer": "Artist", "correct": true },
+      { "answer": "Collector", "correct": false },
+      { "answer": "Critic", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_6",
-    "question": "Which word is most nearly opposite in meaning to 'scarce'?",
+    "question": "All members of the expedition are either experienced climbers or trained navigators. No trained navigator is inexperienced. Some members of the expedition are inexperienced. Which conclusion must follow?",
     "options": [
-      {
-        "answer": "Abundant",
-        "correct": true
-      },
-      {
-        "answer": "Rare",
-        "correct": false
-      },
-      {
-        "answer": "Valuable",
-        "correct": false
-      },
-      {
-        "answer": "Limited",
-        "correct": false
-      }
+      { "answer": "Some experienced climbers are not trained navigators", "correct": false },
+      { "answer": "Some members of the expedition are experienced climbers", "correct": true },
+      { "answer": "All experienced climbers are inexperienced", "correct": false },
+      { "answer": "No member of the expedition is both an experienced climber and a trained navigator", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_7",
-    "question": "Odometer is to distance as thermometer is to what?",
+    "question": "If an alarm is activated, a warning light flashes. The warning light is not flashing. What must be true?",
     "options": [
-      {
-        "answer": "Weather",
-        "correct": false
-      },
-      {
-        "answer": "Mercury",
-        "correct": false
-      },
-      {
-        "answer": "Temperature",
-        "correct": true
-      },
-      {
-        "answer": "Pressure",
-        "correct": false
-      }
+      { "answer": "The alarm is not activated", "correct": true },
+      { "answer": "The warning light is broken", "correct": false },
+      { "answer": "The alarm was activated earlier", "correct": false },
+      { "answer": "The alarm is activated but silent", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_8",
-    "question": "Which word best completes the sentence: Although the twins looked almost identical, their personalities were remarkably ___?",
+    "question": "Only registered members may vote in the election. Alex voted in the election. Which conclusion must follow?",
     "options": [
-      {
-        "answer": "Obscure",
-        "correct": false
-      },
-      {
-        "answer": "Similar",
-        "correct": false
-      },
-      {
-        "answer": "Artificial",
-        "correct": false
-      },
-      {
-        "answer": "Different",
-        "correct": true
-      }
+      { "answer": "Alex registered specifically to vote", "correct": false },
+      { "answer": "Alex is a registered member", "correct": true },
+      { "answer": "Every registered member voted", "correct": false },
+      { "answer": "Alex is eligible to vote in every election", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_9",
-    "question": "Sapling is to tree as calf is to what?",
+    "question": "A person may enter the laboratory only if they possess a valid permit. Which statement expresses the same restriction?",
     "options": [
-      {
-        "answer": "Cow",
-        "correct": true
-      },
-      {
-        "answer": "Foal",
-        "correct": false
-      },
-      {
-        "answer": "Herd",
-        "correct": false
-      },
-      {
-        "answer": "Pasture",
-        "correct": false
-      }
+      { "answer": "Anyone with a valid permit must enter the laboratory", "correct": false },
+      { "answer": "Anyone who enters the laboratory possesses a valid permit", "correct": true },
+      { "answer": "Anyone without a valid permit is forbidden from entering every building", "correct": false },
+      { "answer": "Anyone who does not enter the laboratory lacks a valid permit", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_10",
-    "question": "Which pair of words has the most similar relationship to 'author : novel'?",
+    "question": "Thermometer is to temperature as barometer is to what?",
     "options": [
-      {
-        "answer": "Reader : library",
-        "correct": false
-      },
-      {
-        "answer": "Composer : symphony",
-        "correct": true
-      },
-      {
-        "answer": "Actor : theatre",
-        "correct": false
-      },
-      {
-        "answer": "Teacher : student",
-        "correct": false
-      }
+      { "answer": "Humidity", "correct": false },
+      { "answer": "Wind speed", "correct": false },
+      { "answer": "Atmospheric pressure", "correct": true },
+      { "answer": "Precipitation", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_11",
-    "question": "All kestrels are falcons, and no falcons are flightless; which statement must therefore be true?",
+    "question": "All archivists are meticulous. No meticulous person is careless. Some researchers are archivists. Which conclusion must follow?",
     "options": [
-      {
-        "answer": "All flying animals are kestrels",
-        "correct": false
-      },
-      {
-        "answer": "Some falcons are flightless",
-        "correct": false
-      },
-      {
-        "answer": "No kestrels are flightless",
-        "correct": true
-      },
-      {
-        "answer": "All falcons are kestrels",
-        "correct": false
-      }
+      { "answer": "All researchers are meticulous", "correct": false },
+      { "answer": "Some researchers are not careless", "correct": true },
+      { "answer": "No researchers are careless", "correct": false },
+      { "answer": "Some meticulous people are not researchers", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_12",
-    "question": "Which word best completes the sentence: The witness's account was so ___ that investigators could not reconcile it with the physical evidence?",
+    "question": "If P is true, then Q is true. If Q is true, then R is true. R is false. What must follow?",
     "options": [
-      {
-        "answer": "Inconsistent",
-        "correct": true
-      },
-      {
-        "answer": "Meticulous",
-        "correct": false
-      },
-      {
-        "answer": "Lucid",
-        "correct": false
-      },
-      {
-        "answer": "Conclusive",
-        "correct": false
-      }
+      { "answer": "P is true and Q is false", "correct": false },
+      { "answer": "P is false and Q is true", "correct": false },
+      { "answer": "P is false", "correct": true },
+      { "answer": "Q is true", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_13",
-    "question": "Blueprint is to building as score is to what?",
+    "question": "A company introduces a new attendance policy. During the following month, employee absences decrease. The manager concludes that the new policy caused the decrease. Which is the strongest reason to question this conclusion?",
     "options": [
-      {
-        "answer": "Instrument",
-        "correct": false
-      },
-      {
-        "answer": "Composer",
-        "correct": false
-      },
-      {
-        "answer": "Audience",
-        "correct": false
-      },
-      {
-        "answer": "Performance",
-        "correct": true
-      }
+      { "answer": "The policy was introduced before the decrease occurred", "correct": false },
+      { "answer": "The number of employees did not necessarily remain constant", "correct": true },
+      { "answer": "The policy was intended to reduce absences", "correct": false },
+      { "answer": "Some employees may have preferred the previous policy", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_14",
-    "question": "Some poets are historians, all historians are scholars, and no scholars are illiterate; which statement must be true?",
+    "question": "Every member of the committee has either a legal qualification or a financial qualification, and some members have both. Which statement must be true?",
     "options": [
-      {
-        "answer": "All poets are scholars",
-        "correct": false
-      },
-      {
-        "answer": "Some poets are not illiterate",
-        "correct": true
-      },
-      {
-        "answer": "No poets are illiterate",
-        "correct": false
-      },
-      {
-        "answer": "All scholars are historians",
-        "correct": false
-      }
+      { "answer": "Every member with a legal qualification also has a financial qualification", "correct": false },
+      { "answer": "At least one member has both qualifications", "correct": true },
+      { "answer": "No member has only a legal qualification", "correct": false },
+      { "answer": "Every member has exactly one qualification", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_15",
-    "question": "Which word best describes a statement that appears self-contradictory but may nevertheless express a truth?",
+    "question": "A museum's policy states: \"An object may be displayed only if it has been authenticated, and it must not be displayed if its ownership is disputed.\" An object is currently displayed. Which conclusion must follow?",
     "options": [
-      {
-        "answer": "Euphemism",
-        "correct": false
-      },
-      {
-        "answer": "Tautology",
-        "correct": false
-      },
-      {
-        "answer": "Paradox",
-        "correct": true
-      },
-      {
-        "answer": "Analogy",
-        "correct": false
-      }
+      { "answer": "Its ownership is undisputed and it has been authenticated", "correct": true },
+      { "answer": "Its ownership is undisputed, but it may not have been authenticated", "correct": false },
+      { "answer": "It has been authenticated, but its ownership may be disputed", "correct": false },
+      { "answer": "It has been authenticated and its ownership has been legally established", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_16",
-    "question": "Ephemeral is to permanent as taciturn is to what?",
+    "question": "All members of Group A belong to Group B. No member of Group B belongs to Group C. Some members of Group D belong to Group A. Which statement must be true?",
     "options": [
-      {
-        "answer": "Garrulous",
-        "correct": true
-      },
-      {
-        "answer": "Reticent",
-        "correct": false
-      },
-      {
-        "answer": "Reserved",
-        "correct": false
-      },
-      {
-        "answer": "Laconic",
-        "correct": false
-      }
+      { "answer": "Some members of Group D belong to Group C", "correct": false },
+      { "answer": "No members of Group D belong to Group B", "correct": false },
+      { "answer": "Some members of Group D do not belong to Group C", "correct": true },
+      { "answer": "No members of Group A belong to Group D", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_17",
-    "question": "All merels are vorins; some vorins are taves; no taves are lorms; which statement is necessarily true?",
+    "question": "If a report is approved, then either the budget is released or the project is delayed, but not both. If the project is delayed, the director is notified. The budget has not been released. What must be true if the report is approved?",
     "options": [
-      {
-        "answer": "Some merels are taves",
-        "correct": false
-      },
-      {
-        "answer": "No merels are lorms",
-        "correct": false
-      },
-      {
-        "answer": "Some vorins are not lorms",
-        "correct": true
-      },
-      {
-        "answer": "All vorins are merels",
-        "correct": false
-      }
+      { "answer": "The director is notified", "correct": true },
+      { "answer": "The director is not notified", "correct": false },
+      { "answer": "The project is not delayed", "correct": false },
+      { "answer": "The budget is released after the project is delayed", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_18",
-    "question": "Which pair exhibits the same relationship as 'profligate : frugal'?",
+    "question": "A researcher argues: \"Whenever a city has an efficient public transport system, traffic congestion decreases. Traffic congestion has decreased in this city. Therefore, this city has an efficient public transport system.\" What is the central logical flaw in the argument?",
     "options": [
-      {
-        "answer": "Obstinate : stubborn",
-        "correct": false
-      },
-      {
-        "answer": "Sporadic : intermittent",
-        "correct": false
-      },
-      {
-        "answer": "Audacious : courageous",
-        "correct": false
-      },
-      {
-        "answer": "Loquacious : taciturn",
-        "correct": true
-      }
+      { "answer": "It assumes that a decrease in congestion is impossible without public transport", "correct": false },
+      { "answer": "It treats a condition that is sufficient for an outcome as though it were necessary for that outcome", "correct": true },
+      { "answer": "It assumes that every city has the same amount of traffic congestion", "correct": false },
+      { "answer": "It contradicts its own premise by claiming that congestion has decreased", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_19",
-    "question": "A critic argues: 'Every novel that has remained continuously popular for two centuries possesses literary merit. This novel possesses literary merit. Therefore, it will remain continuously popular for two centuries.' Which flaw best describes the reasoning?",
+    "question": "Four presentations, A, B, C and D, must be given in a single sequence. A must occur before B. B must occur before C. D must occur immediately after C. Which sequence is possible?",
     "options": [
-      {
-        "answer": "It treats a necessary condition as though it were sufficient",
-        "correct": true
-      },
-      {
-        "answer": "It assumes that no unpopular novel can possess literary merit",
-        "correct": false
-      },
-      {
-        "answer": "It contradicts its original premise",
-        "correct": false
-      },
-      {
-        "answer": "It concludes that literary merit cannot change over time",
-        "correct": false
-      }
+      { "answer": "A, B, C, D", "correct": true },
+      { "answer": "A, C, D, B", "correct": false },
+      { "answer": "B, A, C, D", "correct": false },
+      { "answer": "A, B, D, C", "correct": false }
     ]
   },
   {
     "category": "V",
     "difficulty": "_20",
-    "question": "No dral who is neither a fen nor a cor is a pel; every siv is a dral; some sivs are pels; which conclusion necessarily follows?",
+    "question": "Consider the following premises: Every accepted manuscript has been reviewed. No reviewed manuscript is anonymous. Some submitted manuscripts are anonymous. Which conclusion must follow?",
     "options": [
-      {
-        "answer": "Every siv is both a fen and a cor",
-        "correct": false
-      },
-      {
-        "answer": "Some siv is either a fen or a cor",
-        "correct": true
-      },
-      {
-        "answer": "No siv is both a fen and a cor",
-        "correct": false
-      },
-      {
-        "answer": "Every dral that is a pel is a siv",
-        "correct": false
-      }
+      { "answer": "Some submitted manuscripts have been reviewed", "correct": false },
+      { "answer": "Some submitted manuscripts have not been accepted", "correct": true },
+      { "answer": "No submitted manuscript has been accepted", "correct": false },
+      { "answer": "Some anonymous manuscripts have been accepted", "correct": false }
     ]
   }
 ]

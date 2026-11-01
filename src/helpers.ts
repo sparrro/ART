@@ -1,11 +1,9 @@
 import { testProgressType } from "./types";
 import { questionType, resultDataType } from "./types";
-import questionsData from "../data/verbalQuestions.json";
+import { questions } from "./dataConfig";
 import { dbGetOne } from "./apiCalls";
 import { backgroundProgressState, personalisedQuestionsState, testProgressState, timerState } from "./state";
 import { CacheType, StringSelectMenuInteraction } from "discord.js";
-
-const questions = questionsData as questionType[];
 
 export const paginate = <T>(array: T[]): T[][] => {
     const pages: T[][] = [];

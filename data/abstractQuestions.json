@@ -1,0 +1,462 @@
+[
+  {
+    "category": "A",
+    "difficulty": "_1",
+    "question": "Which symbol comes next in the sequence: ▲, ■, ▲, ■, ▲, ?",
+    "options": [
+      {
+        "answer": "▲",
+        "correct": false
+      },
+      {
+        "answer": "■",
+        "correct": true
+      },
+      {
+        "answer": "●",
+        "correct": false
+      },
+      {
+        "answer": "○",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_2",
+    "question": "Which symbol completes the sequence: ○, ○○, ○○○, ○○○○, ?",
+    "options": [
+      {
+        "answer": "○○○",
+        "correct": false
+      },
+      {
+        "answer": "○○○○○",
+        "correct": true
+      },
+      {
+        "answer": "○○",
+        "correct": false
+      },
+      {
+        "answer": "○○○○○○",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_3",
+    "question": "Which group does not belong with the others?",
+    "options": [
+      {
+        "answer": "▲▲",
+        "correct": false
+      },
+      {
+        "answer": "■■",
+        "correct": false
+      },
+      {
+        "answer": "○○",
+        "correct": false
+      },
+      {
+        "answer": "●○",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_4",
+    "question": "If ▲○ becomes ○▲, how should ■△ be transformed using the same rule?",
+    "options": [
+      {
+        "answer": "△■",
+        "correct": true
+      },
+      {
+        "answer": "■△",
+        "correct": false
+      },
+      {
+        "answer": "△△",
+        "correct": false
+      },
+      {
+        "answer": "■■",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_5",
+    "question": "Which group completes the matrix\n▲, ▲▲, ▲▲▲\n○, ○○, ○○○\n■, ■■, ?",
+    "options": [
+      {
+        "answer": "■■",
+        "correct": false
+      },
+      {
+        "answer": "■■■■",
+        "correct": false
+      },
+      {
+        "answer": "■■■",
+        "correct": true
+      },
+      {
+        "answer": "■",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_6",
+    "question": "Which symbol comes next: ▲, ▼, ▲▲, ▼▼, ▲▲▲, ?",
+    "options": [
+      {
+        "answer": "▲▲▲▲",
+        "correct": false
+      },
+      {
+        "answer": "▼▼▼",
+        "correct": true
+      },
+      {
+        "answer": "▲▲▲",
+        "correct": false
+      },
+      {
+        "answer": "▼▼",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_7",
+    "question": "A symbol undergoes the following transformation: ▲○■ becomes ■○▲. What does ◆□● become under the same transformation?",
+    "options": [
+      {
+        "answer": "●□◆",
+        "correct": true
+      },
+      {
+        "answer": "◆●□",
+        "correct": false
+      },
+      {
+        "answer": "□◆●",
+        "correct": false
+      },
+      {
+        "answer": "●◆□",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_8",
+    "question": "Which group completes the matrix:\n▲○, ○▲, ▲○▲\n■□, □■, ■□■\n◆◇, ◇◆, ?",
+    "options": [
+      {
+        "answer": "◇◆◇",
+        "correct": false
+      },
+      {
+        "answer": "◆◇◆",
+        "correct": true
+      },
+      {
+        "answer": "◆◆◇",
+        "correct": false
+      },
+      {
+        "answer": "◇◇◆",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_9",
+    "question": "Which symbol completes the sequence: ▲, ○, ■, ▲▲, ○○, ■■, ▲▲▲, ○○○, ?",
+    "options": [
+      {
+        "answer": "■■",
+        "correct": false
+      },
+      {
+        "answer": "▲▲▲",
+        "correct": false
+      },
+      {
+        "answer": "■■■",
+        "correct": true
+      },
+      {
+        "answer": "○○○○",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_10",
+    "question": "In a transformation system, ▲○ becomes ○● and ■△ becomes △▲. Following the same rule, what does ◆□ become?",
+    "options": [
+      {
+        "answer": "□■",
+        "correct": true
+      },
+      {
+        "answer": "◇■",
+        "correct": false
+      },
+      {
+        "answer": "□◆",
+        "correct": false
+      },
+      {
+        "answer": "◆◇",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_11",
+    "question": "Which group completes the matrix:\n▲○■, ○■▲, ■▲○\n◆□●, □●◆, ●◆□\n△◇★, ◇★△, ?",
+    "options": [
+      {
+        "answer": "★△◇",
+        "correct": true
+      },
+      {
+        "answer": "△◇★",
+        "correct": false
+      },
+      {
+        "answer": "★◇△",
+        "correct": false
+      },
+      {
+        "answer": "◇△★",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_12",
+    "question": "A sequence of symbols follows two alternating transformations: first reverse the order of the symbols, then replace every symbol with its filled equivalent. Starting with ▲○□, what is the result after both transformations have been applied twice?",
+    "options": [
+      {
+        "answer": "■●▼",
+        "correct": false
+      },
+      {
+        "answer": "□○▲",
+        "correct": false
+      },
+      {
+        "answer": "■●▲",
+        "correct": false
+      },
+      {
+        "answer": "▲●■",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_13",
+    "question": "In each row of a matrix, the third group is formed by placing the first group's symbols followed by the second group's symbols, with identical adjacent symbols combined into one. If the first two groups are ▲▲○ and ○■, what is the third group?",
+    "options": [
+      {
+        "answer": "▲▲○■",
+        "correct": true
+      },
+      {
+        "answer": "▲▲○○■",
+        "correct": false
+      },
+      {
+        "answer": "▲○■",
+        "correct": false
+      },
+      {
+        "answer": "▲▲■■",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_14",
+    "question": "A symbol is transformed by rotating its orientation 90 degrees clockwise and then reflecting it horizontally. If a right-pointing arrow becomes a downward-pointing arrow, what does an upward-pointing arrow become under the same transformation?",
+    "options": [
+      {
+        "answer": "Upward",
+        "correct": false
+      },
+      {
+        "answer": "Downward",
+        "correct": false
+      },
+      {
+        "answer": "Leftward",
+        "correct": true
+      },
+      {
+        "answer": "Rightward",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_15",
+    "question": "A sequence follows this rule: each new group is created by reversing the previous group and then moving its first symbol to the end. Starting with ▲○■◆, what is the third group?",
+    "options": [
+      {
+        "answer": "◆○▲■",
+        "correct": false
+      },
+      {
+        "answer": "▲○■◆",
+        "correct": true
+      },
+      {
+        "answer": "■◆○▲",
+        "correct": false
+      },
+      {
+        "answer": "○▲◆■",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_16",
+    "question": "A matrix follows two independent rules: each row contains three different symbols, and each column contains exactly one filled symbol. The first two rows are ▲○■ / □◆○. Which of the following could be the third row?",
+    "options": [
+      {
+        "answer": "△◇★",
+        "correct": false
+      },
+      {
+        "answer": "▲●□",
+        "correct": false
+      },
+      {
+        "answer": "◆○■",
+        "correct": false
+      },
+      {
+        "answer": "△○◇",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_17",
+    "question": "A transformation changes a group by reversing its order, changing every filled symbol to its outline equivalent and every outline symbol to its filled equivalent, and then moving the last symbol to the beginning. What does ▲●□■ become?",
+    "options": [
+      {
+        "answer": "●▲■○",
+        "correct": false
+      },
+      {
+        "answer": "△□■○",
+        "correct": true
+      },
+      {
+        "answer": "○■△●",
+        "correct": false
+      },
+      {
+        "answer": "●△□○",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_18",
+    "question": "Three symbols follow a cyclic transformation in which the first moves to the end, the second becomes filled if it was outlined and outlined if it was filled, and the third changes shape to its paired equivalent. Starting with ▲○■, what is the result after two transformations, where the paired equivalents are ▲↔▼, ○↔● and ■↔□?",
+    "options": [
+      {
+        "answer": "■▼●",
+        "correct": true
+      },
+      {
+        "answer": "●□▲",
+        "correct": false
+      },
+      {
+        "answer": "▼○□",
+        "correct": false
+      },
+      {
+        "answer": "□○▼",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_19",
+    "question": "A transformation system has two operations: X reverses the order of three symbols, while Y exchanges every symbol with its paired equivalent (▲↔▼, ○↔●, ■↔□). If the sequence of operations is X, Y, X, Y, X, what is the result when applied to ▲○■?",
+    "options": [
+      {
+        "answer": "□●▼",
+        "correct": false
+      },
+      {
+        "answer": "■○▲",
+        "correct": true
+      },
+      {
+        "answer": "▲○■",
+        "correct": false
+      },
+      {
+        "answer": "▼●□",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "A",
+    "difficulty": "_20",
+    "question": "A three-symbol sequence is transformed using the following rule: reverse its order, replace the first and third symbols with their paired equivalents (▲↔▼, ○↔●, ■↔□), and rotate the middle symbol's shape 90 degrees clockwise. If the middle symbol is a circle, it remains unchanged. What is the result when the rule is applied to ▲○■?",
+    "options": [
+      {
+        "answer": "□○▼",
+        "correct": true
+      },
+      {
+        "answer": "■○▲",
+        "correct": false
+      },
+      {
+        "answer": "□●▼",
+        "correct": false
+      },
+      {
+        "answer": "▼○□",
+        "correct": false
+      }
+    ]
+  }
+]
