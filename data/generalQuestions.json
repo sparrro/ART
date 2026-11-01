@@ -1,1 +1,222 @@
-[]
+[
+  {
+    "category": "G",
+    "difficulty": "_1",
+    "question": "In which year did the Second World War end?",
+    "options": [
+      { "answer": "1943", "correct": false },
+      { "answer": "1945", "correct": true },
+      { "answer": "1947", "correct": false },
+      { "answer": "1950", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_2",
+    "question": "Which ancient civilisation constructed the pyramids at Giza?",
+    "options": [
+      { "answer": "The Sumerians", "correct": false },
+      { "answer": "The Egyptians", "correct": true },
+      { "answer": "The Persians", "correct": false },
+      { "answer": "The Phoenicians", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_3",
+    "question": "Who was the first emperor of Rome?",
+    "options": [
+      { "answer": "Julius Caesar", "correct": false },
+      { "answer": "Nero", "correct": false },
+      { "answer": "Augustus", "correct": true },
+      { "answer": "Constantine", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_4",
+    "question": "Which city was the capital of the Byzantine Empire?",
+    "options": [
+      { "answer": "Athens", "correct": false },
+      { "answer": "Alexandria", "correct": false },
+      { "answer": "Constantinople", "correct": true },
+      { "answer": "Antioch", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_5",
+    "question": "Which English king was forced to agree to the Magna Carta in 1215?",
+    "options": [
+      { "answer": "Henry II", "correct": false },
+      { "answer": "Richard I", "correct": false },
+      { "answer": "John", "correct": true },
+      { "answer": "Edward I", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_6",
+    "question": "Which empire was ruled by Mansa Musa during the fourteenth century?",
+    "options": [
+      { "answer": "The Songhai Empire", "correct": false },
+      { "answer": "The Mali Empire", "correct": true },
+      { "answer": "The Ghana Empire", "correct": false },
+      { "answer": "The Benin Empire", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_7",
+    "question": "Which battle in 1066 resulted in William the Conqueror becoming king of England?",
+    "options": [
+      { "answer": "The Battle of Stamford Bridge", "correct": false },
+      { "answer": "The Battle of Agincourt", "correct": false },
+      { "answer": "The Battle of Hastings", "correct": true },
+      { "answer": "The Battle of Bannockburn", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_8",
+    "question": "Which treaty, signed in 1648, is commonly associated with the end of the Thirty Years' War?",
+    "options": [
+      { "answer": "The Treaty of Utrecht", "correct": false },
+      { "answer": "The Peace of Westphalia", "correct": true },
+      { "answer": "The Treaty of Augsburg", "correct": false },
+      { "answer": "The Treaty of Tordesillas", "correct": false }
+    ]
+  },
+  {
+  "category": "G",
+  "difficulty": "_9",
+  "question": "Which agreement, signed in 1938, allowed Nazi Germany to annex the Sudetenland from Czechoslovakia?",
+  "options": [
+      { "answer": "The Molotov–Ribbentrop Pact", "correct": false },
+      { "answer": "The Munich Agreement", "correct": true },
+      { "answer": "The Locarno Treaties", "correct": false },
+      { "answer": "The Treaty of Rapallo", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_10",
+    "question": "Which scientist formulated the three laws of motion published in Principia Mathematica in 1687?",
+    "options": [
+      { "answer": "Galileo Galilei", "correct": false },
+      { "answer": "Johannes Kepler", "correct": false },
+      { "answer": "Isaac Newton", "correct": true },
+      { "answer": "Robert Boyle", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_11",
+    "question": "Which faction, led by Oliver Cromwell, emerged victorious in the English Civil Wars?",
+    "options": [
+      { "answer": "The Royalists", "correct": false },
+      { "answer": "The Parliamentarians", "correct": true },
+      { "answer": "The Jacobites", "correct": false },
+      { "answer": "The Levellers", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_12",
+    "question": "Which treaty divided newly claimed overseas territories between Spain and Portugal in 1494?",
+    "options": [
+      { "answer": "The Treaty of Zaragoza", "correct": false },
+      { "answer": "The Treaty of Utrecht", "correct": false },
+      { "answer": "The Treaty of Tordesillas", "correct": true },
+      { "answer": "The Treaty of Alcáçovas", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_13",
+    "question": "Which dynasty established Shia Islam as the state religion of Iran",
+    "options": [
+      { "answer": "The Pahlavis", "correct": false },
+      { "answer": "The Safavids", "correct": true },
+      { "answer": "The Afsharids", "correct": false },
+      { "answer": "The Sassanids", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_14",
+    "question": "Which political settlement followed Napoleon's defeat and sought to restore a balance of power in Europe?",
+    "options": [
+      { "answer": "The Congress of Berlin", "correct": false },
+      { "answer": "The Congress of Vienna", "correct": true },
+      { "answer": "The Congress of Verona", "correct": false },
+      { "answer": "The Congress of Aix-la-Chapelle", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_15",
+    "question": "Which dynasty ruled China when the voyages of the explorer Zheng He began in 1405?",
+    "options": [
+      { "answer": "The Yuan dynasty", "correct": false },
+      { "answer": "The Song dynasty", "correct": false },
+      { "answer": "The Ming dynasty", "correct": true },
+      { "answer": "The Qing dynasty", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_16",
+    "question": "What event immediately triggered the July Crisis of 1914, which preceded the outbreak of the First World War?",
+    "options": [
+      { "answer": "The assassination of Archduke Franz Ferdinand", "correct": true },
+      { "answer": "The German invasion of Belgium", "correct": false },
+      { "answer": "The Russian mobilisation against Austria-Hungary", "correct": false },
+      { "answer": "The sinking of the RMS Lusitania", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_17",
+    "question": "Which agreement formally ended the state of war between Germany and the Allied Powers following the First World War?",
+    "options": [
+      { "answer": "The Treaty of Brest-Litovsk", "correct": false },
+      { "answer": "The Treaty of Saint-Germain-en-Laye", "correct": false },
+      { "answer": "The Treaty of Versailles", "correct": true },
+      { "answer": "The Treaty of Lausanne", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_18",
+    "question": "Which event in 1688 resulted in the removal of James II from the English throne and the accession of William III and Mary II?",
+    "options": [
+      { "answer": "The English Civil War", "correct": false },
+      { "answer": "The Glorious Revolution", "correct": true },
+      { "answer": "The Jacobite Rising", "correct": false },
+      { "answer": "The Restoration", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_19",
+    "question": "Which city became the capital of the Abbasid Caliphate when it was founded by Caliph al-Mansur in 762?",
+    "options": [
+      { "answer": "Damascus", "correct": false },
+      { "answer": "Cairo", "correct": false },
+      { "answer": "Baghdad", "correct": true },
+      { "answer": "Samarkand", "correct": false }
+    ]
+  },
+  {
+    "category": "G",
+    "difficulty": "_20",
+    "question": "Which nineteenth-century political movement led to the overthrow of the Tokugawa shogunate and the restoration of imperial rule in Japan in 1868?",
+    "options": [
+      { "answer": "The Taiping Rebellion", "correct": false },
+      { "answer": "The Boxer Rebellion", "correct": false },
+      { "answer": "The Meiji Restoration", "correct": true },
+      { "answer": "The Xinhai Revolution", "correct": false }
+    ]
+  }
+]
