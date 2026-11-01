@@ -200,12 +200,12 @@
   {
     "category": "V",
     "difficulty": "_19",
-    "question": "Four presentations, A, B, C and D, must be given in a single sequence. A must occur before B. B must occur before C. D must occur immediately after C. Which sequence is possible?",
+    "question": "Four presentations, A, B, C, D and E, must be given in a single sequence. A must occur before B. B must occur before C. D must occur immediately after C. E must occur before B. Which sequence is possible?",
     "options": [
-      { "answer": "A, B, C, D", "correct": true },
-      { "answer": "A, C, D, B", "correct": false },
-      { "answer": "B, A, C, D", "correct": false },
-      { "answer": "A, B, D, C", "correct": false }
+      { "answer": "A, B, C, D, E", "correct": false },
+      { "answer": "E, A, B, C, D", "correct": true },
+      { "answer": "B, A, E, C, D", "correct": false },
+      { "answer": "E, A, B, D, C", "correct": false }
     ]
   },
   {
