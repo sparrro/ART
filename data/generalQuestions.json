@@ -134,7 +134,7 @@
   {
     "category": "G",
     "difficulty": "_13",
-    "question": "Which dynasty established Shia Islam as the state religion of Iran",
+    "question": "Which dynasty established Shia Islam as the state religion of Iran?",
     "options": [
       { "answer": "The Pahlavis", "correct": false },
       { "answer": "The Safavids", "correct": true },
