@@ -185,7 +185,6 @@ export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
         };
     };
 
-    questionSubset = scramble(questionSubset);
     questionSubset.forEach(q => {
         q.options = scramble(q.options);
     });
