@@ -1,6 +1,6 @@
 import { testProgressType } from "./types";
 import { questionType, resultDataType } from "./types";
-import { questions } from "./dataConfig";
+import { questions, testQuestions } from "./dataConfig";
 import { dbGetOne } from "./apiCalls";
 import { backgroundProgressState, personalisedQuestionsState, testProgressState, timerState } from "./state";
 import { CacheType, StringSelectMenuInteraction } from "discord.js";
@@ -163,7 +163,6 @@ export const clearStates = (id: string) => {
 export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
     let questionSubset: questionType[] = [];
     const scrambledQuestions = scramble(questions);
-    console.log(questions.map(q => q.options.length))
 
     if (mode == "full") {
 
