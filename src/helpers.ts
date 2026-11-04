@@ -177,7 +177,10 @@ export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
                 const draw = scrambledQuestions.find(question => {
                     return question.category == category && question.difficulty == `_${j.toString()}`;
                 });
-                if (draw) questionSubset.push(draw);
+                if (draw) questionSubset.push({
+                    ...draw,
+                    options: [...draw.options]
+                });
             };
         };
     } else {
@@ -185,7 +188,10 @@ export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
             const draw = scrambledQuestions.find(question => {
                 return question.category == mode && question.difficulty == `_${i.toString()}`;
             });
-            if (draw) questionSubset.push(draw);
+            if (draw) questionSubset.push({
+                ...draw,
+                options: [...draw.options]
+            });
         };
     };
 
@@ -195,10 +201,7 @@ export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
             answer: "I don't know",
             correct: false
         });
-        console.log(questions.map(q => q.options.length))
     });
 
     return questionSubset;
 };
-
-randomQuestions("full")
