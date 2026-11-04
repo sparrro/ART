@@ -163,6 +163,7 @@ export const clearStates = (id: string) => {
 export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
     let questionSubset: questionType[] = [];
     const scrambledQuestions = scramble(questions);
+    console.log(questions.map(q => q.options.length))
 
     if (mode == "full") {
 
@@ -190,7 +191,14 @@ export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
 
     questionSubset.forEach(q => {
         q.options = scramble(q.options);
+        q.options.push({
+            answer: "I don't know",
+            correct: false
+        });
+        console.log(questions.map(q => q.options.length))
     });
 
     return questionSubset;
 };
+
+randomQuestions("full")

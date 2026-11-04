@@ -20,6 +20,8 @@ import {
 import { clearStates, countScores, formatTime, paginate, preventedFromTesting, randomQuestions, scramble, splitQuestions } from "./helpers";
 import { backgroundProgressState, personalisedQuestionsState, testProgressState, timerState } from "./state";
 
+console.log(questions.map(q => q.options.length))
+
 let iqChannel: Channel | undefined | null;
 
 const client = new Client({
@@ -51,7 +53,7 @@ client.once("clientReady", async () => {
     }, 1000 * 60 * 60 * 6);
     
     //deletes all its dms - shouldn't be needed again but you never know
-    for (const member of members.values()) {
+    /* for (const member of members.values()) {
         if (member.user.bot) continue;
         try {
             const dm = await member.user.createDM();
@@ -64,7 +66,7 @@ client.once("clientReady", async () => {
         } catch (err) {
             await father?.send(`I couldn't delete my dms to ${member.displayName}`);
         };
-    }
+    } */
 
     await father?.send("I'm online");
 
@@ -169,12 +171,17 @@ client.on("interactionCreate", async (interaction) => {
     if (!interaction.isStringSelectMenu()) return;
     if (!interaction.customId.endsWith("?")) return;
 
+    console.log(questions.map(q => q.options.length))
+
     const question = questions.find(q =>
         q.question.endsWith(interaction.customId)
     );
     const answer = question!.options.find(o =>
         o.answer == interaction.values[0]
     );
+    console.log("log -1: " + question?.options.map(o => [o.answer, o.correct]))
+    console.log("log 0: " + interaction.values)
+    console.log("log 1: " + answer?.answer + answer?.correct);
     const progress = testProgressState.get(interaction.user.id);
     const backGroundProgress = backgroundProgressState.get(interaction.user.id);
     if (!progress || !backGroundProgress) {
@@ -182,6 +189,7 @@ client.on("interactionCreate", async (interaction) => {
         return;
     };
     const qId = (question!.category + question!.difficulty) as `${"V" | "N" | "A" | "G"}${allowedQsType}`;
+    console.log("log 2: " + qId);
 
     answer?.correct ? progress[qId] = true : progress[qId] = false;
     switch (question!.category) {
@@ -300,9 +308,10 @@ client.on("interactionCreate", async (interaction) => {
         };
         return;
     } else {
+        const content = `${formatTime(remaining)} left\n${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
         const components = createIQQuestionnaire(firstQ);
         await interaction.message.edit({
-            content: `${formatTime(remaining)} left\n${firstQ.question}`,
+            content,
             components
         });
     };
@@ -516,6 +525,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("full");
 
         const firstQ = qCopy[0];
+        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -531,7 +541,7 @@ client.on("interactionCreate", async (interaction) => {
 
         const components = createIQQuestionnaire(firstQ);
         await initialDm.edit({
-            content: firstQ.question,
+            content: content,
             components
         });
         setTimeout(async () => {
@@ -575,6 +585,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("V");
 
         const firstQ = qCopy[0];
+        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -587,7 +598,7 @@ client.on("interactionCreate", async (interaction) => {
 
         const components = createIQQuestionnaire(firstQ);
         await initialDm.edit({
-            content: firstQ.question,
+            content: content,
             components
         });
         setTimeout(async () => {
@@ -631,6 +642,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("N");
 
         const firstQ = qCopy[0];
+        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -643,7 +655,7 @@ client.on("interactionCreate", async (interaction) => {
 
         const components = createIQQuestionnaire(firstQ);
         await initialDm.edit({
-            content: firstQ.question,
+            content: content,
             components
         });
         setTimeout(async () => {
@@ -687,6 +699,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("A");
 
         const firstQ = qCopy[0];
+        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -699,7 +712,7 @@ client.on("interactionCreate", async (interaction) => {
 
         const components = createIQQuestionnaire(firstQ);
         await initialDm.edit({
-            content: firstQ.question,
+            content: content,
             components
         });
         setTimeout(async () => {
@@ -743,6 +756,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("G");
 
         const firstQ = qCopy[0];
+        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -755,7 +769,7 @@ client.on("interactionCreate", async (interaction) => {
 
         const components = createIQQuestionnaire(firstQ);
         await initialDm.edit({
-            content: firstQ.question,
+            content: content,
             components
         });
         setTimeout(async () => {
