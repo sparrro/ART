@@ -303,7 +303,7 @@ client.on("interactionCreate", async (interaction) => {
         };
         return;
     } else {
-        const content = `${formatTime(remaining)} left\n${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
+        const content = `${formatTime(remaining)} left\n${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
         const components = createIQQuestionnaire(firstQ);
         await interaction.message.edit({
             content,
@@ -520,7 +520,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("full");
 
         const firstQ = qCopy[0];
-        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
+        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
         backgroundProgressState.set(interaction.user.id, {
@@ -579,7 +579,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("V");
 
         const firstQ = qCopy[0];
-        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
+        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -636,7 +636,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("N");
 
         const firstQ = qCopy[0];
-        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
+        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -693,7 +693,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("A");
 
         const firstQ = qCopy[0];
-        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
+        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -750,7 +750,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("G");
 
         const firstQ = qCopy[0];
-        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nD) ${firstQ.options[4].answer}`
+        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
