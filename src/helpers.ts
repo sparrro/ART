@@ -162,7 +162,7 @@ export const clearStates = (id: string) => {
 
 export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
     let questionSubset: questionType[] = [];
-    const scrambledQuestions = scramble(testQuestions);
+    const scrambledQuestions = scramble(questions);
 
     if (mode == "full") {
 

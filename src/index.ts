@@ -51,7 +51,7 @@ client.once("clientReady", async () => {
     }, 1000 * 60 * 60 * 6);
     
     //deletes all its dms - shouldn't be needed again but you never know
-    /* for (const member of members.values()) {
+    for (const member of members.values()) {
         if (member.user.bot) continue;
         try {
             const dm = await member.user.createDM();
@@ -64,7 +64,7 @@ client.once("clientReady", async () => {
         } catch (err) {
             await father?.send(`I couldn't delete my dms to ${member.displayName}`);
         };
-    } */
+    }
 
     await father?.send("I'm online");
 
@@ -303,7 +303,10 @@ client.on("interactionCreate", async (interaction) => {
         };
         return;
     } else {
-        const content = `${formatTime(remaining)} left\n${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
+        const category = firstQ.category == "V" ? "Verbal reasoning" : (firstQ.category == "N" ? "Numerical reasoning" : (firstQ.category == "A" ? "Abstract reasoning" : "History knowledge"));
+        const totalQuestions = backGroundProgress.verbalAnswers && backGroundProgress.numericalAnswers ? 80 : 20;
+        const currentQuestion = totalQuestions - qCopy!.length + 1;
+        const content = `${formatTime(remaining)} left\n\nQuestion ${currentQuestion}/${totalQuestions}\n\n${category} section\n${firstQ.question}\n\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}\n\u200B`
         const components = createIQQuestionnaire(firstQ);
         await interaction.message.edit({
             content,
@@ -520,7 +523,8 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("full");
 
         const firstQ = qCopy[0];
-        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
+        const category = firstQ.category == "V" ? "Verbal reasoning" : (firstQ.category == "N" ? "Numerical reasoning" : (firstQ.category == "A" ? "Abstract reasoning" : "History knowledge"));
+        const content = `Question 1/${qCopy.length}\n${category} section\n\n${firstQ.question}\n\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}\n\u200B`
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
         backgroundProgressState.set(interaction.user.id, {
@@ -579,7 +583,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("V");
 
         const firstQ = qCopy[0];
-        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
+        const content = `Question 1/20\n\n${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}\n\u200B`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -636,7 +640,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("N");
 
         const firstQ = qCopy[0];
-        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
+        const content = `Question 1/20\n\n${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}\n\u200B`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -693,7 +697,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("A");
 
         const firstQ = qCopy[0];
-        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
+        const content = `Question 1/20\n\n${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}\n\u200B`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
@@ -750,7 +754,7 @@ client.on("interactionCreate", async (interaction) => {
         const qCopy = randomQuestions("G");
 
         const firstQ = qCopy[0];
-        const content = `${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}`
+        const content = `Question 1/20\n\n${firstQ.question}\nA) ${firstQ.options[0].answer}\nB) ${firstQ.options[1].answer}\nC) ${firstQ.options[2].answer}\nD) ${firstQ.options[3].answer}\nE) ${firstQ.options[4].answer}\n\u200B`
         qCopy.shift();
         personalisedQuestionsState.set(interaction.user.id, qCopy);
         testProgressState.set(interaction.user.id, {});
