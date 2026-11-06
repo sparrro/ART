@@ -138,7 +138,7 @@ export const createIQQuestionnaire = (question: questionType) => {
     .addOptions(
         question.options.map(option =>
             new StringSelectMenuOptionBuilder()
-            .setLabel(option.answer)
+            .setLabel(question.options.indexOf(option) == 0 ? "A" : (question.options.indexOf(option) == 1 ? "B" : (question.options.indexOf(option) == 2 ? "C" : (question.options.indexOf(option) == 3) ? "D" : "E")))
             .setValue(option.answer)
         )
     );

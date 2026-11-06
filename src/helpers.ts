@@ -1,6 +1,6 @@
 import { testProgressType } from "./types";
 import { questionType, resultDataType } from "./types";
-import { questions } from "./dataConfig";
+import { questions, testQuestions } from "./dataConfig";
 import { dbGetOne } from "./apiCalls";
 import { backgroundProgressState, personalisedQuestionsState, testProgressState, timerState } from "./state";
 import { CacheType, StringSelectMenuInteraction } from "discord.js";
@@ -164,30 +164,42 @@ export const randomQuestions = (mode: "full" | "V" | "N" | "A" | "G") => {
     let questionSubset: questionType[] = [];
     const scrambledQuestions = scramble(questions);
 
-    for(let i = 1; i < 21; i++) {
-        if (mode == "full") {
-            for (let j = 0; j < 4; j++) {
+    if (mode == "full") {
+
+        for (let i = 0; i < 4; i++) {
+            for (let j = 1; j < 21; j++) {
+                let category: "V" | "N" | "A" | "G";
+                if (i == 0) category = "V";
+                if (i == 1) category = "N";
+                if (i == 2) category = "A";
+                if (i == 3) category = "G";
                 const draw = scrambledQuestions.find(question => {
-                    let category;
-                    if (j == 0) category = "V";
-                    if (j == 1) category = "N";
-                    if (j == 2) category = "A";
-                    if (j == 3) category = "G";
-                    return question.category == category && question.difficulty == `_${i.toString()}`;
+                    return question.category == category && question.difficulty == `_${j.toString()}`;
                 });
-                if (draw) questionSubset.push(draw);
+                if (draw) questionSubset.push({
+                    ...draw,
+                    options: [...draw.options]
+                });
             };
-        } else {
+        };
+    } else {
+        for (let i = 1; i < 21; i++) {
             const draw = scrambledQuestions.find(question => {
                 return question.category == mode && question.difficulty == `_${i.toString()}`;
             });
-            if (draw) questionSubset.push(draw);
+            if (draw) questionSubset.push({
+                ...draw,
+                options: [...draw.options]
+            });
         };
     };
 
-    questionSubset = scramble(questionSubset);
     questionSubset.forEach(q => {
         q.options = scramble(q.options);
+        q.options.push({
+            answer: "I don't know",
+            correct: false
+        });
     });
 
     return questionSubset;
