@@ -138,6 +138,21 @@ export const dbGetOne = async (id: string) => {
     };
 };
 
+export const dbGetAverage = async () => {
+    try {
+        const response = await fetch(`${API_BASE_URL}/results/average`, {
+            method: "get",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await response.json();
+        return data;
+    } catch (err) {
+        return err;
+    };
+};
+
 export const dbTest = async () => {
     try {
         const response = await fetch(API_BASE_URL!, {
