@@ -134,3 +134,10 @@ export type testProgressType = {
     G_19?: boolean,
     G_20?: boolean,
 };
+
+export type averagesType = {
+    verbalScore: number,
+    numericalScore: number,
+    abstractScore: number,
+    generalKnowledge: number
+};

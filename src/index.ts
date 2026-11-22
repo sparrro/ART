@@ -1,4 +1,4 @@
-import { dbAdd, dbAddAbstract, dbAddGeneral, dbAddHdi, dbAddNumerical, dbAddVerbal, dbDataAdd, dbDataRetrieve, dbGetOne, dbPing, dbTest } from "./apiCalls";
+import { dbAdd, dbAddAbstract, dbAddGeneral, dbAddHdi, dbAddNumerical, dbAddVerbal, dbDataAdd, dbDataRetrieve, dbGetAverage, dbGetOne, dbPing, dbTest } from "./apiCalls";
 import { countryPages, createCountryMenu, createIQQuestionnaire, createRegionMenu, createStartButtons } from "./components";
 import {
     TOKEN,
@@ -9,7 +9,7 @@ import {
     TEST_TAKER_ID,
 } from "./environment";
 import countries from "../data/hdiData.json";
-import { allowedQsType, questionType, resultDataType } from "./types";
+import { allowedQsType, averagesType, questionType, resultDataType } from "./types";
 import { questions } from "./dataConfig";
 import {
     Channel,
@@ -394,6 +394,31 @@ client.on("interactionCreate", async (interaction) => {
                     return;
                 };
                 await dbDataAdd(backGroundProgress);
+
+                //start current work area
+                const averageScoreResult = await dbGetAverage();
+                if (!averageScoreResult.data) {
+                    console.log("Failed to retrieve average scores");
+                    await interaction.message.edit({
+                        content: "Thank you for taking my test",
+                        components: []
+                    });
+                } else {
+                    const averages = averageScoreResult.data as averagesType[];
+                    if (averages[0]) {
+                        await interaction.message.edit({
+                            content: "", //tell the user's score compared to the average
+                            components: []
+                        });
+                    } else {
+                        await interaction.message.edit({
+                            content: "Thank you for taking my test",
+                            components: []
+                        });
+                    }
+                }
+                //end current work area
+
                 if (result.data.verbalScore && result.data.numericalScore && result.data.abstractScore && result.data.generalKnowledge) {
                     await client.guilds.fetch();
                     const server = client.guilds.cache.get(SERVER_ID!);
@@ -402,10 +427,6 @@ client.on("interactionCreate", async (interaction) => {
                         if (!member.roles.cache.has(TEST_TAKER_ID!)) await member.roles.add(TEST_TAKER_ID!);
                     };
                 };
-                await interaction.message.edit({
-                    content: "Thank you for taking my test",
-                    components: []
-                });
                 clearStates(interaction.user.id);
             } else {
                 const result = await dbAddHdi(interaction.user.id, country!.country, region!.region, region!.hdi);
